@@ -1085,7 +1085,7 @@ import { createClient } from 'jsr:@supabase/supabase-js@2'
     };
 
     try {
-      // Insert into Supabase
+
       let { data, error } = await supabase.from("contact-details").insert([
         {
           Name: name,
