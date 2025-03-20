@@ -79,7 +79,7 @@
     
                   <div class="main-menu-ex main-menu-ex1">
                     <ul>
-                      <li><a href="/" >Home</a></li>
+                      <li><a href="/index.html" >Home</a></li>
     
                       <li class="dropdown-menu-parrent">
                         <a href="/about.html" class="main1">About Us <i class="fa-solid fa-angle-down"></i></a>
@@ -212,19 +212,16 @@
       <!--=====HEADER END=======-->
     
       <style>
-        .image img {
-          width: 100%;
-        }
-    
-        @media (max-width: 768px) {
-          .logo-m a img {
-            width: 150px;
-          }
-    
-          .mobile-logo a img {
-            width: 120px;
-          }
-        }
+          .hero10-sliders .hero10-single.slick-current.slick-active::after{
+       background-image: url('/assets/service/r17.jpg') !important;
+      }
+      
+      .hero10-sliders .hero10-single::after{
+       background-image: none !important;
+      }
+
+
+      .implement-div{margin:10px;position:relative;padding:40px 20px;max-width:360px;display:flex;gap:20px;justify-content:center;box-shadow:2px 2px 10px rgb(0 0 0 / .1)}.implement-div-1{display:flex;flex-direction:column}.implement-div h4{font-size:20px;font-weight:700}.implement-div p{font-size:18px;font-weight:500}.implement-div:hover{transform:translateZ(0) scale(1)}.benefits-div{margin:10px;position:relative;background-color:#FF7A01;padding:40px;max-width:350px;display:flex;flex-direction:column;justify-content:center}.benefits-div-1{display:flex;flex-direction:column;align-items:center;justify-content:center}.benefits-div h4{font-size:20px;font-weight:700}.benefits-div p{color:white!important;text-align:center;font-size:18px;font-weight:500}.benefits-div:hover{transform:translateZ(0) scale(1)}.benefits-box{max-height:390px;height:100%}.unique-icon{color:#d63384;font-size:1.5em;margin-right:8px;vertical-align:middle}.unique-container{height:auto}.unique-image{width:100%}.unique-content{display:grid;grid-template-columns:1fr}.unique-cards{grid-template-columns:1fr}.unique-container{height:500px;max-width:1300px;margin:0 auto;padding:20px;text-align:center}.unique-title{color:#2d2d2d;margin-bottom:20px}.unique-content{margin-top:4rem;display:flex;height:100%;gap:20px}.unique-image{width:50%}.unique-image img{width:100%;height:100%;object-fit:cover;border-radius:20px}.unique-cards{width:95%;display:grid;grid-template-columns:1fr 1fr;gap:40px}.unique-card{background:#fff;border-radius:20px;box-shadow:0 4px 8px rgb(0 0 0 / .1);padding:20px;transition:transform 0.3s}.unique-card:hover{transform:translateY(-10px)}.unique-card h3{text-align:left;color:#2d2d2d;margin-bottom:10px}.unique-card p{text-align:left;color:#000}.image img{width:100%}@media (max-width:768px){.logo-m a img{width:150px}.mobile-logo a img{width:120px}}
       </style>
       <!--=====Mobile header start=======-->
       <div class="mobile-header mobile-header-main d-block d-lg-none">
@@ -425,18 +422,9 @@
 
     <!--=====Mobile header end=======-->
 
-    <style>
-        .hero10-sliders .hero10-single.slick-current.slick-active::after{
-       background-image: url('/assets/service/r17.jpg') !important;
-      }
+    
       
-      .hero10-sliders .hero10-single::after{
-       background-image: none !important;
-      }
-      </style>
-      
-      
-      <div class="_relative">
+      <section class="_relative">
       <div class="hero10-sliders">
          <div class="hero10-single">
              <div class="container">
@@ -505,11 +493,11 @@
       
       
       </div>
-      </div>
+      </section>
       
 
 
-    <div class="service-details-all sp" style="padding: 50px 0;">
+    <section class="service-details-all sp" style="padding: 50px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 m-auto">
@@ -537,12 +525,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
 
 
-    <div class="about4 sp" id="about">
+    <section class="about4 sp" id="about">
         <div class="container">
             <div class="row">
                
@@ -605,9 +593,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="about4 sp" id="about">
+    <section class="about4 sp" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -687,101 +675,12 @@
             
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <style>
-        .unique-container {
-          height: 500px;
-          max-width: 1300px;
-          margin: 0 auto;
-          padding: 20px;
-          text-align: center;
-        }
-    
-        .unique-title {
-    
-          color: #2d2d2d;
-          margin-bottom: 20px;
-        }
-    
-        .unique-content {
-          margin-top: 4rem;
-          display: flex;
-          height: 100%;
-          /* grid-template-columns: 1fr 1fr; */
-          gap: 20px;
-        }
-    
-        .unique-image {
-          width: 50%;
-        }
-    
-        .unique-image img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 20px;
-        }
-    
-        .unique-cards {
-          width: 95%;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 40px;
-        }
-    
-        .unique-card {
-          background: white;
-          border-radius: 20px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          padding: 20px;
-          transition: transform 0.3s;
-        }
-    
-        .unique-card:hover {
-          transform: translateY(-10px);
-        }
-    
-        .unique-card h3 {
-          text-align: left;
-          color: #2d2d2d;
-    
-          margin-bottom: 10px;
-        }
-    
-        .unique-card p {
-          text-align: left;
-          color: black;
-        }
-    
-        @media (max-width: 768px) {
-          .unique-container {
-          height: auto;
-        
-        }
-        .unique-image {
-          width: 100%;
-        }
-          .unique-content {
-            display: grid;
-            grid-template-columns: 1fr;
-          }
-    
-          .unique-cards {
-            grid-template-columns: 1fr;
-          }
-        }
-    
-        .unique-icon {
-          color: #d63384;
-          font-size: 1.5em;
-          margin-right: 8px;
-          vertical-align: middle;
-        }
-      </style>
+   
 
-    <div class="unique-container">
+    <section class="unique-container">
         <h1 class="unique-title">Benefits of SAM </h1>
         <div class="unique-content">
             <div class="unique-image">
@@ -808,21 +707,16 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-<style>
-    .benefits-box{
-        max-height: 390px ;
-        height: 100%;
-    }
-</style>
+
 
     <div class="space30"></div>
     <div class="space30"></div>
     <div class="space30"></div>
     <div class="space30"></div>
     <div class="space30"></div>
-    <div class="service-benefits " style="background-color: #FF7A01; padding: 100px 0;">
+    <section class="service-benefits " style="background-color: #FF7A01; padding: 100px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 m-auto text-center">
@@ -954,11 +848,11 @@
             </div>
             <img class="shape-left" src="/assets/img/shapes/home2-shape2.png" alt="">
         </div>
-    </div>
+    </section>
 
 
 
-    <div class="service8 sp" id="service" style="background-color: #F7F5FB;">
+    <section class="service8 sp" id="service" style="background-color: #F7F5FB;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 m-auto text-center">
@@ -1067,43 +961,10 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
 
-    <style>
-        .benefits-div{
-            margin: 10px;
-            position: relative;
-        background-color: #FF7A01;
-           padding: 40px;
-           max-width: 350px;
-          display: flex ;
-          flex-direction: column;
-          justify-content: center;
-           
-        }
-        .benefits-div-1{
-          display: flex ;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-        .benefits-div h4{
-            font-size: 20px;
-            font-weight: 700;
-        }
-        .benefits-div p{
-          color: white !important;
-          text-align: center;
-            font-size: 18px;
-            font-weight: 500;
-        }
-        .benefits-div:hover{
-           transform: translateZ(0) scale(1);
-        }
-    
-    </style>
-      <div class="service9 sp" id="service" style="margin-top: 11rem;">
+      <section class="service9 sp" id="service" style="margin-top: 11rem;">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 m-auto text-center">
@@ -1225,44 +1086,11 @@
            
        </section>
         </div>
-      </div>
-              
-<style>
-    .implement-div{
-                margin: 10px;
-                position: relative;
-            /* background-color: #FF7A01; */
-               padding: 40px 20px;
-               max-width: 360px;
-              display: flex ;
-              /* flex-direction: column; */
-              gap: 20px;
-              justify-content: center;
-              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-               /* box-shadow: #FF7A01 ; */
-            }
-            .implement-div-1{
-              display: flex ;
-              flex-direction: column;
-            
-            }
-            .implement-div h4{
-                font-size: 20px;
-                font-weight: 700;
-            }
-            .implement-div p{
-              
-              
-                font-size: 18px;
-                font-weight: 500;
-            }
-            .implement-div:hover{
-               transform: translateZ(0) scale(1);
-            }
-  </style>
+      </section>
+
   
   
-          <div class="work10 " style="margin-top: 50px;">
+          <section class="work10 " style="margin-top: 50px;">
             <div class="container">
               <div class="row">
                 <div class="col-lg-8 m-auto text-center">
@@ -1374,11 +1202,11 @@
            
        </section>
             </div>
-          </div>
+          </section>
   
     <!--=====SERVICE DETAILS START=======-->
 
-    <div class="service-details-all sp">
+    <section class="service-details-all sp">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 m-auto">
@@ -1503,14 +1331,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--=====SERVICE AREA END=======-->
 
 
     <!--===== FOOTER AREA START =======-->
 
-    <div class="footer1 _relative">
+    <section class="footer1 _relative">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6 col-12">
@@ -1632,7 +1460,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
     <!--===== FOOTER AREA END =======-->
 
