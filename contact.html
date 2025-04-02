@@ -39,7 +39,155 @@
   gtag('config', 'G-8P98C1QDGP');
 </script>
 </head>
-<body class="body">
+<style>
+  .consultation-btn {
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal {
+
+  position: fixed;
+  z-index: 100000000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+#consultationForm{
+  margin: 30px 0;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+
+}
+#consultationForm input{
+  background-color: #E9E8E9;
+    border: none;
+    width: 70%;
+    margin-top: 20px;
+    padding: 10px;
+    color: #60656E;
+}
+
+#consultationForm textarea{
+  background-color: #E9E8E9;
+    border: none;
+ 
+    margin-top: 20px;
+    padding: 16px;
+    color: #60656E;
+  width: 70%;
+}
+#consultationForm button{
+
+  background-color: #FF7A01;
+    border: none;
+    width: 70%;
+    margin-top: 20px;
+    padding: 16px;
+    color: white;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.close {
+    float: left;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+</style>
+<body class="body" style="position: relative;">
+  <div id="consultationModal" class="modal">
+    <div style=" width: 100%;height: 100%; display: flex; justify-content: center; align-items: center; ">
+      <div class="modal-content">
+        <span onclick="requestConsultationclose()" class="close">&times;</span>
+        <h2 style="text-align: center;">Request Consultation</h2>
+        <form id="consultationForm">
+            <input type="text" name="name" id="rname" placeholder="Your Name" required>
+            <input type="email" name="email" id="remail" placeholder="Your Email" required>
+            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" required>
+            <input type="text" name="company" id="rcompany" placeholder="Company Name" required>
+            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+  
+</div>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    (function () {
+    emailjs.init("Jox7N_HRF5owJdvd1");
+  })();
+
+function requestConsultation(){
+  console.log("ksamdkamdkasm")
+  document.getElementById("consultationModal").style.display = "block";
+}
+function requestConsultationclose(){
+  console.log("ksamdkamdkasm")
+  document.getElementById("consultationModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    let modal = document.getElementById("consultationModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
+document.getElementById("consultationForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let rname = document.getElementById("rname").value;
+    let remail = document.getElementById("remail").value;
+    let rcompany = document.getElementById("rcompany").value;
+    let rphone = document.getElementById("rphone").value;
+    let rdes = document.getElementById("rdes").value;
+
+    let templates = {
+      from_name: remail,
+      name: rname,
+      email: remail,
+      phone: rphone,
+      company: rcompany,
+      discription: rdes,
+    };
+
+    emailjs.send("service_ypnrf7e", "template_afkjhzw", templates).then(
+        (response) => {
+          console.log("Email SUCCESS!", response.status, response.text);
+          alert("Data Submitted Successfully!");
+          document.getElementById("consultationForm").reset();
+        },
+        (error) => {
+          console.error("Email FAILED...", error);
+        }
+      );
+
+    document.getElementById("consultationModal").style.display = "none";
+});
+
+</script>
 
   
 
@@ -189,7 +337,7 @@
 
             <div class="header2-buttons">
               <div class="button">
-                <a class="theme-btn1" href="tel:+91 4449006000">+91 4449006000
+                <a class="theme-btn1 consultation-btn" onclick="requestConsultation()" >Request Consultation
                 </a>
               </div>
             </div>
@@ -448,25 +596,6 @@
                             </p>
                         </div>
 
-                        <div class="heading1" style="margin-top: 50px;">
-                          <span class="span">Call To Action</span>
-
-                          <div style="display: flex; align-items: start; justify-content: start;">
-                            <div class="button">
-                              <button class="theme-btn1">Contact Us Today <span><i class="fa-solid fa-arrow-right"></i></span></button>
-                            </div>
-                           
-
-                          
-                            <div class="button" style="margin-left: 10px;">
-                              <button class="theme-btn1">Submit an Enquiry <span><i class="fa-solid fa-arrow-right"></i></span></button>
-                            </div>
-                          </div>
-                           
-                       
-                      
-                           
-                      </div>
 
                       <div style="margin-top: 40px;">
 
@@ -898,154 +1027,6 @@ emailjs.init('N7uBOExvFiTH9Bjzz')
   }
 </script>
 
-
-
-<!-- <script type="module" >
-
-import { createClient } from 'jsr:@supabase/supabase-js@2'
-    let supabase = createClient(
-    "https://tpubkavhlvhacljqfrwb.supabase.co",
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwdWJrYXZobHZoYWNsanFmcndiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDExNTkxNzQsImV4cCI6MjA1NjczNTE3NH0.BjvXWwA-9pWrohxkDlfj8sipVuHrYIIUR_6970dGbLI"
-  );
-
-  (function(){
-    emailjs.init("N7uBOExvFiTH9Bjzz"); 
-  })();
-
-  document.getElementById("contactForm").addEventListener("submit", function(e) {
-    console.log("object")
-      e.preventDefault(); 
-  
-    
-      var name = document.getElementById("fname").value;
-    var lname = document.getElementById("lname").value;
-    var femail = document.getElementById("femail").value;
-    var inquiry = document.getElementById("inquirySelect").value;
-    console.log("inquiry",inquiry)
-    var phone = document.getElementById("fphone").value;
-    var message = document.getElementById("fmessage").value;
-
-    var alert_msg = document.getElementById("alert_msg")
-
-      var templates={
-        from_name: femail,
-      name: name,
-      lname: lname,
-      email: femail,
-      phone: phone,
-      enquiry: inquiry,
-      message: message,
-      }
-    
-      supabase.from("contact-details")
-            .insert({ Name: name, email:femail, Phone:phone, Enquiry:inquiry,Message:message })
-
-            .then(
-              (data,error)=>{
-
-                if(error){
-                  console.log('eror')
-                }
-
-                    emailjs.send("service_uv2oljd","template_pnp1r6q", templates).then(
-            (response) => {
-              console.log('SUCCESS!', response.status, response.text);
-              alert('Data Submitted')
-            },
-            (error) => {
-              console.log('FAILED...', error);
-            },
-          );
-              }
-            )
-            .catch((error)=>{
-              alert('Something went wrong')
-            })
-      
-
-      
-   
-    });
-
-</script> -->
-
-
-
-<!-- <script type="module">
-  import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
-
-  let supabase = createClient(
-    "https://iaesslpmimgzzpgxpopv.supabase.co",
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlhZXNzbHBtaW1nenpwZ3hwb3B2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDExNjM0MjMsImV4cCI6MjA1NjczOTQyM30.KySVO8ISYjM6KJBl2mJPr6MbxX2CNndXMcrfzZ0rTxY"
-  );
-
-  (function () {
-    emailjs.init("N7uBOExvFiTH9Bjzz");
-  })();
-
-  document.getElementById("contactForm").addEventListener("submit", async function (e) {
-    e.preventDefault(); 
-
-    console.log("Submitting form...");
-
-    
-
-    
-    let name = document.getElementById("fname").value;
-    let lname = document.getElementById("lname").value;
-    let femail = document.getElementById("femail").value;
-    let inquiry = document.getElementById("inquirySelect").value;
-    let phone = document.getElementById("fphone").value;
-    let message = document.getElementById("fmessage").value;
-
-    let templates = {
-      from_name: femail,
-      name: name,
-      lname: lname,
-      email: femail,
-      phone: phone,
-      enquiry: inquiry,
-      message: message,
-    };
-
-    try {
-    
-      let { data, error } = await supabase.from("contact-details").insert([
-        {
-          Name: name, 
-    Email: femail,
-    Phone: phone,
-    Enquiry: inquiry,
-    Message: message,
-        },
-      ]);
-      console.log("Supabase Response:", data);
-     console.log("Supabase Error:", error);
-
-      if (error) {
-        console.error("Supabase Insert Error:", error);
-        alert("Error saving data!");
-        return;
-      }
-
-      console.log("Supabase Insert Success:", data);
-
-    
-      emailjs.send("service_uv2oljd", "template_pnp1r6q", templates).then(
-        (response) => {
-          console.log("Email SUCCESS!", response.status, response.text);
-          alert("Data Submitted Successfully!");
-        },
-        (error) => {
-          console.error("Email FAILED...", error);
-        }
-      );
-    } catch (error) {
-      console.error("Unexpected Error:", error);
-      alert("Something went wrong!");
-    }
-  });
-</script> -->
 
 
 <script type="module">

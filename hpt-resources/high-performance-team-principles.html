@@ -44,7 +44,155 @@
 </script>
 </head>
 
-<body class="body">
+<style>
+  .consultation-btn {
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal {
+
+  position: fixed;
+  z-index: 100000000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+#consultationForm{
+  margin: 30px 0;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+
+}
+#consultationForm input{
+  background-color: #E9E8E9;
+    border: none;
+    width: 70%;
+    margin-top: 20px;
+    padding: 10px;
+    color: #60656E;
+}
+
+#consultationForm textarea{
+  background-color: #E9E8E9;
+    border: none;
+ 
+    margin-top: 20px;
+    padding: 16px;
+    color: #60656E;
+  width: 70%;
+}
+#consultationForm button{
+
+  background-color: #FF7A01;
+    border: none;
+    width: 70%;
+    margin-top: 20px;
+    padding: 16px;
+    color: white;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.close {
+    float: left;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+</style>
+<body class="body" style="position: relative;">
+  <div id="consultationModal" class="modal">
+    <div style=" width: 100%;height: 100%; display: flex; justify-content: center; align-items: center; ">
+      <div class="modal-content">
+        <span onclick="requestConsultationclose()" class="close">&times;</span>
+        <h2 style="text-align: center;">Request Consultation</h2>
+        <form id="consultationForm">
+            <input type="text" name="name" id="rname" placeholder="Your Name" required>
+            <input type="email" name="email" id="remail" placeholder="Your Email" required>
+            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" required>
+            <input type="text" name="company" id="rcompany" placeholder="Company Name" required>
+            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+  
+</div>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    (function () {
+    emailjs.init("Jox7N_HRF5owJdvd1");
+  })();
+
+function requestConsultation(){
+  console.log("ksamdkamdkasm")
+  document.getElementById("consultationModal").style.display = "block";
+}
+function requestConsultationclose(){
+  console.log("ksamdkamdkasm")
+  document.getElementById("consultationModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    let modal = document.getElementById("consultationModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
+document.getElementById("consultationForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let rname = document.getElementById("rname").value;
+    let remail = document.getElementById("remail").value;
+    let rcompany = document.getElementById("rcompany").value;
+    let rphone = document.getElementById("rphone").value;
+    let rdes = document.getElementById("rdes").value;
+
+    let templates = {
+      from_name: remail,
+      name: rname,
+      email: remail,
+      phone: rphone,
+      company: rcompany,
+      discription: rdes,
+    };
+
+    emailjs.send("service_ypnrf7e", "template_afkjhzw", templates).then(
+        (response) => {
+          console.log("Email SUCCESS!", response.status, response.text);
+          alert("Data Submitted Successfully!");
+          document.getElementById("consultationForm").reset();
+        },
+        (error) => {
+          console.error("Email FAILED...", error);
+        }
+      );
+
+    document.getElementById("consultationModal").style.display = "none";
+});
+
+</script>
   
 
   <!--=====progress END=======-->
@@ -194,7 +342,7 @@
 
               <div class="header2-buttons">
                 <div class="button">
-                  <a class="theme-btn1" href="tel:+91 4449006000">+91 4449006000
+                  <a class="theme-btn1 consultation-btn" onclick="requestConsultation()" >Request Consultation
                   </a>
                 </div>
               </div>
