@@ -1047,11 +1047,11 @@ emailjs.init('N7uBOExvFiTH9Bjzz')
     console.log("Submitting form...");
 
     // Validate Google reCAPTCHA
-    // let recaptchaResponse = grecaptcha.getResponse();
-    // if (!recaptchaResponse) {
-    //   alert("Please verify that you are not a robot!");
-    //   return;
-    // }
+    let recaptchaResponse = grecaptcha.getResponse();
+    if (!recaptchaResponse) {
+      alert("Please verify that you are not a robot!");
+      return;
+    }
 
     // Get form data
     let name = document.getElementById("fname").value;
@@ -1073,6 +1073,17 @@ emailjs.init('N7uBOExvFiTH9Bjzz')
 
     try {
       
+        // Send email after successful insertion
+        emailjs.send("service_ypnrf7e", "template_y609hqg", templates).then(
+        (response) => {
+          console.log("Email SUCCESS!", response.status, response.text);
+          alert("Data Submitted Successfully!");
+        },
+        (error) => {
+          console.error("Email FAILED...", error);
+        }
+      );
+
       let { data, error } = await supabase.from("contact-details").insert([
         {
           Name: name,
@@ -1083,24 +1094,11 @@ emailjs.init('N7uBOExvFiTH9Bjzz')
         },
       ]);
 
-      if (error) {
-        console.error("Supabase Insert Error:", error);
-        alert("Error saving data!");
-        return;
-      }
+      
 
       console.log("Supabase Insert Success:", data);
 
-      // Send email after successful insertion
-      emailjs.send("service_ypnrf7e", "template_y609hqg", templates).then(
-        (response) => {
-          console.log("Email SUCCESS!", response.status, response.text);
-          alert("Data Submitted Successfully!");
-        },
-        (error) => {
-          console.error("Email FAILED...", error);
-        }
-      );
+    
 
       // Reset reCAPTCHA after successful submission
       grecaptcha.reset();
