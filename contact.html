@@ -38,7 +38,128 @@
 
   gtag('config', 'G-8P98C1QDGP');
 </script>
-</head>
+<style>
+  .hidden-popup {
+display: none !important;
+}
+#custom-popup{
+position: fixed;
+top:0;
+margin: auto;
+width: 100%; 
+height: 100%;
+z-index: 1000;
+
+}
+.elementor-location-popup{
+/* padding-top: 50%;x */
+height: 100vh;
+margin: auto;
+z-index: 100000;
+}
+</style>
+<style>
+  .menu-item-has-children .sub-menu {
+    display: none;
+  }
+
+  .menu-item-has-children.show-submenu > .sub-menu {
+    display: block;
+  }
+</style>
+<style>
+  .sub-menu.elementor-nav-menu--dropdown{
+width: fit-content !important;
+  }
+/* Hide all submenus by default */
+.sub-menu {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background: white;
+padding: 10px;
+list-style: none;
+z-index: 999;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show submenu when hovering over parent */
+.menu-item-has-children:hover > .sub-menu {
+display: block;
+}
+
+/* For sub-submenus: adjust position */
+.menu-item-has-children .sub-menu .menu-item-has-children {
+position: relative;
+}
+
+.menu-item-has-children .sub-menu .sub-menu {
+top: 0px !important;
+left: -53%;
+}
+
+/* Initial state: menu hidden */
+.elementor-nav-menu__containerrrr {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.4s ease, transform 0.3s ease;
+transform-origin: top;
+transform: scaleY(0);
+}
+
+/* When active: show the menu */
+.elementor-active + .elementor-nav-menu__containerrrr {
+height: 600px !important; /* Arbitrary large value */
+transform: scaleY(1) !important;
+/* overflow: auto; */
+overflow-y: auto !important;
+}
+
+
+@media (max-width: 768px) {
+.elementor-nav-menu__containerrrr {
+left: -80px;
+top: 30px;
+}
+.menu-item-has-children .sub-menu .sub-menu {
+top: 0px !important;
+left: 0;
+}
+.elementor-nav-menu__container {
+max-height: fit-content;
+overflow: visible;
+transform: scaleY(1);
+}
+.sub-menu {
+/* display: ; */
+position: relative;
+top: 0;
+left: 0;
+background: white;
+padding: 10px;
+list-style: none;
+z-index: 999;
+box-shadow:none;
+}
+
+.elementor-nav-menu__container .sub-menu {
+display: block !important;
+max-height: none;
+overflow: visible;
+transform: none;
+padding-left: 1em; /* Optional for indentation */
+}
+
+.menu-item-has-children > a::after {
+content: none; /* Hide dropdown indicators if any */
+}
+}
+
+
+
+</style>
+  </head>
 <style>
   .consultation-btn {
     background-color: #ff7f00;
@@ -640,31 +761,31 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                             <div class="row">
                               <div class="col-md-6">
                                 <div class="single-input">
-                                  <input type="text" id="fname" placeholder="First Name">
+                                  <input type="text" name="fname" id="fname" placeholder="First Name">
                                 </div>
                               </div>
             
                               <div class="col-md-6">
                                 <div class="single-input">
-                                  <input type="text" id="lname" placeholder="Last Name">
+                                  <input type="text" name="lname" id="lname" placeholder="Last Name">
                                 </div>
                               </div>
             
                               <div class="col-md-6">
                                 <div class="single-input">
-                                  <input type="email" id="femail" placeholder="Email">
+                                  <input type="email" name="femail" id="femail" placeholder="Email">
                                 </div>
                               </div>
             
                               <div class="col-md-6">
                                 <div class="single-input">
-                                  <input type="number" id="fphone" placeholder="Phone">
+                                  <input type="number" name="fphone" id="fphone" placeholder="Phone">
                                 </div>
                               </div>
             
                               <div class="col-md-12" style="margin-top: 10px;">
                                 <div class="single-input">
-                                  <select class="single-input"  id="inquirySelect" style="width: 100%; padding: 10px; background-color: #E9E8E9; outline:none;border:none" placeholder="Subject">
+                                  <select class="single-input" name="finquirySelect"  id="inquirySelect" style="width: 100%; padding: 10px; background-color: #E9E8E9; outline:none;border:none" placeholder="Subject">
                                     <option value="General Inquiry">General Inquiry</option>
                                     <option value="Service Request">Service Request
                                     </option>
@@ -679,7 +800,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             
                               <div class="col-md-12">
                                 <div class="single-input">
-                                  <textarea id="fmessage" rows="4" placeholder="Message"></textarea>
+                                  <textarea id="fmessage" name="fmessage" rows="4" placeholder="Message"></textarea>
                                 </div>
                               </div>
                               <div class="col-md-12 g-recaptcha" data-sitekey="6LeZ5fAqAAAAAAqeJWL3tBx8B5N97XTZfshmY69H"></div>
@@ -1073,7 +1194,7 @@ emailjs.init('N7uBOExvFiTH9Bjzz')
 
     try {
       
-        // Send email after successful insertion
+      
         emailjs.send("service_ypnrf7e", "template_y609hqg", templates).then(
         (response) => {
           console.log("Email SUCCESS!", response.status, response.text);
@@ -1093,14 +1214,6 @@ emailjs.init('N7uBOExvFiTH9Bjzz')
           Message: message,
         },
       ]);
-
-      
-
-      console.log("Supabase Insert Success:", data);
-
-    
-
-      // Reset reCAPTCHA after successful submission
       grecaptcha.reset();
 
     } catch (error) {
@@ -1130,5 +1243,245 @@ emailjs.init('N7uBOExvFiTH9Bjzz')
             <script src="assets/js/tilt.jquery.js"></script>
             <script src="assets/js/main.js"></script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordionTitles = document.querySelectorAll(".elementor-tab-title");
+    
+        accordionTitles.forEach((title) => {
+          title.addEventListener("click", function () {
+            const isExpanded = title.getAttribute("aria-expanded") === "true";
+            const tabId = title.getAttribute("aria-controls");
+            const tabContent = document.getElementById(tabId);
+    
+            // Collapse all
+            document.querySelectorAll(".elementor-tab-title").forEach((el) => {
+              el.setAttribute("aria-expanded", "false");
+            });
+            document.querySelectorAll(".elementor-tab-content").forEach((el) => {
+              el.style.display = "none";
+            });
+    
+            // Expand the clicked one if it wasn't already expanded
+            if (!isExpanded) {
+              title.setAttribute("aria-expanded", "true");
+              tabContent.style.display = "block";
+            }
+          });
+        });
+    
+        // Optional: Start with all contents hidden
+        document.querySelectorAll(".elementor-tab-content").forEach((content) => {
+          content.style.display = "none";
+        });
+      });
+    </script> 
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const allMenus = document.querySelectorAll('.menu-item-has-children');
+    
+        allMenus.forEach(menu => {
+          menu.addEventListener('mouseenter', () => {
+            menu.classList.add('show-submenu');
+          });
+    
+          menu.addEventListener('mouseleave', () => {
+            menu.classList.remove('show-submenu');
+          });
+        });
+      });
+
+
+    </script>
+    
+  
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+const toggleBtn = document.querySelector('.elementor-menu-toggle');
+const navMenu = document.querySelector('.elementor-nav-menu__container');
+
+toggleBtn.addEventListener('click', () => {
+  const isActive = toggleBtn.classList.toggle('elementor-active');
+  toggleBtn.setAttribute('aria-expanded', isActive);
+  navMenu.setAttribute('aria-hidden', !isActive);
+});
+});
+
+</script>
+
+    <script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+<script type="text/javascript">
+  (function() {
+    emailjs.init("1O1f1MirHqYBS7vZg");
+  })();
+</script>
+
+    <script>
+     
+      function sendEmail() {
+     console.log("lkanksdn")
+
+      const name = document.getElementById("form-field-name").value;
+  const company = document.getElementById("form-field-field_f632dff").value;
+  const designation = document.getElementById("form-field-field_c57af48").value;
+  const email = document.getElementById("form-field-email").value;
+  const phone = document.getElementById("form-field-field_44b3e2f").value;
+  const city = document.getElementById("form-field-field_bf37d11").value;
+  const service = document.getElementById("form-field-field_cbb58fe").value;
+
+  // You can add form validation here if needed
+
+  if (!name || !company || !designation || !email || !phone || !city || !service || service === "Select your Service") {
+      alert("Please fill in all fields before submitting.");
+      return;
+    }
+  const templateParams = {
+    name: name,
+    email: email,
+    phone: phone,
+    company: company,
+    designation: designation,
+    city: city,
+    service: service
+  };
+
+  console.log(templateParams); 
+
+        emailjs.send("service_zqsaiye", "template_0tslfpb", templateParams)
+        .then(function () {
+          alert("Message sent successfully!");
+          document.getElementById("contact-form").reset();
+          // form.reset();
+        }, function (error) {
+          alert("Failed to send message. Error: " + JSON.stringify(error));
+        });
+
+      return false;
+    }
+
+    </script>
+    <script src="email.js"></script>
+
+
+    
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+        const popup = document.getElementById("custom-popup");
+        const bookBtns = document.querySelectorAll(".elementor-button");
+    
+        // Loop through all Book Now buttons
+        bookBtns.forEach(function (btn) {
+          btn.addEventListener("click", function (e) {
+            console.log("lkdfkdsfnj")
+            // Optional: You can add a condition here if only certain buttons should trigger the popup
+            if (btn.textContent.trim() === "Book Now") {
+              e.preventDefault();
+              popup.classList.remove("hidden-popup");
+            }
+          });
+        });
+    
+        // Close the popup when clicking outside or using the close button
+        popup.addEventListener("click", function (e) {
+          if (e.target === popup) {
+            popup.classList.add("hidden-popup");
+          }
+        });
+    
+        // Optional Close Button inside popup
+        const closeBtn = document.createElement("button");
+        closeBtn.textContent = "×";
+        closeBtn.style.position = "absolute";
+        closeBtn.style.top = "10px";
+        closeBtn.style.right = "10px";
+        closeBtn.style.fontSize = "24px";
+        closeBtn.style.background = "transparent";
+        closeBtn.style.border = "none";
+        closeBtn.style.cursor = "pointer";
+        closeBtn.onclick = function () {
+          popup.classList.add("hidden-popup");
+        };
+        popup.appendChild(closeBtn);
+      });
+    </script>
+    <script>
+      const form2 = document.getElementById("contactForm");
+    
+    form2.addEventListener("submit", function (e) {
+      e.preventDefault(); 
+    
+      const formData2 = new FormData(form2);
+    
+      const urlEncodedData = new URLSearchParams();
+      urlEncodedData.append("first", formData2.get("fname"));
+      urlEncodedData.append("last", formData2.get("lname"));
+      urlEncodedData.append("email", formData2.get("femail"));
+      urlEncodedData.append("phone", formData2.get("fphone"));
+      urlEncodedData.append("inquiry", formData2.get("finquirySelect"));
+      urlEncodedData.append("message", formData2.get("fmessage"));
+    
+      fetch("https://script.google.com/macros/s/AKfycbylLSQw0pwCGG36b-Q6oK3KCzeoBiN5Axhvz6x5SE8tDjcJK0tfO8zTV0NEVbHal2A8/exec", {
+        method: "POST",
+        body: urlEncodedData,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success) {
+            // alert("Submitted successfully!");
+            form2.reset();
+          } else {
+            // alert("Error: " + data.error);
+          }
+        })
+        .catch((error) => {
+          // alert("Network error: " + error.message);
+        });
+    });
+    
+    </script>
+    <script>
+      const form3 = document.getElementById("consultationForm");
+    
+    form3.addEventListener("submit", function (e) {
+      e.preventDefault(); 
+    
+      const formData3 = new FormData(form3);
+    
+      const urlEncodedData = new URLSearchParams();
+      urlEncodedData.append("name", formData3.get("name"));
+      urlEncodedData.append("email", formData3.get("email"));
+      urlEncodedData.append("phone", formData3.get("phone"));
+      urlEncodedData.append("company", formData3.get("company"));
+      urlEncodedData.append("message", formData3.get("description"));
+    
+      fetch("https://script.google.com/macros/s/AKfycbw_vuKvuu4KNCMrFi9tjklVLq7sb92j7WO7HQ3ofF08kSv_EJcM74_KUS_h8Uf2Y8zc/exec", {
+        method: "POST",
+        body: urlEncodedData,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success) {
+            // alert("Submitted successfully!");
+            form3.reset();
+          } else {
+            // alert("Error: " + data.error);
+          }
+        })
+        .catch((error) => {
+          // alert("Network error: " + error.message);
+        });
+    });
+    
+    </script>
+   
 </body>
 </html>

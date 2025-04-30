@@ -1904,5 +1904,42 @@ document.getElementById("consultationForm").addEventListener("submit", function(
      <script src="assets/js/jquery.lineProgressbar.js"></script>
      <script src="assets/js/tilt.jquery.js"></script>
      <script src="assets/js/main.js"></script>
+ <script>
+    const form3 = document.getElementById("consultationForm");
+  
+  form3.addEventListener("submit", function (e) {
+    e.preventDefault(); 
+  
+    const formData3 = new FormData(form3);
+  
+    const urlEncodedData = new URLSearchParams();
+    urlEncodedData.append("name", formData3.get("name"));
+    urlEncodedData.append("email", formData3.get("email"));
+    urlEncodedData.append("phone", formData3.get("phone"));
+    urlEncodedData.append("company", formData3.get("company"));
+    urlEncodedData.append("message", formData3.get("description"));
+  
+    fetch("https://script.google.com/macros/s/AKfycbw_vuKvuu4KNCMrFi9tjklVLq7sb92j7WO7HQ3ofF08kSv_EJcM74_KUS_h8Uf2Y8zc/exec", {
+      method: "POST",
+      body: urlEncodedData,
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          // alert("Submitted successfully!");
+          form3.reset();
+        } else {
+          // alert("Error: " + data.error);
+        }
+      })
+      .catch((error) => {
+        // alert("Network error: " + error.message);
+      });
+  });
+  
+  </script>
 </body>
 </html>
