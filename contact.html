@@ -757,7 +757,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           </div>
                           <div class="space10"></div>
             
-                          <form  id="contactForm">
+                          <!-- <form  id="contactForm">
                             <div class="row">
                               <div class="col-md-6">
                                 <div class="single-input">
@@ -815,8 +815,70 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         <p> ✓ The form is sent successfully.</p>
                       </div>
                             </div>
-                          </form>
+                          </form> -->
+                          <form id="contactForm" action="https://crm.zoho.in/crm/WebToLeadForm" method="POST" onSubmit="javascript:document.charset='UTF-8'; return checkMandatory()" accept-charset="UTF-8">
+                            <!-- Zoho Hidden Fields -->
+                            <input type="hidden" name="xnQsjsdp" value="043a5253b2bcef40f44c182d5bfd3ee7f043764575c5f572ce5850e6715ee32d">
+                            <input type="hidden" name="zc_gad" id="zc_gad" value="">
+                            <input type="hidden" name="xmIwtLD" value="db082f40e8817847ce678f23a3460b830e2f4d59a2a6b133938506a5d720f915eae019967b9fa41da371727d9b60b974">
+                            <input type="hidden" name="actionType" value="TGVhZHM=">
+                            <input type="hidden" name="returnURL" value="https://www.ceohrconsultancy.com/contact-details.html">
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="single-input">
+                                        <input type="text" name="First Name" id="fname" placeholder="First Name" aria-required="true" maxlength="40">
+                                    </div>
+                                </div>
                         
+                                <div class="col-md-6">
+                                    <div class="single-input">
+                                        <input type="text" name="Last Name" id="lname" placeholder="Last Name" aria-required="true" maxlength="80">
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <div class="single-input">
+                                        <input type="email" name="Email" id="femail" placeholder="Email" aria-required="true" maxlength="100" ftype="email">
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <div class="single-input">
+                                        <input type="text" name="Mobile" id="fphone" placeholder="Phone" aria-required="true" maxlength="30">
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-12" style="margin-top: 10px;">
+                                    <div class="single-input">
+                                        <select class="single-input" name="Designation" id="inquirySelect" style="width: 100%; padding: 10px; background-color: #E9E8E9; outline:none;border:none" placeholder="Subject">
+                                            <option value="General Inquiry">General Inquiry</option>
+                                            <option value="Service Request">Service Request</option>
+                                            <option value="Collaboration Opportunities">Collaboration Opportunities</option>
+                                            <option value="Feedback/Complaints">Feedback/Complaints</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-12">
+                                    <div class="single-input">
+                                        <textarea id="Description" name="Description" rows="4" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-12 g-recaptcha" data-sitekey="6LeZ5fAqAAAAAAqeJWL3tBx8B5N97XTZfshmY69H"></div>
+                        
+                                <div class="col-md-12" style="margin-top: 10px;">
+                                    <button type="submit">
+                                        <div class="theme-btn1">Submit Now <span><i class="fa-solid fa-arrow-right"></i></span></div>
+                                    </button>
+                                </div>
+                                
+                                <div id="alert_msg">
+                                    <p> ✓ The form is sent successfully.</p>
+                                </div>
+                            </div>
+                        </form>
                         
                         <script>
                             // Modified Zoho validation functions
