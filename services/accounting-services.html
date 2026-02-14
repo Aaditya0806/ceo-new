@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accounting Services | High-Performance Teams | Recruitment</title>
+    <!-- <meta
+    name="description"
+    content="Discover expert HR solutions: High-Performance Teams, Bulk Hiring, Assessments, and Outsourced HR for MSMEs. Transform your workforce with tailored strategies."
+  />
+  <meta
+    name="keywords"
+    content=" •	High-Performance Teams
+    •	HR recruitment services
+    •	Bulk hiring solutions
+    •	Bulk assessment services
+    •	Outsourced HR for MSMEs    
+    "
+  /> -->
+
+    <!--=====FAB ICON=======-->
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=====CSS=======-->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/assets/css/nice-select.css" />
+    <link rel="stylesheet" href="/assets/css/slick-slider.css" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/assets/css/aos.css" />
+    <link rel="stylesheet" href="/assets/css/mobile-menu.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <!--=====JQUERY=======-->
+    <script src="/assets/js/jquery-3-6-0.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8P98C1QDGP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8P98C1QDGP');
+</script>
+</head>
+  <style>
+  .consultation-btn {
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal {
+
+  position: fixed;
+  z-index: 100000000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+#consultationForm{
+  margin: 10px 0;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+
+}
+#consultationForm input{
+  background-color: #E9E8E9;
+    border: none;
+    width: 70%;
+    margin-top: 20px;
+    padding: 5px;
+    color: #60656E;
+    font-size: 14px;
+}
+
+#consultationForm textarea{
+  background-color: #E9E8E9;
+    border: none;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 7px;
+    color: #60656E;
+  width: 70%;
+}
+#consultationForm button{
+
+  background-color: #FF7A01;
+    border: none;
+    width: 70%;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.close {
+    float: left;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+</style>
+<body class="body" style="position: relative;">
+  <div id="consultationModal" class="modal">
+    <div style=" width: 100%;height: 100%; display: flex; justify-content: center; align-items: center; ">
+      <div class="modal-content">
+        <span onclick="requestConsultationclose()" class="close">&times;</span>
+        <h2 style="text-align: center;">Request Consultation</h2>
+        <form id="consultationForm">
+            <input type="text" name="name" id="rname" placeholder="Your Name" required>
+            <input type="email" name="email" id="remail" placeholder="Your Email" required>
+            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" required>
+            <input type="text" name="company" id="rcompany" placeholder="Company Name" required>
+            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+  
+</div>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    (function () {
+    emailjs.init("Jox7N_HRF5owJdvd1");
+  })();
+
+function requestConsultation(){
+  console.log("ksamdkamdkasm")
+  document.getElementById("consultationModal").style.display = "block";
+}
+function requestConsultationclose(){
+  console.log("ksamdkamdkasm")
+  document.getElementById("consultationModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    let modal = document.getElementById("consultationModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
+document.getElementById("consultationForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let rname = document.getElementById("rname").value;
+    let remail = document.getElementById("remail").value;
+    let rcompany = document.getElementById("rcompany").value;
+    let rphone = document.getElementById("rphone").value;
+    let rdes = document.getElementById("rdes").value;
+
+    let templates = {
+      from_name: remail,
+      name: rname,
+      email: remail,
+      phone: rphone,
+      company: rcompany,
+      discription: rdes,
+    };
+
+    emailjs.send("service_ypnrf7e", "template_afkjhzw", templates).then(
+        (response) => {
+          console.log("Email SUCCESS!", response.status, response.text);
+          alert("Data Submitted Successfully!");
+          document.getElementById("consultationForm").reset();
+        },
+        (error) => {
+          console.error("Email FAILED...", error);
+        }
+      );
+
+    document.getElementById("consultationModal").style.display = "none";
+});
+
+</script>
+    <!-- Preloader Start -->
+
+    <!-- Preloader End -->
+
+    <!--=====progress END=======-->
+
+    <div class="paginacontainer">
+      <div class="progress-wrap">
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
+    </div>
+
+    <!--=====HEADER START=======-->
+    <header>
+      <div class="header-area header-area1 header-area-all d-none d-lg-block" id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="header-elements">
+                <div class="site-logo">
+                  <a href="/">
+                    <img loading="lazy" src="/assets/logo.png" alt="" />
+                  </a>
+                </div>
+  
+                <div class="main-menu-ex main-menu-ex1">
+                  <ul>
+                    <li><a href="/" >Home</a></li>
+  
+                    <li class="dropdown-menu-parrent">
+                      <a href="/about.html" class="main1">About Us <i class="fa-solid fa-angle-down"></i></a>
+  
+                      <ul>
+                        <!-- <li><a href="">Service</a></li> -->
+                        <li>
+                          <a href="/industries-we-serve.html">Industries We Serve</a>
+                        </li>
+  
+                        <li>
+                          <a href="/why-choose-us.html">Why Choose Us</a>
+                        </li>
+  
+                        <li>
+                          <a href="/team.html">Our Team</a>
+                        </li>
+                      </ul>
+                    </li>
+  
+                    <li class="dropdown-menu-parrent">
+                      <a href="/service.html" class="main1">Service <i class="fa-solid fa-angle-down"></i></a>
+                      <ul>
+                        <!-- <li><a href="">Service</a></li> -->
+                        <li>
+                          <a href="/services/High-Performance-Team-and-self-managed.html">High-Performance Teams/
+                            Self-Managed Teams</a>
+                        </li>
+                        <li>
+                          <a href="/services/Recruitment-service.html">
+                            Recruitment Services</a>
+                        </li>
+                        <li>
+                          <a href="/services/Bulk-Hiring-Services.html">
+                            Bulk Hiring Services</a>
+                        </li>
+                        <li>
+                          <a href="/services/Bulk-Assessmest-Service.html">Bulk Assessment Services
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/services/Outsourced-HR-Management-for-MSME.html">Outsourced HR Management for MSMEs
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/services/Operational-Excellence-Services.html">Operational Excellence Services</a>
+                        </li>
+                        <li>
+                          <a href="/services/Comprehensive-Workplace-Insights-and-Feedback-Solutions.html">Comprehensive
+                            Workplace Insights and Feedback
+                            Solutions</a>
+                        </li>
+                        <li>
+                          <a href="/services/Learning-solution.html">Learning Solutions</a>
+                        </li>
+                        <li>
+                          <a href="/services/Skill-development.html">Skill Development Services</a>
+                        </li>
+                        <li>
+                          <a href="/services/ER-Score-Card-Service.html">ER Score Card Services</a>
+                        </li>
+                        <li><a href="/services/accounting-services.html" class="highlighted-header">Accounting Services</a></li>
+                        <li><a href="/free-tool.html">Free Tools</a></li>
+                      </ul>
+                    </li>
+  
+  
+                    <li class="dropdown-menu-parrent"><a href="/hpt-resources.html" class="main1">HPT Resources <i
+                          class="fa-solid fa-angle-down"></i></a>
+                      <ul style="height: 560px; overflow-y: auto;">
+                        <!-- <li><a href="">Service</a></li> -->
+                        <li><a href="/hpt-resources/what-is-high-performance-teams.html">What is High-Performance Teams
+                          </a></li>
+                        <li><a href="/hpt-resources/the-history-of-high-performance-teams.html"> The History of
+                            High-Performance Teams </a></li>
+                        <li><a href="/hpt-resources/high-performance-team-principles.html"> High-Performance Team (HPT)
+                            Principles </a></li>
+                        <li><a href="/hpt-resources/workforce-planning-in-high-performance-teams.html"> Workforce Planning
+                            in High-Performance Teams </a></li>
+                        <li><a href="/hpt-resources/hpt-organizational-structure.html"> HPT Organizational Structure </a>
+                        </li>
+                        <li><a href="/hpt-resources/scientific-selection.html">Scientific Selection </a></li>
+                        <li><a href="/hpt-resources/cultural-visioning.html"> Cultural Visioning </a></li>
+                        <li><a href="/hpt-resources/team-formation.html"> Team Formation </a></li>
+                        <li><a href="/hpt-resources/communication-continuum.html"> Communication Continuum </a></li>
+                        <li><a href="/hpt-resources/shift-assembly-meeting.html"> Shift Assembly Meeting </a></li>
+                        <li><a href="/hpt-resources/insights.html">Insights</a></li>
+                        <li><a href="/hpt-resources/star-caps.html"> STAR Caps </a></li>
+                        <li><a href="/hpt-resources/team-scorecard.html"> Team Scorecard </a></li>
+                        <li><a href="/hpt-resources/reward-&-recognition-and-celebration-in-high-performance-teams.html">
+                            Reward & Recognition and Celebration in High-Performance Teams </a></li>
+                        <li><a href="/hpt-resources/skill-based-progression-system.html"> Skill-Based Progression System
+                          </a></li>
+                        <li><a href="/hpt-resources/learn-teach-learn.html">Learn-Teach-Learn </a></li>
+                        <li><a href="/hpt-resources/empowerment.html"> Empowerment </a></li>
+                        <li><a href="/hpt-resources/human-value-action-team-self-governance.html">Human Value Action Team
+                          </a></li>
+  
+  
+  
+  
+                      </ul>
+                    </li>
+  
+                    <li class="dropdown-menu-parrent">
+                      <a href="/testimonial.html" class="main1">Client and Testimonials</a>
+                    </li>
+  
+                    <li class="dropdown-menu-parrent">
+                      <a href="/FAQ.html" class="main1">FAQs</a>
+                    </li>
+  
+                    <li class="dropdown-menu-parrent">
+                      <a href="/contact.html" class="main1">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="header2-buttons">
+                  <div class="button">
+                    <a class="theme-btn1 consultation-btn" onclick="requestConsultation()" style="padding: 8px 8px; font-size: 15px;" >Request Consultation
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--=====HEADER END=======-->
+  
+    <style>
+   .benefits-box{height:350px!important}.hero10-sliders .hero10-single.slick-current.slick-active::after{background-image:url(/assets/acc-service.jpg)!important}.hero10-sliders .hero10-single{min-height:500px}.hero10-sliders .hero10-single::after{background-image:none!important}.work1 .work1-box{background-color:#F5F3F4}.heading1 h2{text-align:center!important}.heading1 p{text-align:center}.image img{width:100%}@media (max-width:768px){.benefits-box{height:auto!important}.logo-m a img{width:150px}.mobile-logo a img{width:120px}}
+    </style>
+    <!--=====Mobile header start=======-->
+    <div class="mobile-header mobile-header-main d-block d-lg-none">
+      <div class="container-fluid">
+        <div class="col-12">
+          <div class="mobile-header-elements">
+            <div class="mobile-logo">
+              <a href="/"><img loading="lazy" src="/assets/logo.png" alt="" /></a>
+            </div>
+            <div class="mobile-nav-icon">
+              <i class="fa-duotone fa-bars-staggered"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="mobile-sidebar d-block d-lg-none">
+      <div class="logo-m">
+        <a href="/"><img style="width: 100px" src="/assets/logo.png" alt="" /></a>
+      </div>
+      <div class="menu-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="mobile-nav">
+        <ul>
+          <li class="has-dropdown"><a href="/">Home </a></li>
+          <li class="has-dropdown">
+            <a href="/about.html">About Us</a>
+            <ul class="sub-menu">
+              <li>
+                <a href="/about.html">About Us</a>
+              </li>
+              <li>
+                <a href="/industries-we-serve.html">Industries We Serve</a>
+              </li>
+  
+              <li>
+                <a href="/why-choose-us.html">Why Choose Us</a>
+              </li>
+  
+              <li>
+                <a href="/team.html">Our Team</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="/service.html" class="highlighted-header">Service</a>
+            <ul class="sub-menu">
+              <!-- <li><a href="">Service</a></li> -->
+              <li>
+                <a href="/service.html" class="highlighted-header"> Our Services</a>
+              </li>
+              <li>
+                <a href="/services/High-Performance-Team-and-self-managed.html">High-Performance Teams/ Self-Managed
+                  Teams</a>
+              </li>
+              <li>
+                <a href="/services/Recruitment-service.html">
+                  Recruitment Services</a>
+              </li>
+              <li>
+                <a href="/services/Bulk-Hiring-Services.html">
+                  Bulk Hiring Services</a>
+              </li>
+              <li>
+                <a href="/services/Bulk-Assessmest-Service.html">Bulk Assessment Services
+                </a>
+              </li>
+              <li>
+                <a href="/services/Outsourced-HR-Management-for-MSME.html">Outsourced HR Management for MSMEs
+                </a>
+              </li>
+              <li>
+                <a href="/services/Operational-Excellence-Services.html">Operational Excellence Services</a>
+              </li>
+              <li>
+                <a href="/services/Comprehensive-Workplace-Insights-and-Feedback-Solutions.html">Comprehensive Workplace
+                  Insights and Feedback Solutions</a>
+              </li>
+              <li>
+                <a href="/services/Learning-solution.html">Learning Solutions</a>
+              </li>
+              <li>
+                <a href="/services/Skill-development.html">Skill Development Services</a>
+              </li>
+              <li>
+                <a href="/services/ER-Score-Card-Service.html">ER Score Card Services</a>
+              </li>
+              <li>
+                <a href="/services/accounting-services.html">Accounting Services</a>
+              </li>
+              <li>
+                <a href="/free-tool.html">Free Tools</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="/hpt-resources.html">HPT Resources</a>
+            <ul class="sub-menu">
+              <!-- <li><a href="">Service</a></li> -->
+              <li><a href="/hpt-resources.html">HPT Resources
+              </a></li>
+              <li><a href="/hpt-resources/what-is-high-performance-teams.html">What is High-Performance Teams
+              </a></li>
+            <li><a href="/hpt-resources/the-history-of-high-performance-teams.html"> The History of
+                High-Performance Teams </a></li>
+            <li><a href="/hpt-resources/high-performance-team-principles.html"> High-Performance Team (HPT)
+                Principles </a></li>
+            <li><a href="/hpt-resources/workforce-planning-in-high-performance-teams.html"> Workforce Planning
+                in High-Performance Teams </a></li>
+            <li><a href="/hpt-resources/hpt-organizational-structure.html"> HPT Organizational Structure </a>
+            </li>
+            <li><a href="/hpt-resources/scientific-selection.html">Scientific Selection </a></li>
+            <li><a href="/hpt-resources/cultural-visioning.html"> Cultural Visioning </a></li>
+            <li><a href="/hpt-resources/shift-assembly-meeting.html"> Shift Assembly Meeting </a></li>
+            <li><a href="/hpt-resources/insights.html">Insights</a></li>
+            <li><a href="/hpt-resources/team-formation.html"> Team Formation </a></li>
+            <li><a href="/hpt-resources/communication-continuum.html"> Communication Continuum </a></li>
+            <li><a href="/hpt-resources/star-caps.html"> STAR Caps </a></li>
+            <li><a href="/hpt-resources/team-scorecard.html"> Team Scorecard </a></li>
+            <li><a href="/hpt-resources/reward-&-recognition-and-celebration-in-high-performance-teams.html">
+                Reward & Recognition and Celebration in High-Performance Teams </a></li>
+            <li><a href="/hpt-resources/skill-based-progression-system.html"> Skill-Based Progression System
+              </a></li>
+            <li><a href="/hpt-resources/learn-teach-learn.html">Learn-Teach-Learn </a></li>
+            <li><a href="/hpt-resources/empowerment.html"> Empowerment </a></li>
+            <li><a href="/hpt-resources/human-value-action-team-self-governance.html">Human Value Action Team
+              </a></li>
+            </ul>
+          </li>
+  
+          <li><a href="/testimonial.html">Client and Testimonials</a></li>
+          <li><a href="/FAQ.html">FAQs</a></li>
+        </ul>
+  
+        <div class="mobile-button">
+          <a class="theme-btn1" href="/contact.html">Contact Us <span><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+  
+        <div class="single-footer-items">
+          <h3>Contact Us</h3>
+  
+          <div class="contact-box">
+            <div class="icon">
+              <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
+            </div>
+            <div class="pera">
+              <a href="tel:+91 8939983080">+91 8939983080</a>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="icon">
+              <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
+            </div>
+            <div class="pera">
+              <a href="tel:+91 4449006000">+91 4449006000</a>
+            </div>
+          </div>
+  
+          <div class="contact-box">
+            <div class="icon">
+              <img loading="lazy" src="/assets/img/icons/footer-icon2.png" alt="" />
+            </div>
+            <div class="pera">
+              <a href="mailto:info@ceohrconsultancy.com">info@ceohrconsultancy.com</a>
+            </div>
+          </div>
+  
+          <div class="contact-box">
+            <div class="icon">
+              <img loading="lazy" src="/assets/img/icons/footer-icon3.png" alt="" />
+            </div>
+            <div class="pera">
+              <a href="">9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai, Tamil
+                Nadu, India – 600116</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="contact-infos">
+          <h3>Our Location</h3>
+          <ul class="social-icon">
+            <li>
+              <a href="https://www.linkedin.com/company/136419/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/CEO_GROUPS"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ceo_hr_consultancy/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--=====Mobile header end=======-->
+
+    <!--=====HERO AREA START =======-->
+
+    <div class="common-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 m-auto text-center">
+            <div class="main-heading">
+              <h1>Our Service</h1>
+              <div class="pages-intro">
+                <a href="/">Home </a>
+                <span><i class="fa-regular fa-angle-right"></i></span>
+                <p>Our Service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=====HERO AREA END=======-->
+
+    <!--=====ABOUT AREA START=======-->
+
+  
+    <section class="_relative">
+      <div class="hero10-sliders">
+        <div class="hero10-single">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-10">
+                <div class="main-heading">
+                  <h1 style="text-align: center">Accounting Services</h1>
+                  <div class="space16"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chosse1" style="margin: 80px 0;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div class="heading1 choose1-heading">
+              <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
+              <h2 class="text-anime-style-3" style="text-align: center">
+                Structured Accounting & Financial Management Services for Growing Businesses
+              </h2>
+              <div class="space16"></div>
+              <p
+                data-aos="fade-left"
+                data-aos-duration="900"
+                style="text-align: center"
+              >
+                Every business — whether a startup, trading firm, ecommerce brand, manufacturer, or service provider — needs reliable accounting to grow with confidence.
+
+
+              </p>
+
+              <div class="work1" style="background-color: white">
+                <div class="container">
+                  <div class="row align-items-start">
+                    <div class="col-lg-12">
+                      <div class="heading1 work1-heading">
+                        <div class="space30"></div>
+                        <h3
+                          class="text-anime-style-3"
+                          style="text-align: center; perspective: 400px"
+                        >
+                        Clean books, timely reports, and financial clarity make it easier to:
+                        </h3>
+
+                    
+
+                        <div class="space10"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                Make informed decisions
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                Attract investors
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="row align-items-start"
+                    style="justify-content: center"
+                  >
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                Manage cashflow effectively
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                Maintain statutory compliance
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="row align-items-start"
+                    style="justify-content: center"
+                  >
+                   
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                Scale operations with confidence
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="space30"></div>
+              <p
+                data-aos="fade-left"
+                data-aos-duration="900"
+                style="text-align: center"
+              >
+At CEO HR Consultancy, our Professional Accounting Services are designed to give business owners complete peace of mind. We combine structured processes, deep financial domain expertise, and modern accounting systems to deliver accurate, timely, and insight-driven financial reporting.
+
+              </p>
+
+              
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center" style="margin-top: 80px">
+          <div class="col-lg-12">
+            <div class="heading1 choose1-heading">
+              <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
+              <h2 class="text-anime-style-3">Why Professional Accounting Services Matter</h2>
+              <div class="space16"></div>
+              <p data-aos="fade-left" data-aos-duration="900">
+                Accounting is not just about recording transactions. It is about understanding the financial health of your business.
+
+              </p>
+
+              <div class="work1" style="background-color: white">
+                <div class="container">
+                  <div class="row align-items-start">
+                    <div class="col-lg-12">
+                      <div class="heading1 work1-heading">
+                        <div class="space30"></div>
+                        <h3
+                          class="text-anime-style-3"
+                          style="text-align: center; perspective: 400px"
+                        >
+                        A professionally maintained accounting system helps answer critical business questions:
+
+                        </h3>
+
+                    
+
+                        <div class="space10"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                Are you consistently profitable?
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                Which costs are increasing month-over-month?
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                How strong is your cash position?
+
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                Are receivables getting delayed?
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="row align-items-start"
+                    style="justify-content: center"
+                  >
+                   
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                Is your business financially ready to expand?
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="space30"></div>
+             <p data-aos="fade-left" data-aos-duration="900">
+Most founders and business owners do not have the time to monitor these financial details daily — and that’s where structured professional accounting support becomes essential.
+              </p>
+
+               <div class="work1" style="background-color: white">
+                <div class="container">
+                  <div class="row align-items-start">
+                    <div class="col-lg-12">
+                      <div class="heading1 work1-heading">
+                        <div class="space30"></div>
+                        <h3
+                          class="text-anime-style-3"
+                          style="text-align: center; perspective: 400px"
+                        >
+                        Our approach ensures that your books are:
+
+                        </h3>
+
+                    
+
+                        <div class="space10"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                ✔ Accurate
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                ✔ Updated regularly
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                ✔ Transparent
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                ✔ Audit-ready
+
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="row align-items-start"
+                    style="justify-content: center"
+                  >
+                   
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                ✔ Decision-supportive
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="space30"></div>
+              
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="row align-items-center" style="margin-top: 80px">
+      
+          <div class="col-lg-12">
+            <div class="heading1 choose1-heading">
+              <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
+              <h2 class="text-anime-style-3">Our Accounting Services Include</h2>
+              <div class="space16"></div>
+              <p data-aos="fade-left" data-aos-duration="900">
+                1. Monthly Bookkeeping
+              </p>
+              <div class="work1" style="background-color: white">
+                <div class="container">
+                 
+                  <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                Recording all sales, purchases, expenses, and payments
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                Bank and credit card reconciliation
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                Vendor and customer ledger maintenance
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                GST-related accounting entries
+
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="row align-items-start"
+                    style="justify-content: center"
+                  >
+                   
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                Ensuring systematic documentation
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="space30"></div>
+               <p data-aos="fade-left" data-aos-duration="900">
+               We maintain clean, structured, and compliant books that reflect the true financial position of your business
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center" style="margin-top: 80px">
+          <div class="col-lg-12">
+            <div class="heading1 choose1-heading">
+              <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
+              <h2 class="text-anime-style-3">2. Accounts Management
+</h2>
+              <div class="space16"></div>
+             
+             
+              <div class="work1" style="background-color: white">
+                <div class="container">
+               
+                  <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                Accounts Payable (Vendor management)
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                Accounts Receivable (Customer follow-ups & tracking)
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                
+                                Expense tracking & categorization
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                	Cashflow monitoring
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="row align-items-start"
+                    style="justify-content: center"
+                  >
+                   
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                Periodic account reviews
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="space30"></div>
+               <p data-aos="fade-left" data-aos-duration="900">
+                We help businesses maintain discipline in financial operations while improving financial visibility.
+
+               
+              </p>
+            
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="row align-items-center" style="margin-top: 80px">
+       
+          <div class="col-lg-12">
+            <div class="heading1 choose1-heading">
+              <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
+              <h2 class="text-anime-style-3" >
+                3. Monthly MIS & Business Performance Reports
+
+              </h2>
+              <div class="space16"></div>
+              
+              <div class="work1" style="background-color: white">
+                <div class="container">
+                  
+                  <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                Profit & Loss Statement
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                Balance Sheet
+
+
+
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                Cost Analysis Reports
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                Performance comparison (Month-on-Month)
+
+
+
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                Cashflow Summary
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                Key financial insights & recommendations
+
+
+
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                </div>
+              </div>
+              <div class="space30"></div>
+             <p data-aos="fade-left" data-aos-duration="900">
+                Our MIS reporting is designed not just for compliance — but for better business decision-making.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row align-items-center" style="margin-top: 80px">
+       
+          <div class="col-lg-12">
+            <div class="heading1 choose1-heading">
+            <div style="display: flex; justify-content: center;">
+              <!-- <span class="span" data-aos="zoom-in-left" style="color: black;" data-aos-duration="700"
+              >Other Service</span
+            > -->
+            </div>
+              <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
+              <h2 class="text-anime-style-3" >
+                Our Approach 
+              </h2>
+              <div class="space16"></div>
+            <p data-aos="fade-left" data-aos-duration="900">
+                At CEO HR Consultancy, we follow a structured consulting methodology
+              </p>
+              <div class="work1" style="background-color: white">
+                <div class="container">
+                 
+                  <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                	Understanding your business model
+
+
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                
+                                Reviewing current accounting systems
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                Identifying process gaps
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+                                	Implementing structured accounting workflows
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-start" style="justify-content: center">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                	Delivering monthly financial clarity
+
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                   
+                  </div>
+
+               
+                </div>
+              </div>
+              <div class="space30"></div>
+            
+              <p data-aos="fade-left" data-aos-duration="900">
+                We use modern accounting tools and standardized internal review mechanisms to ensure consistency and quality in every engagement.
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center" style="margin-top: 80px">
+       
+          <div class="col-lg-12">
+            <div class="heading1 choose1-heading">
+              <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
+              <h2 class="text-anime-style-3" >
+                Who We Serve  
+              </h2>
+            <div class="space16"></div>
+            <p data-aos="fade-left" data-aos-duration="900">
+                We support:
+
+              </p>
+              <div class="work1" style="background-color: white">
+                <div class="container">
+                 
+                  <div class="row align-items-start">
+                    <div class="col-lg-6" >
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box" >
+                            <div class="heading1">
+                              <p>
+                                Startups & Early-Stage Companies
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="heading1 work1-heading">
+                        <div
+                          class="aos-init"
+                          data-aos="fade-left"
+                          data-aos-duration="900"
+                        >
+                          <div class="work1-box">
+                            <div class="heading1">
+                              <p>
+Growing SMEs
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  
+                </div>
+              </div>
+              <div class="space30"></div>
+             <p data-aos="fade-left" data-aos-duration="900">
+              Whether you are building from scratch or restructuring existing accounts, we bring process clarity and financial discipline.
+
+
+              </p>
+              
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <div class="about3 " id="about" style="margin: 50px 0 ;">
+        <div class="container">
+          <div class="row align-items-center">
+            
+
+            <div class="col-lg-12">
+              <div class="heading3 about3-heading">
+
+                <h2 class="text-anime-style-3" style="text-align: center; perspective: 400px;">Why Choose CEO HR Consultancy?
+</h2>
+                <div class="space16"></div>
+                 
+
+                <div class="row" style="justify-content: center;">
+                        <div class="col-lg-6">
+                            <div class="about3-icon-box aos-init aos-animate">
+                            <div class="">
+                              <div class="icon">
+                                <img loading="lazy" src="/assets/img/icons/about3-icon1.png" alt="">
+                              </div>
+                            </div>
+                            <div class="heading3">
+                              <h5>
+                                <a href="">Two decades of business consulting experience
+</a>
+                              </h5>
+                              
+                            </div>
+                          </div>
+          
+                          <div class="about3-icon-box aos-init aos-animate">
+                            <div class="">
+                              <div class="icon">
+                                <img loading="lazy" src="/assets/img/icons/about3-icon2.png" alt="">
+                              </div>
+                            </div>
+                            <div class="heading3">
+                              <h5>
+                                <a href=" ">Strong financial domain understanding</a>
+                              </h5>
+                              
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="col-lg-6">
+                            <div class="about3-icon-box aos-init aos-animate">
+                            <div class="">
+                              <div class="icon">
+                                <img loading="lazy" src="/assets/img/icons/about3-icon3.png" style="width: 40px;" alt="">
+                              </div>
+                            </div>
+                            <div class="heading3">
+                              <h5>
+                                <a href="">Structured compliance-driven approach</a>
+                              </h5>
+                              <p>
+                                
+                              </p>
+                            </div>
+                          </div>
+          
+                          <div class="about3-icon-box aos-init aos-animate">
+                            <div class="">
+                              <div class="icon">
+                                <img loading="lazy" src="/assets/img/icons/about3-icon5.png" style="width: 40px;" alt="">
+                              </div>
+                            </div>
+                            <div class="heading3">
+                              <h5>
+                                <a href="">Technology-enabled accounting processes</a>
+                              </h5>
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="about3-icon-box aos-init aos-animate">
+                            <div class="">
+                              <div class="icon">
+                                <img loading="lazy" src="/assets/img/icons/about3-icon4.png" style="width: 40px;" alt="">
+                              </div>
+                            </div>
+                            <div class="heading3">
+                              <h5>
+                                <a href="">Reliable, confidential, and professional handling
+                                  </a>
+                              </h5>
+                             
+                            </div>
+                          </div>
+          
+                           
+                        </div>
+                </div>
+
+ <div class="space30"></div>
+             <p data-aos="fade-left" data-aos-duration="900">
+              We do not just maintain books — we strengthen your financial foundation.
+
+
+
+              </p>
+              
+
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="margin-bottom: 60px; margin-top: 60px;">
+        
+        <article>
+          <div class="heading1">
+            <div class="space30"></div>
+            <h2 style="text-align: center;">Get Reliable Accounting Services for Your Business </h2>
+            <p style="text-align: center;">Accurate accounting is the backbone of sustainable growth. <br>
+If you want clarity, control, and confidence in your financial operations, our team is ready to support you. <br>
+<b>Contact us today to discuss your accounting requirements and build a stronger financial structure for your business.</b>
+</p>
+            
+
+            
+            
+              <div class="space16"></div>
+              <div class="button" style="display: flex; justify-content: center;">
+                 <a href="/contact.html"> <button type="submit" class="theme-btn1">
+                    Contact Us Today
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                  </button></a>
+
+                   
+                </div>
+
+
+                
+          </div>
+        </article>
+        <div class="space20"></div>
+      </div>
+
+   
+   
+    
+    <!--===== FOOTER AREA START =======-->
+
+    <section class="footer1 _relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="single-footer-items footer-logo-area">
+              <div class="footer-logo">
+                <a href="/"><img style="width: 150px" src="/assets/logo.png" alt="" /></a>
+              </div>
+              <div class="space20"></div>
+              <div class="heading1-w">
+                <p>
+                  Transforming Businesses, Empowering Teams, Driving Excellence.
+                </p>
+              </div>
+              <ul class="social-icon">
+                <li>
+                  <a href="https://www.linkedin.com/company/136419/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/CEO_GROUPS"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA"><i
+                      class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/ceo_hr_consultancy/"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="col-lg col-md-6 col-12">
+            <div class="single-footer-items">
+              <h3>Quick Links</h3>
+  
+              <ul class="menu-list">
+                <li><a href="/service.html">Service</a></li>
+                <li><a href="/hpt-resources.html">HPT Resources</a></li>
+                <li><a href="/team.html">Our Team</a></li>
+                <li><a href="/free-tool.html">Free Tool</a></li>
+                <li><a href="/FAQ.html">FAQS</a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="col-lg col-md-6 col-12">
+            <div class="single-footer-items pl-5">
+              <h3>Explore</h3>
+  
+              <ul class="menu-list">
+                <li><a href="/">Home </a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/testimonial.html">Testimonial</a></li>
+                <li><a href="/contact.html">Contact US</a></li>
+                <li>
+                  <a href="/Privacy-Policy-Terms-of-Use.html">Privacy Policy & <br />
+                    Terms of Use</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="single-footer-items">
+              <h3>Contact Us</h3>
+  
+              <div class="contact-box">
+                <div class="icon">
+                  <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
+                </div>
+                <div class="pera">
+                  <!-- <a href="tel:+91- 8939983080">+91- 8939983080</a> -->
+                  <a href="tel:+91- 4449006000">+91 4449006000</a>
+                </div>
+              </div>
+              <div class="contact-box">
+                <div class="icon">
+                  <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
+                </div>
+                <div class="pera">
+                  <a href="tel:+91- 8939983080">+91 8939983080</a>
+                  <!-- <a href="tel:+91 4449006000">+91 4449006000</a> -->
+                </div>
+              </div>
+  
+              <div class="contact-box">
+                <div class="icon">
+                  <img loading="lazy" src="/assets/img/icons/footer-icon2.png" alt="" />
+                </div>
+                <div class="pera">
+                  <a href="mailto:info@ceohrconsultancy.com">info@ceohrconsultancy.com</a>
+                </div>
+              </div>
+  
+              <div class="contact-box">
+                <div class="icon">
+                  <img loading="lazy" src="/assets/img/icons/footer-icon3.png" alt="" />
+                </div>
+                <div class="pera">
+                  <a>9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
+                    Tamil Nadu, India – 600116</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="space70"></div>
+      </div>
+  
+      <div class="copyright-area _relative">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-12">
+              <div class="coppyright">
+                <p>© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--===== FOOTER AREA END =======-->
+
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/fontawesome.js"></script>
+    <script src="/assets/js/jquery.countup.js"></script>
+    <script src="/assets/js/mobile-menu.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/slick-slider.js"></script>
+    <script src="/assets/js/gsap.min.js"></script>
+    <script src="/assets/js/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/Splitetext.js"></script>
+    <script src="/assets/js/SmoothScroll.js"></script>
+    <script src="/assets/js/text-animation.js"></script>
+    <script src="/assets/js/jquery.lineProgressbar.js"></script>
+    <script src="/assets/js/tilt.jquery.js"></script>
+    <script src="/assets/js/main.js"></script>
+   <script>
+    const form3 = document.getElementById("consultationForm");
+  
+  form3.addEventListener("submit", function (e) {
+    e.preventDefault(); 
+  
+    const formData3 = new FormData(form3);
+  
+    const urlEncodedData = new URLSearchParams();
+    urlEncodedData.append("name", formData3.get("name"));
+    urlEncodedData.append("email", formData3.get("email"));
+    urlEncodedData.append("phone", formData3.get("phone"));
+    urlEncodedData.append("company", formData3.get("company"));
+    urlEncodedData.append("message", formData3.get("description"));
+  
+    fetch("https://script.google.com/macros/s/AKfycbw_vuKvuu4KNCMrFi9tjklVLq7sb92j7WO7HQ3ofF08kSv_EJcM74_KUS_h8Uf2Y8zc/exec", {
+      method: "POST",
+      body: urlEncodedData,
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          // alert("Submitted successfully!");
+          form3.reset();
+        } else {
+          // alert("Error: " + data.error);
+        }
+      })
+      .catch((error) => {
+        // alert("Network error: " + error.message);
+      });
+  });
+  
+  </script>
+</body>
+</html>
