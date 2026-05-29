@@ -3,22 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+  <meta name="cms-page" content="service_recruitment" />
+    <title data-cms="meta.title">
       Recruitment Services | Tailored Hiring Solutions | Bulk Hiring Experts
     </title>
-    <meta
-      name="description"
+    <meta name="description"
       content="Discover expert recruitment solutions for all levels—GET to CEO. Leverage our assessments and industry expertise to hire the best talent."
-    />
-    <meta
-      name="keywords"
+    / data-cms-attr="meta.description|content">
+    <meta name="keywords"
       content="•	Recruitment services
       •	Executive search and hiring
       •	Bulk hiring solutions
       •	Campus recruitment services
       •	Comprehensive talent assessments
       "
-    />
+    / data-cms-attr="meta.keywords|content">
 
     <!--=====FAB ICON=======-->
          <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -587,7 +586,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     data-aos-duration="700"
                     >Service
                   </span>
-                       <h1> Sourcing the Right
+                       <h1 data-cms="hero.heading"> Sourcing the Right
                         Talent, From GET to
                         CEO
                       </h1>
@@ -1646,5 +1645,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 </html>

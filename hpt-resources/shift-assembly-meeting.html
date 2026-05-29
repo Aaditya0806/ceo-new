@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+    <meta name="cms-page" content="hpt_shift_assembly_meeting" />
+    <title data-cms="meta.title">
         Shift Assembly Meeting | SAM for Team Alignment | CEO HR
     </title>
-    <meta name="description"
+    <meta name="description" data-cms-attr="meta.description|content"
         content="Discover the role of Shift Assembly Meetings (SAM) in fostering communication, alignment, and ownership within teams. Learn how SAM drives operational success." />
-    <meta name="keywords" content="	Shift Assembly Meeting process
+    <meta name="keywords" data-cms-attr="meta.keywords|content" content="	Shift Assembly Meeting process
 	SAM in team communication
 	Operational alignment in shifts
   	SAM log sheet best practices
   Team ownership through SAM
-  
-      
+
+
      " />
 
     <!--=====FAB ICON=======-->
@@ -131,14 +132,14 @@
     <div style=" width: 100%;height: 100%; display: flex; justify-content: center; align-items: center; ">
       <div class="modal-content">
         <span onclick="requestConsultationclose()" class="close">&times;</span>
-        <h2 style="text-align: center;">Request Consultation</h2>
+        <h2 style="text-align: center;" data-cms="shared.consultationModal.heading">Request Consultation</h2>
         <form id="consultationForm">
-            <input type="text" name="name" id="rname" placeholder="Your Name" required>
-            <input type="email" name="email" id="remail" placeholder="Your Email" required>
-            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" required>
-            <input type="text" name="company" id="rcompany" placeholder="Company Name" required>
-            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" required></textarea>
-            <button type="submit">Submit</button>
+            <input type="text" name="name" id="rname" placeholder="Your Name" data-cms-attr="shared.consultationModal.placeholderName|placeholder" required>
+            <input type="email" name="email" id="remail" placeholder="Your Email" data-cms-attr="shared.consultationModal.placeholderEmail|placeholder" required>
+            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" data-cms-attr="shared.consultationModal.placeholderPhone|placeholder" required>
+            <input type="text" name="company" id="rcompany" placeholder="Company Name" data-cms-attr="shared.consultationModal.placeholderCompany|placeholder" required>
+            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" data-cms-attr="shared.consultationModal.placeholderDescription|placeholder" required></textarea>
+            <button type="submit" data-cms="shared.consultationModal.btnText">Submit</button>
         </form>
     </div>
     </div>
@@ -585,24 +586,24 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           class="span"
                           data-aos="zoom-in-right"
                           data-aos-duration="700"
-                          >HPT Resources
+                          data-cms="hero.eyebrow">HPT Resources
                         </span>
-                             <h1> Shift Assembly Meeting Enhancing Team Communication and Ownership
+                             <h1 data-cms="hero.heading"> Shift Assembly Meeting Enhancing Team Communication and Ownership
                             </h1>
                              <div class="space16"></div>
-                             <p> Streamline shift transitions, foster team alignment, and instill a culture of accountability
+                             <p data-cms="hero.paragraph"> Streamline shift transitions, foster team alignment, and instill a culture of accountability
                                 with structured communication through SAM. </p>
-                             
-                
+
+
                          </div>
                      </div>
                      <div class="space30"></div>
                      <div class="col-lg-12 col-md-10" style="display: flex; gap: 20px; flex-wrap: wrap;">
                       <div class="button">
-                        <a href="/contact.html" class="theme-btn16"   >Request A Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                        <a href="/contact.html" class="theme-btn16" data-cms-href="hero.primaryBtnLink" data-cms="hero.primaryBtnText">Request A Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
                     </div>
                     <div class="button">
-                        <a href="/hpt-resources.html" class="theme-btn16"   >Explore Other Resources <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                        <a href="/hpt-resources.html" class="theme-btn16" data-cms-href="hero.secondaryBtnLink" data-cms="hero.secondaryBtnText">Explore Other Resources <span><i class="fa-solid fa-arrow-right"></i></span></a>
                     </div>
                      </div>
                  </div>
@@ -624,8 +625,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                              <div class="space16"></div>
                              <p> Streamline shift transitions, foster team alignment, and instill a culture of accountability
                                 with structured communication through SAM.  </p>
-                             
-                
+
+
                          </div>
                      </div>
                      <div class="space30"></div>
@@ -654,11 +655,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     <div class="service-details-area">
                         <article>
 
-                            <h2 style="text-align: center; font-weight: 700;">
+                            <h2 style="text-align: center; font-weight: 700;" data-cms="intro.heading">
                                 What is a Shift Assembly Meeting ?
                             </h2>
                             <div class="space16"></div>
-                            <p style="text-align: center; font-size: 20px; ">
+                            <p style="text-align: center; font-size: 20px; " data-cms-html="intro.paragraph">
                                 The <b>Shift Assembly Meeting</b> is a structured communication forum conducted at the
                                 beginning of every shift. It bridges outgoing and incoming teams, ensuring smooth
                                 transitions, enhanced collaboration, and operational ownership.
@@ -687,14 +688,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <div class="col-lg-12">
                     <div class="heading4 about4-heading">
                         <!-- <span class="span aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="700">About Us</span> -->
-                        <h2 class="text-anime-style-3" style="perspective: 400px; color: black; text-align: center;">
+                        <h2 class="text-anime-style-3" style="perspective: 400px; color: black; text-align: center;" data-cms="purpose.heading">
                             Purpose of SAM
 
 
                         </h2>
                         <div class="space16"></div>
                         <h3 class="text-anime-style-3" style="perspective: 400px;text-align: center;">
-                           
+
 
                         </h3>
 
@@ -704,13 +705,13 @@ document.getElementById("consultationForm").addEventListener("submit", function(
     <div class="col-lg-6 about4-box aos-init aos-animate" data-aos="fade-left" data-aos-duration="800">
         <div class="">
             <div class="icon">
-                <img loading="lazy" src="/assets/resources/service2-iocn1.png" style="width: 40px;" alt="">
+                <img loading="lazy" src="/assets/resources/service2-iocn1.png" data-cms-src="purpose.items.0.icon" style="width: 40px;" alt="">
             </div>
         </div>
         <div class="heading4">
-            <h5><a>Communicate Updates </a></h5>
+            <h5><a data-cms="purpose.items.0.title">Communicate Updates </a></h5>
             <div class="space10"></div>
-            <p> Share key happenings, performance metrics, and business updates. <br>
+            <p data-cms-html="purpose.items.0.description"> Share key happenings, performance metrics, and business updates. <br>
                 Provide essential safety and operational information to the incoming team.
 
 
@@ -721,13 +722,13 @@ document.getElementById("consultationForm").addEventListener("submit", function(
     <div class="col-lg-6 about4-box aos-init aos-animate" data-aos="fade-left" data-aos-duration="1100">
         <div class="">
             <div class="icon">
-                <img loading="lazy" src="/assets/resources/service2-iocn2.png" style="width: 40px;" alt="">
+                <img loading="lazy" src="/assets/resources/service2-iocn2.png" data-cms-src="purpose.items.1.icon" style="width: 40px;" alt="">
             </div>
         </div>
         <div class="heading4">
-            <h5><a>Encourage Engagement </a></h5>
+            <h5><a data-cms="purpose.items.1.title">Encourage Engagement </a></h5>
             <div class="space10"></div>
-            <p> Actively involve team members in discussions. <br>
+            <p data-cms-html="purpose.items.1.description"> Actively involve team members in discussions. <br>
                 Instill ownership in delivering team targets.
 
 
@@ -754,17 +755,32 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="heading6">
             <!-- <span class="span aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="700"><img
                 src="/assets/img/icons/span6.svg" alt=""> Recruitment Technologies</span> -->
-            <h2 class="text-anime-style-3" style="perspective: 400px;">
-              Key Responsibilities in SAM 
+            <h2 class="text-anime-style-3" style="perspective: 400px;" data-cms="responsibilities.heading">
+              Key Responsibilities in SAM
 
             </h2>
           </div>
         </div>
       </div>
       <div class="space30"></div>
-      <div class="row" style="justify-content: center;"> 
+      <div class="row" style="justify-content: center;" data-cms-list="responsibilities.items">
+        <template data-cms-template>
+          <div class="col-lg-6">
+            <div class="others-boxs">
+              <div class="">
+                <div class="icon">
+                  <img loading="lazy" data-cms-field-src="icon" src="" style="width: 46px; height: 46px;" alt="">
+                </div>
+              </div>
+              <div class="heading6">
+                <h4><a data-cms-field="title"></a></h4>
+                <p data-cms-field="description"></p>
+              </div>
+            </div>
+          </div>
+        </template>
 
-       
+
         <div class="col-lg-6">
           <div class="aos-init aos-animate" data-aos="fade-right" data-aos-duration="800">
             <div class="others-boxs">
@@ -795,10 +811,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             </div>
           </div>
 
-       
+
         </div>
         <div class="col-lg-6">
-         
+
 
           <div class="aos-init" data-aos="fade-right" data-aos-duration="1200">
             <div class="others-boxs">
@@ -829,10 +845,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <div class="col-lg-12">
                     <div class="heading4 about4-heading">
                         <!-- <span class="span aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="700">About Us</span> -->
-                        <h2 class="text-anime-style-3" style="perspective: 400px; color: black; text-align: center;">
-                            Meeting Details 
+                        <h2 class="text-anime-style-3" style="perspective: 400px; color: black; text-align: center;" data-cms="meetingDetails.heading">
+                            Meeting Details
                         </h2>
-                       
+
 
 
                         <div class="about4-border"></div>
@@ -841,59 +857,59 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         <div class="col-lg-6 about4-box aos-init aos-animate" data-aos="fade-left" data-aos-duration="1100">
                             <div class="">
                                 <div class="icon">
-                                    <img loading="lazy" src="/assets/resources/service2-iocn2.png" style="width: 40px;" alt="">
+                                    <img loading="lazy" src="/assets/resources/service2-iocn2.png" data-cms-src="meetingDetails.items.0.icon" style="width: 40px;" alt="">
                                 </div>
                             </div>
                             <div class="heading4">
-                                <h5><a>	Duration</a></h5>
+                                <h5><a data-cms="meetingDetails.items.0.title">	Duration</a></h5>
                                 <div class="space10"></div>
-                                <p>20 minutes
-                                </p>
-                            </div>
-                        </div>
-                     
-                        <div class="col-lg-6 about4-box aos-init aos-animate" data-aos="fade-left" data-aos-duration="800">
-                            <div class="">
-                                <div class="icon">
-                                    <img loading="lazy" src="/assets/resources/service2-iocn1.png" style="width: 40px;" alt="">
-                                </div>
-                            </div>
-                            <div class="heading4">
-                                <h5><a>Location</a></h5>
-                                <div class="space10"></div>
-                                <p>SAM Room
+                                <p data-cms="meetingDetails.items.0.description">20 minutes
                                 </p>
                             </div>
                         </div>
 
-                       
-                        <div class="col-lg-6 about4-box aos-init aos-animate" data-aos="fade-left" data-aos-duration="1100">
+                        <div class="col-lg-6 about4-box aos-init aos-animate" data-aos="fade-left" data-aos-duration="800">
                             <div class="">
                                 <div class="icon">
-                                    <img loading="lazy" src="/assets/all-icons/consumer-centric.png" style="width: 40px;" alt="">
+                                    <img loading="lazy" src="/assets/resources/service2-iocn1.png" data-cms-src="meetingDetails.items.1.icon" style="width: 40px;" alt="">
                                 </div>
                             </div>
                             <div class="heading4">
-                                <h5><a>Participants</a></h5>
+                                <h5><a data-cms="meetingDetails.items.1.title">Location</a></h5>
                                 <div class="space10"></div>
-                                <p>Outgoing Shift Leader, Incoming Shift Leader, and Team Members
+                                <p data-cms="meetingDetails.items.1.description">SAM Room
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6 about4-box aos-init aos-animate" data-aos="fade-left" data-aos-duration="1100">
+                            <div class="">
+                                <div class="icon">
+                                    <img loading="lazy" src="/assets/all-icons/consumer-centric.png" data-cms-src="meetingDetails.items.2.icon" style="width: 40px;" alt="">
+                                </div>
+                            </div>
+                            <div class="heading4">
+                                <h5><a data-cms="meetingDetails.items.2.title">Participants</a></h5>
+                                <div class="space10"></div>
+                                <p data-cms="meetingDetails.items.2.description">Outgoing Shift Leader, Incoming Shift Leader, and Team Members
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-6 about4-box aos-init aos-animate" data-aos="fade-left" data-aos-duration="1100">
                             <div class="">
                                 <div class="icon">
-                                    <img loading="lazy" src="/assets/all-icons/monitoring (1).png" style="width: 40px;" alt="">
+                                    <img loading="lazy" src="/assets/all-icons/monitoring (1).png" data-cms-src="meetingDetails.items.3.icon" style="width: 40px;" alt="">
                                 </div>
                             </div>
                             <div class="heading4">
-                                <h5><a>Timings</a></h5>
+                                <h5><a data-cms="meetingDetails.items.3.title">Timings</a></h5>
                                 <div class="space10"></div>
-                                <p>Start of every shift (6:00 AM, 2:00 PM, 10:00 PM)
+                                <p data-cms="meetingDetails.items.3.description">Start of every shift (6:00 AM, 2:00 PM, 10:00 PM)
                                 </p>
                             </div>
                         </div>
-                       
+
                       </div>
 
 
@@ -909,29 +925,29 @@ document.getElementById("consultationForm").addEventListener("submit", function(
    
 
     <section class="unique-container">
-        <h1 class="unique-title">Benefits of SAM </h1>
+        <h1 class="unique-title" data-cms="benefits.heading">Benefits of SAM </h1>
         <div class="unique-content">
             <div class="unique-image">
-                <img loading="lazy" src="/assets/assembly/Benefits of SAM.png" alt="Team Image">
+                <img loading="lazy" src="/assets/assembly/Benefits of SAM.png" data-cms-src="benefits.image" alt="Team Image">
             </div>
             <div class="unique-cards">
                 <div class="unique-card">
-                    <h3> Improved Team Alignment</h3>
-                    <p>Ensures all members are informed and aligned with goals.</p>
+                    <h3 data-cms="benefits.cards.0.title"> Improved Team Alignment</h3>
+                    <p data-cms="benefits.cards.0.description">Ensures all members are informed and aligned with goals.</p>
                 </div>
                 <div class="unique-card">
-                    <h3> Enhanced Communication</h3>
-                    <p>Facilitates effective information sharing and coordination.
+                    <h3 data-cms="benefits.cards.1.title"> Enhanced Communication</h3>
+                    <p data-cms="benefits.cards.1.description">Facilitates effective information sharing and coordination.
                     </p>
                 </div>
                 <div class="unique-card">
-                    <h3> Increased Accountability</h3>
-                    <p>Fosters a culture of responsibility and transparency.
+                    <h3 data-cms="benefits.cards.2.title"> Increased Accountability</h3>
+                    <p data-cms="benefits.cards.2.description">Fosters a culture of responsibility and transparency.
                     </p>
                 </div>
                 <div class="unique-card">
-                    <h3> Streamlined Operations </h3>
-                    <p>Reduces inefficiencies through structured discussions and planning.</p>
+                    <h3 data-cms="benefits.cards.3.title"> Streamlined Operations </h3>
+                    <p data-cms="benefits.cards.3.description">Reduces inefficiencies through structured discussions and planning.</p>
                 </div>
             </div>
         </div>
@@ -951,7 +967,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     <div class="heading2">
                         <!-- <span class="span aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="700">Service
               Benefits</span> -->
-                        <h2 class="text-anime-style-3" style="perspective: 400px; color: white;">
+                        <h2 class="text-anime-style-3" style="perspective: 400px; color: white;" data-cms="agenda.heading">
                             Agenda of SAM
                         </h2>
                         <!-- <div class="space16"></div>
@@ -963,7 +979,22 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 </div>
 
                 <div class="space30"></div>
-                <div class="row" style="justify-content: center;">
+                <div class="row" style="justify-content: center;" data-cms-list="agenda.cards">
+                    <template data-cms-template>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="benefits-box">
+                          <div class="icon">
+                            <img loading="lazy" data-cms-field-src="icon" src="" style="width: 40px;" alt="">
+                          </div>
+                          <div class="heading2">
+                            <h4 style="color: black;"><a data-cms-field="title"></a></h4>
+                            <div class="space16"></div>
+                            <p style="color: black;" data-cms-field="description"></p>
+                            <div class="space16"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </template>
                     <div class="col-lg-3 col-md-6 aos-init" data-aos="zoom-in-up" data-aos-duration="700">
                         <div class="benefits-box">
                             <div class="icon">
@@ -1087,16 +1118,16 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     <div class="heading8">
                         <!-- <span class="span aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="700"><img
                 src="/assets/img/logo/span8.png" alt=""> Our Service Areas</span> -->
-                        <h2 class="text-anime-style-3" style="perspective: 400px;">
+                        <h2 class="text-anime-style-3" style="perspective: 400px;" data-cms="logSheet.heading">
                             SAM Log Sheet Ensuring Accountability
                         </h2>
                         <div class="space16"></div>
-                        <p style="color: black;">All discussions during SAM are recorded in a structured SAM log sheet
+                        <p style="color: black;" data-cms="logSheet.intro">All discussions during SAM are recorded in a structured SAM log sheet
                             to maintain consistency and accountability. The log sheet captures
                         </p>
                         <div class="space16"></div>
                         <div class="space16"></div>
-                        <p style="color: black;">The log sheet promotes transparency, supports continuous improvement,
+                        <p style="color: black;" data-cms="logSheet.outro">The log sheet promotes transparency, supports continuous improvement,
                             and provides a reliable record of operational insights.
                         </p>
                         <div class="space16"></div>
@@ -1104,7 +1135,20 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 </div>
             </div>
             <div class="space30"></div>
-            <div class="row" style="justify-content: center;">
+            <div class="row" style="justify-content: center;" data-cms-list="logSheet.items">
+                <template data-cms-template>
+                  <div class="col-lg-4">
+                    <div class="service-box">
+                      <div class="icon">
+                        <img loading="lazy" data-cms-field-src="icon" src="" style="width: 46px; height: 46px;" alt="">
+                      </div>
+                      <div class="heading">
+                        <h4><a data-cms-field="title"></a></h4>
+                        <p data-cms-field="description"></p>
+                      </div>
+                    </div>
+                  </div>
+                </template>
                 <div class="col-lg-4 aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="1200">
                     <div class="service-box">
                         <div class="icon">
@@ -1199,7 +1243,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="heading9">
   
                 <div class="space16"></div>
-                <h2 style="text-align: center;">Basic Premises of SAM
+                <h2 style="text-align: center;" data-cms="basicPremises.heading">Basic Premises of SAM
                 </h2>
   
            
@@ -1208,122 +1252,134 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             </div>
           </div>
           <div class="space30"></div>
-          <section class="service9 " style="max-width: 100%; display: flex; justify-content: center; flex-wrap: wrap;">
+          <section class="service9 " style="max-width: 100%; display: flex; justify-content: center; flex-wrap: wrap;" data-cms-list="basicPremises.items">
+            <template data-cms-template>
+              <div class="benefits-div">
+                <div class="benefits-div-1">
+                  <img loading="lazy" data-cms-field-src="icon" src="" style="width: 50px; height: 50px; margin-bottom: 20px;display: flex; justify-content: center;" alt="">
+                </div>
+                <div class="benefits-div-2" style="margin-top: 0px;">
+                  <div class="heading">
+                    <p data-cms-field="text"></p>
+                  </div>
+                </div>
+              </div>
+            </template>
             <div class="benefits-div">
                  <div class="benefits-div-1">
                      <img loading="lazy" src="/assets/starcaps/b5.png" style="width: 50px; height: 50px; margin-bottom: 20px;display: flex; justify-content: center;" alt="">
-                    
+
                  </div>
                  <div class="benefits-div-2" style="margin-top: 0px;">
                    <div class="heading">
-                      
+
                        <p>
                         Standing meeting lasting 15-20 minutes
-  
+
                        </p>
                    </div>
                  </div>
-                 
+
             </div>
             <div class="benefits-div">
                  <div class="benefits-div-1">
                      <img loading="lazy" src="/assets/starcaps/b1.png" style="width: 50px; height: 50px; margin-bottom: 20px;display: flex; justify-content: center;" alt="">
-                    
+
                  </div>
                  <div class="benefits-div-2" style="margin-top: 0px;">
                    <div class="heading">
-                      
+
                        <p>
                         Punctuality and agenda adherence are critical
-  
+
                        </p>
                    </div>
                  </div>
-                 
+
             </div>
             <div class="benefits-div">
                  <div class="benefits-div-1">
                      <img loading="lazy" src="/assets/starcaps/b2.png" style="width: 50px; height: 50px; margin-bottom: 20px;display: flex; justify-content: center;" alt="">
-                    
+
                  </div>
                  <div class="benefits-div-2" style="margin-top: 0px;">
                    <div class="heading">
-                      
+
                        <p>
                         Participants come prepared with data for discussion
-  
-  
-  
+
+
+
                        </p>
                    </div>
                  </div>
-                 
+
             </div>
             <div class="benefits-div">
                  <div class="benefits-div-1">
                      <img loading="lazy" src="/assets/starcaps/b3.png" style="width: 50px; height: 50px; margin-bottom: 20px;display: flex; justify-content: center;" alt="">
-                     
+
                  </div>
                  <div class="benefits-div-2" style="margin-top: 0px;">
                    <div class="heading">
-                      
+
                        <p>Major updates are recorded in the SAM log sheet</p>
                    </div>
                  </div>
-                 
+
             </div>
             <div class="benefits-div">
                  <div class="benefits-div-1">
                      <img loading="lazy" src="/assets/starcaps/b4.png" style="width: 50px; height: 50px; margin-bottom: 20px;display: flex; justify-content: center;" alt="">
-                   
+
                  </div>
                  <div class="benefits-div-2" style="margin-top: 0px;">
                    <div class="heading">
-                      
+
                        <p>
                         Communication should be crisp and clear.
-  
-  
-  
+
+
+
                        </p>
                    </div>
                  </div>
-                 
+
             </div>
             <div class="benefits-div">
                  <div class="benefits-div-1">
                      <img loading="lazy" src="/assets/starcaps/b5.png" style="width: 50px; height: 50px; margin-bottom: 20px;display: flex; justify-content: center;" alt="">
-                     
+
                  </div>
                  <div class="benefits-div-2" style="margin-top: 0px;">
                    <div class="heading">
-                      
+
                        <p>
                         Issues are discussed for future resolution but not grievances
-  
-  
+
+
                        </p>
                    </div>
                  </div>
-                 
+
             </div>
             <div class="benefits-div">
                  <div class="benefits-div-1">
                      <img loading="lazy" src="/assets/all-white-icon/planning.png" style="width: 50px; height: 50px; margin-bottom: 20px;display: flex; justify-content: center;" alt="">
-                     
+
                  </div>
                  <div class="benefits-div-2" style="margin-top: 0px;">
                    <div class="heading">
-                      
+
                        <p>
                         Conducted by the Team Captain or Planning & Delivery STAR Cap in their absence
-  
+
                        </p>
                    </div>
                  </div>
-                 
+
             </div>
-           
+
        </section>
         </div>
       </section>
@@ -1337,7 +1393,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   <div class="heading10">
   
                     <div class="space16"></div>
-                    <h2 style="text-align: center;">Benefits of SAM
+                    <h2 style="text-align: center;" data-cms="benefits2.heading">Benefits of SAM
                     </h2>
   
                     <div class="space20"></div>
@@ -1348,27 +1404,44 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   
               <div class="space30"></div>
            
-          <section class="service9 " style="max-width: 100%; display: flex; justify-content: center; flex-wrap: wrap; background-color: white;">
+          <section class="service9 " style="max-width: 100%; display: flex; justify-content: center; flex-wrap: wrap; background-color: white;" data-cms-list="benefits2.cards">
+            <template data-cms-template>
+              <div class="implement-div">
+                <img loading="lazy" data-cms-field-src="icon" src="" style="width: 50px; height: 50px; margin-bottom: 20px;display: flex; justify-content: center;" alt="">
+                <div>
+                  <div class="implement-div-1">
+                    <div class="heading">
+                      <h4><a style="margin-bottom: 30px; " data-cms-field="title"></a></h4>
+                    </div>
+                  </div>
+                  <div class="implement-div-2" style="margin-top: 5px;">
+                    <div class="heading">
+                      <p data-cms-field="description"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </template>
             <div class="implement-div">
               <img loading="lazy" src="/assets/starcaps/ic1.png" style="width: 50px; height: 50px; margin-bottom: 20px;display: flex; justify-content: center;" alt="">
               <div>
                 <div class="implement-div-1">
                   <div class="heading">
                     <h4><a style="margin-bottom: 30px; "> 	Improved Team Alignment
-  
+
                    </a></h4>
-                    
+
                 </div>
               </div>
               <div class="implement-div-2" style="margin-top: 5px;">
                 <div class="heading">
-                   
+
                     <p>Ensures all members are informed and aligned with goals.
-  
+
                     </p>
                 </div>
               </div>
-  
+
               </div>
             </div>
             <div class="implement-div">
@@ -1378,20 +1451,20 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   <div class="heading">
                     <h4><a style="margin-bottom: 30px; "> Enhanced Communication
                    </a></h4>
-                    
+
                 </div>
               </div>
               <div class="implement-div-2" style="margin-top: 5px;">
                 <div class="heading">
-                   
+
                     <p>Facilitates effective information sharing and coordination
-  
-  
-  
+
+
+
                     </p>
                 </div>
               </div>
-  
+
               </div>
             </div>
             <div class="implement-div">
@@ -1401,18 +1474,18 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   <div class="heading">
                     <h4><a style="margin-bottom: 30px; "> Increased Accountability
                    </a></h4>
-                    
+
                 </div>
               </div>
               <div class="implement-div-2" style="margin-top: 5px;">
                 <div class="heading">
-                   
+
                     <p>Fosters a culture of responsibility and transparency
-  
+
                     </p>
                 </div>
               </div>
-  
+
               </div>
             </div>
             <div class="implement-div">
@@ -1421,25 +1494,25 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <div class="implement-div-1">
                   <div class="heading">
                     <h4><a style="margin-bottom: 30px; "> Streamlined Operations
-  
+
                    </a></h4>
-                    
+
                 </div>
               </div>
               <div class="implement-div-2" style="margin-top: 5px;">
                 <div class="heading">
-                   
+
                     <p>Reduces inefficiencies through structured discussions and planning.
                     </p>
                 </div>
               </div>
-  
+
               </div>
             </div>
-           
-         
-          
-           
+
+
+
+
        </section>
             </div>
           </section>
@@ -1457,9 +1530,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                                 style="flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="col-lg-12">
                                     <div class="heading1-w">
-                                        <h2 style="text-align: center;">Transform Your Organization with HPT </h2>
+                                        <h2 style="text-align: center;" data-cms="cta.heading">Transform Your Organization with HPT </h2>
                                         <div class="space16"></div>
-                                        <p style="text-align: center;  max-width: 1000px; margin: auto;">The HPT
+                                        <p style="text-align: center;  max-width: 1000px; margin: auto;" data-cms="cta.paragraph">The HPT
                                             organizational structure is
                                             more than a model—it’s a philosophy redefining collaboration and
                                             performance. By empowering
@@ -1493,7 +1566,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
                                         <div class="">
                                             <div class="heading1-w">
-                                                <h2 style="text-align: center; color: black;">FAQs</h2>
+                                                <h2 style="text-align: center; color: black;" data-cms="faq.heading">FAQs</h2>
                                                 <div class="space16"></div>
 
                                             </div>
@@ -1507,14 +1580,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                                                         <button class="accordion-button" type="button"
                                                             data-bs-toggle="collapse"
                                                             data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                                            aria-controls="flush-collapseOne">
+                                                            aria-controls="flush-collapseOne" data-cms="faq.items.0.question">
                                                             1. What is the HPT organizational structure?
                                                         </button>
                                                     </h2>
                                                     <div id="flush-collapseOne" class="accordion-collapse collapse show"
                                                         aria-labelledby="flush-headingOne"
                                                         data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">The HPT structure eliminates
+                                                        <div class="accordion-body" data-cms="faq.items.0.answer">The HPT structure eliminates
                                                             traditional hierarchies,
                                                             integrating diverse skills and empowering teams to deliver
                                                             exceptional outcomes.</div>
@@ -1525,14 +1598,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                                                         <button class="accordion-button collapsed" type="button"
                                                             data-bs-toggle="collapse"
                                                             data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                                            aria-controls="flush-collapseTwo">
+                                                            aria-controls="flush-collapseTwo" data-cms="faq.items.1.question">
                                                             2. How does QCDSMA align with the HPT framework?
                                                         </button>
                                                     </h2>
                                                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                                         aria-labelledby="flush-headingTwo"
                                                         data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">QCDSMA—Quality, Cost, Delivery,
+                                                        <div class="accordion-body" data-cms="faq.items.1.answer">QCDSMA—Quality, Cost, Delivery,
                                                             Availability, Morale, and
                                                             Safety—is embedded in team goals, ensuring holistic
                                                             performance and sustainability.</div>
@@ -1543,14 +1616,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                                                         <button class="accordion-button collapsed" type="button"
                                                             data-bs-toggle="collapse"
                                                             data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                                            aria-controls="flush-collapseThree">
+                                                            aria-controls="flush-collapseThree" data-cms="faq.items.2.question">
                                                             3. Why is the HPT structure better than traditional models?
                                                         </button>
                                                     </h2>
                                                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                                                         aria-labelledby="flush-headingThree"
                                                         data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">The HPT structure fosters
+                                                        <div class="accordion-body" data-cms="faq.items.2.answer">The HPT structure fosters
                                                             collaboration, accountability, and
                                                             adaptability, outperforming traditional hierarchical models.
                                                         </div>
@@ -1584,36 +1657,36 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             <div class="col-lg-4 col-md-6 col-12">
               <div class="single-footer-items footer-logo-area">
                 <div class="footer-logo">
-                  <a href="/"><img style="width: 150px" src="/assets/logo.png" alt="" /></a>
+                  <a href="/"><img style="width: 150px" src="/assets/logo.png" data-cms-src="shared.footer.logoImage" alt="" /></a>
                 </div>
                 <div class="space20"></div>
                 <div class="heading1-w">
-                  <p>
+                  <p data-cms="shared.footer.tagline">
                     Transforming Businesses, Empowering Teams, Driving Excellence.
                   </p>
                 </div>
                 <ul class="social-icon">
                   <li>
-                    <a href="https://www.linkedin.com/company/136419/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/company/136419/" data-cms-href="shared.social.linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/CEO_GROUPS"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://twitter.com/CEO_GROUPS" data-cms-href="shared.social.twitter"><i class="fa-brands fa-x-twitter"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA"><i
+                    <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA" data-cms-href="shared.social.youtube"><i
                         class="fa-brands fa-youtube"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/ceo_hr_consultancy/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/ceo_hr_consultancy/" data-cms-href="shared.social.instagram"><i class="fa-brands fa-instagram"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
-    
+
             <div class="col-lg col-md-6 col-12">
               <div class="single-footer-items">
-                <h3>Quick Links</h3>
-    
+                <h3 data-cms="shared.footer.quickLinksTitle">Quick Links</h3>
+
                 <ul class="menu-list">
                   <li><a href="/service.html">Service</a></li>
                   <li><a href="/hpt-resources.html">HPT Resources</a></li>
@@ -1623,11 +1696,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 </ul>
               </div>
             </div>
-    
+
             <div class="col-lg col-md-6 col-12">
               <div class="single-footer-items pl-5">
-                <h3>Explore</h3>
-    
+                <h3 data-cms="shared.footer.exploreTitle">Explore</h3>
+
                 <ul class="menu-list">
                   <li><a href="/">Home </a></li>
                   <li><a href="/about.html">About Us</a></li>
@@ -1640,18 +1713,18 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 </ul>
               </div>
             </div>
-    
+
             <div class="col-lg-3 col-md-6 col-12">
               <div class="single-footer-items">
-                <h3>Contact Us</h3>
-    
+                <h3 data-cms="shared.footer.contactTitle">Contact Us</h3>
+
                 <div class="contact-box">
                   <div class="icon">
                     <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
                   </div>
                   <div class="pera">
                     <!-- <a href="tel:+91- 8939983080">+91- 8939983080</a> -->
-                    <a href="tel:+91 4449006000">+91 4449006000</a>
+                    <a href="tel:+91 4449006000" data-cms="shared.contact.phone1">+91 4449006000</a>
                   </div>
                 </div>
                 <div class="contact-box">
@@ -1659,42 +1732,42 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
                     </div>
                     <div class="pera">
-                      <a href="tel:+91- 8939983080">+91 8939983080</a>
+                      <a href="tel:+91- 8939983080" data-cms="shared.contact.phone2">+91 8939983080</a>
                       <!-- <a href="tel:+91 4449006000">+91 4449006000</a> -->
                     </div>
                   </div>
-    
+
                 <div class="contact-box">
                   <div class="icon">
                     <img loading="lazy" src="/assets/img/icons/footer-icon2.png" alt="" />
                   </div>
                   <div class="pera">
-                    <a href="mailto:info@ceohrconsultancy.com">info@ceohrconsultancy.com</a>
+                    <a href="mailto:info@ceohrconsultancy.com" data-cms="shared.contact.email">info@ceohrconsultancy.com</a>
                   </div>
                 </div>
-    
+
                 <div class="contact-box">
                   <div class="icon">
                     <img loading="lazy" src="/assets/img/icons/footer-icon3.png" alt="" />
                   </div>
                   <div class="pera">
-                    <a>9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
+                    <a data-cms="shared.contact.address">9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
                       Tamil Nadu, India – 600116</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-    
+
           <div class="space70"></div>
         </div>
-    
+
         <div class="copyright-area _relative">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-12">
                 <div class="coppyright">
-                  <p>© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
+                  <p data-cms="shared.footer.copyright">© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
                 </div>
               </div>
             </div>
@@ -1755,8 +1828,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         // alert("Network error: " + error.message);
       });
   });
-  
+
   </script>
+
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
 </body>
 
 </html>

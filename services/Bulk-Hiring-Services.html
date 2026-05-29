@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+    <meta name="cms-page" content="service_bulk_hiring" />
+    <title data-cms="meta.title">
       Bulk Hiring Services | Efficient Workforce Solutions | CEO HR Consultancy
     </title>
     <meta
-      name="description"
+      name="description" data-cms-attr="meta.description|content"
       content="Scalable bulk hiring services for workforce acquisition. Trusted by OLA Electric, Pfizer, and Coke India for efficient and quality-focused hiring solutions."
     />
     <meta
-      name="keywords"
+      name="keywords" data-cms-attr="meta.keywords|content"
       content="Bulk hiring solutions
       • Large-scale workforce recruitment
       • Talent acquisition for manufacturing
@@ -126,14 +127,14 @@
     <div style=" width: 100%;height: 100%; display: flex; justify-content: center; align-items: center; ">
       <div class="modal-content">
         <span onclick="requestConsultationclose()" class="close">&times;</span>
-        <h2 style="text-align: center;">Request Consultation</h2>
+        <h2 style="text-align: center;" data-cms="shared.consultationModal.heading">Request Consultation</h2>
         <form id="consultationForm">
-            <input type="text" name="name" id="rname" placeholder="Your Name" required>
-            <input type="email" name="email" id="remail" placeholder="Your Email" required>
-            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" required>
-            <input type="text" name="company" id="rcompany" placeholder="Company Name" required>
-            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" required></textarea>
-            <button type="submit">Submit</button>
+            <input type="text" name="name" id="rname" placeholder="Your Name" data-cms-attr="shared.consultationModal.placeholderName|placeholder" required>
+            <input type="email" name="email" id="remail" placeholder="Your Email" data-cms-attr="shared.consultationModal.placeholderEmail|placeholder" required>
+            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" data-cms-attr="shared.consultationModal.placeholderPhone|placeholder" required>
+            <input type="text" name="company" id="rcompany" placeholder="Company Name" data-cms-attr="shared.consultationModal.placeholderCompany|placeholder" required>
+            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" data-cms-attr="shared.consultationModal.placeholderDescription|placeholder" required></textarea>
+            <button type="submit" data-cms="shared.consultationModal.btnText">Submit</button>
         </form>
     </div>
     </div>
@@ -613,22 +614,23 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           class="span"
                           data-aos="zoom-in-right"
                           data-aos-duration="700"
+                          data-cms="hero.eyebrow"
                           >Service
                         </span>
-                             <h1>Efficient Solutions
+                             <h1 data-cms="hero.heading">Efficient Solutions
                               for Large-Scale
                               Workforce
                               Acquisition</h1>
-                            
+
                          </div>
                      </div>
                      <div class="space30"></div>
                      <div class="col-lg-12 col-md-10" style="display: flex; gap: 20px; flex-wrap: wrap;">
                       <div class="button">
-                        <a href="/contact.html" class="theme-btn16"   >Request A Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                        <a href="/contact.html" class="theme-btn16" data-cms-href="hero.primaryBtnLink"   data-cms="hero.primaryBtnText">Request A Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
                     </div>
                     <div class="button">
-                        <a href="/service.html" class="theme-btn16"   >Explore Other Services <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                        <a href="/service.html" class="theme-btn16" data-cms-href="hero.secondaryBtnLink"   data-cms="hero.secondaryBtnText">Explore Other Services <span><i class="fa-solid fa-arrow-right"></i></span></a>
                     </div>
                      </div>
                  </div>
@@ -649,7 +651,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                               for Large-Scale
                               Workforce
                               Acquisition</h1>
-                            
+
                          </div>
                      </div>
                      <div class="space30"></div>
@@ -676,7 +678,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
     <div class="space30"></div>
     <div class="container">
       <div class="row heading">
-        <p style="font-size: 20px; text-align: center;">
+        <p style="font-size: 20px; text-align: center;" data-cms-html="intro.paragraph">
           At <strong>CEO HR Consultancy</strong>, we deliver bulk hiring solutions tailored for organizations requiring rapid and efficient workforce scaling. With over two decades of experience and advanced tools, we ensure every hire meets your quality standards and aligns with your business goals
         </p>
       </div>
@@ -710,12 +712,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
             <div class="col-lg-12">
               <div class="heading3 about3-heading">
-                 
-                <h2 class="text-anime-style-3" style="text-align: center;">
+
+                <h2 class="text-anime-style-3" style="text-align: center;" data-cms="whyChooseUs.heading">
                   Why Choose CEO HR Consultancy?
                 </h2>
                 <div class="space16"></div>
-                 
+
 
                 <div class="row" style="justify-content: center;">
                         <div class="col-lg-6">
@@ -726,21 +728,21 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           >
                             <div class="">
                               <div class="icon">
-                                <img loading="lazy" src="/assets/img/icons/about3-icon1.png" alt="" />
+                                <img loading="lazy" src="/assets/img/icons/about3-icon1.png" data-cms-src="whyChooseUs.cards.0.icon" alt="" />
                               </div>
                             </div>
                             <div class="heading3">
                               <h5>
-                                <a href=""
+                                <a href="" data-cms="whyChooseUs.cards.0.title"
                                   >Scalable Solutions</a
                                 >
                               </h5>
-                              <p>
+                              <p data-cms="whyChooseUs.cards.0.description">
                                 Manage projects ranging from 100 to 10,000+ hires.
                               </p>
                             </div>
                           </div>
-          
+
                           <div
                             class="about3-icon-box"
                             data-aos="fade-left"
@@ -748,14 +750,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           >
                             <div class="">
                               <div class="icon">
-                                <img loading="lazy" src="/assets/img/icons/about3-icon2.png" alt="" />
+                                <img loading="lazy" src="/assets/img/icons/about3-icon2.png" data-cms-src="whyChooseUs.cards.1.icon" alt="" />
                               </div>
                             </div>
                             <div class="heading3">
                               <h5>
-                                <a href=" ">Diverse Talent Pool</a>
+                                <a href=" " data-cms="whyChooseUs.cards.1.title">Diverse Talent Pool</a>
                               </h5>
-                              <p>
+                              <p data-cms="whyChooseUs.cards.1.description">
                                 Access candidates across varied skill sets and geographies.
                               </p>
                             </div>
@@ -771,21 +773,21 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           >
                             <div class="">
                               <div class="icon">
-                                <img loading="lazy" src="/assets/img/icons/about3-icon3.png" style="width: 40px;" alt="" />
+                                <img loading="lazy" src="/assets/img/icons/about3-icon3.png" style="width: 40px;" data-cms-src="whyChooseUs.cards.2.icon" alt="" />
                               </div>
                             </div>
                             <div class="heading3">
                               <h5>
-                                <a href=""
+                                <a href="" data-cms="whyChooseUs.cards.2.title"
                                   >Quick Turnaround</a
                                 >
                               </h5>
-                              <p>
+                              <p data-cms="whyChooseUs.cards.2.description">
                                 Efficient processes to meet tight deadlines without compromising quality.
                               </p>
                             </div>
                           </div>
-          
+
                           <div
                             class="about3-icon-box"
                             data-aos="fade-left"
@@ -793,14 +795,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           >
                             <div class="">
                               <div class="icon">
-                                <img loading="lazy" src="/assets/img/icons/about3-icon5.png" style="width: 40px;" alt="" />
+                                <img loading="lazy" src="/assets/img/icons/about3-icon5.png" style="width: 40px;" data-cms-src="whyChooseUs.cards.3.icon" alt="" />
                               </div>
                             </div>
                             <div class="heading3">
                               <h5>
-                                <a href="">Customized Assessments</a>
+                                <a href="" data-cms="whyChooseUs.cards.3.title">Customized Assessments</a>
                               </h5>
-                              <p>
+                              <p data-cms="whyChooseUs.cards.3.description">
                                 Tailored tests to evaluate domain expertise, aptitude, and job-specific skills.
                               </p>
                             </div>
@@ -815,17 +817,17 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           >
                             <div class="">
                               <div class="icon">
-                                <img loading="lazy" src="/assets/img/icons/about3-icon4.png" style="width: 40px;" alt="" />
+                                <img loading="lazy" src="/assets/img/icons/about3-icon4.png" style="width: 40px;" data-cms-src="whyChooseUs.cards.4.icon" alt="" />
                               </div>
                             </div>
                             <div class="heading3">
                               <h5>
-                                <a href=""
+                                <a href="" data-cms="whyChooseUs.cards.4.title"
                                   >Seamless Integration
                                   </a
                                 >
                               </h5>
-                              <p>
+                              <p data-cms="whyChooseUs.cards.4.description">
                                 Ensure new hires are equipped to contribute from day one.
                               </p>
                             </div>
@@ -852,13 +854,26 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             <div class="row">
                 <div class="col-lg-6 m-auto text-center">
                     <div class="heading8">
-                        
-                        <h2 class="text-anime-style-3">Our Expertise in Bulk Hiring</h2>
+
+                        <h2 class="text-anime-style-3" data-cms="expertise.heading">Our Expertise in Bulk Hiring</h2>
                     </div>
                 </div>
             </div>
             <div class="space30"></div>
-            <div class="row" >
+            <div class="row" data-cms-list="expertise.cards">
+                <template data-cms-template>
+                  <div class="col-lg-6">
+                    <div class="service-box">
+                      <div class="icon">
+                        <img loading="lazy" data-cms-field-src="icon" src="" style="width: 40px;" alt="">
+                      </div>
+                      <div class="heading">
+                        <h4><a href="  " data-cms-field="title"></a></h4>
+                        <p data-cms-field="description"></p>
+                      </div>
+                    </div>
+                  </div>
+                </template>
                 <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="1200">
                     <div class="service-box">
                         <div class="icon">
@@ -867,7 +882,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         <div class="heading">
                             <h4><a href="  ">Comprehensive Talent Pool</a></h4>
                             <p>Access a diverse database of pre-screened candidates across industries and roles.</p>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -880,7 +895,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         <div class="heading">
                             <h4><a href="  ">Customized Hiring Processes</a></h4>
                             <p>Tailored strategies designed to meet specific requirements, timelines, and scales.</p>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -897,7 +912,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         </div>
                     </div>
                 </div>
- 
+
 
                 <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="1000">
                   <div class="service-box">
@@ -907,13 +922,13 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       <div class="heading">
                           <h4><a href="  ">Cutting-Edge Assessment Tools</a></h4>
                           <p>Advanced evaluation techniques, including psychometric tests, neuromuscular tests, aptitude tests, and group exercises, to identify best-fit candidates.</p>
-                          
+
                       </div>
                   </div>
               </div>
 
             </div>
-          
+
         </div>
     </div>
 
@@ -947,15 +962,15 @@ document.getElementById("consultationForm").addEventListener("submit", function(
       <div class="col-lg-12">
         <div class="heading1 choose1-heading">
           <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
-          <h2 class="text-anime-style-3" style="text-align: center">
-            Proven Track Record  
+          <h2 class="text-anime-style-3" style="text-align: center" data-cms="provenTrackRecord.heading">
+            Proven Track Record
           </h2>
           <div class="space16"></div>
-         
+
 
           <div class="work1" style="background-color: white">
             <div class="container">
-             
+
               <div class="row align-items-start">
                 <div class="col-lg-6" >
                   <div class="heading1 work1-heading">
@@ -966,7 +981,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     >
                       <div class="work1-box" >
                         <div class="heading1">
-                          <p>
+                          <p data-cms="provenTrackRecord.items.0">
                             45,000+ placements successfully completed across industries.
                           </p>
                         </div>
@@ -984,8 +999,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     >
                       <div class="work1-box">
                         <div class="heading1">
-                          <p>
-                            
+                          <p data-cms="provenTrackRecord.items.1">
+
                             Expertise in sectors such as manufacturing, pharmaceuticals, FMCG, and IT.
                           </p>
                         </div>
@@ -1015,8 +1030,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="row">
           <div class="col-lg-6 m-auto text-center">
             <div class="heading6">
-              
-              <h2 class="text-anime-style-3">Case Studies</h2>
+
+              <h2 class="text-anime-style-3" data-cms="caseStudies.heading">Case Studies</h2>
             </div>
           </div>
         </div>
@@ -1025,8 +1040,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
         <div class="row">
           <h1 class="text-anime-style-3" style="display: flex; gap: 10px;  align-items: center;">
-            <img style="width: 100px;" src="https://assets.olaelectric.com/others/Olalogo.svg" alt="">
-            Electrics
+            <img style="width: 100px;" src="https://assets.olaelectric.com/others/Olalogo.svg" data-cms-src="caseStudies.items.0.logo" alt="">
+            <span data-cms="caseStudies.items.0.title">Electrics</span>
           </h1>
           <div class="col-lg-6">
 
@@ -1039,8 +1054,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   </div>
                 </div>
                 <div class="heading6">
-                  <h4><a   >Challenge</a></h4>
-                  <p>Navigate the post-COVID hiring landscape to scale operations for their E-Scooter manufacturing facility.</p>
+                  <h4><a data-cms="caseStudies.items.0.challengeLabel">Challenge</a></h4>
+                  <p data-cms="caseStudies.items.0.challengeText">Navigate the post-COVID hiring landscape to scale operations for their E-Scooter manufacturing facility.</p>
                 </div>
               </div>
             </div>
@@ -1053,8 +1068,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   </div>
                 </div>
                 <div class="heading6">
-                  <h4><a   >Solution</a></h4>
-                  <p>Assessed nearly 10,000 female candidates across Tamil Nadu, onboarding 1,950 talented individuals.</p>
+                  <h4><a data-cms="caseStudies.items.0.solutionLabel">Solution</a></h4>
+                  <p data-cms="caseStudies.items.0.solutionText">Assessed nearly 10,000 female candidates across Tamil Nadu, onboarding 1,950 talented individuals.</p>
                 </div>
               </div>
             </div>
@@ -1068,21 +1083,21 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   </div>
                 </div>
                 <div class="heading6">
-                  <h4><a   >Impact</a></h4>
-                  <p>Enabled seamless commissioning of the facility with a workforce ready to deliver from day one.</p>
+                  <h4><a data-cms="caseStudies.items.0.outcomeLabel">Impact</a></h4>
+                  <p data-cms="caseStudies.items.0.outcomeText">Enabled seamless commissioning of the facility with a workforce ready to deliver from day one.</p>
                 </div>
               </div>
             </div>
- 
+
 
           </div>
           <div class="col-lg-6">
             <div class="images-all">
               <div class="image1" data-aos="flip-right" data-aos-duration="800">
-                <img style="width: 533px; height: 540px;" src="/assets/service/Bulk Hiring Service/OLA 1.png" alt="">
+                <img style="width: 533px; height: 540px;" src="/assets/service/Bulk Hiring Service/OLA 1.png" data-cms-src="caseStudies.items.0.image1" alt="">
               </div>
               <div class="image2" data-aos="zoom-out" data-aos-duration="1000">
-                <img style="width: 270px; height: 270px;" src="/assets/service/Bulk Hiring Service/OLA 2.png" alt="">
+                <img style="width: 270px; height: 270px;" src="/assets/service/Bulk Hiring Service/OLA 2.png" data-cms-src="caseStudies.items.0.image2" alt="">
               </div>
             </div>
           </div>
@@ -1100,10 +1115,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="col-lg-6">
             <div class="images-all">
               <div class="image1" data-aos="flip-right" data-aos-duration="800">
-                <img style="width: 533px; height: 540px;" src="/assets/service/Bulk Hiring Service/Pfizer 1.png" alt="">
+                <img style="width: 533px; height: 540px;" src="/assets/service/Bulk Hiring Service/Pfizer 1.png" data-cms-src="caseStudies.items.1.image1" alt="">
               </div>
               <div class="image2" data-aos="zoom-out" data-aos-duration="1000">
-                <img style="width: 270px; height: 270px;" src="/assets/service/Bulk Hiring Service/Pfizer 2.png" alt="">
+                <img style="width: 270px; height: 270px;" src="/assets/service/Bulk Hiring Service/Pfizer 2.png" data-cms-src="caseStudies.items.1.image2" alt="">
               </div>
             </div>
           </div>
@@ -1113,8 +1128,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
             <div class="" data-aos="fade-right" data-aos-duration="800">
               <h1 class="text-anime-style-3">
-                <img width="150px" src="https://www.pfizer.com/profiles/pfecpfizercomus_profile/themes/pfcorporate_helix/public/assets/images/Pfizer_Logo_Blue_RGB.svg" alt="">
-             
+                <img width="150px" src="https://www.pfizer.com/profiles/pfecpfizercomus_profile/themes/pfcorporate_helix/public/assets/images/Pfizer_Logo_Blue_RGB.svg" data-cms-src="caseStudies.items.1.logo" alt="">
+                <span data-cms="caseStudies.items.1.title"></span>
               </h1>
               <div class="others-boxs">
                 <div class="">
@@ -1123,8 +1138,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   </div>
                 </div>
                 <div class="heading6">
-                  <h4><a   >Challenge</a></h4>
-                  <p>Staff a greenfield plant in Vizag with qualified female candidates within a 150 km range.</p>
+                  <h4><a data-cms="caseStudies.items.1.challengeLabel">Challenge</a></h4>
+                  <p data-cms="caseStudies.items.1.challengeText">Staff a greenfield plant in Vizag with qualified female candidates within a 150 km range.</p>
                 </div>
               </div>
             </div>
@@ -1137,12 +1152,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   </div>
                 </div>
                 <div class="heading6">
-                  <h4><a   >Solution</a></h4>
-                  <p>Assessed over 2,500 candidates with Intermediate Science qualifications.</p>
+                  <h4><a data-cms="caseStudies.items.1.solutionLabel">Solution</a></h4>
+                  <p data-cms="caseStudies.items.1.solutionText">Assessed over 2,500 candidates with Intermediate Science qualifications.</p>
                 </div>
               </div>
             </div>
- 
+
 
 
             <div class="" data-aos="fade-right" data-aos-duration="1000">
@@ -1153,8 +1168,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   </div>
                 </div>
                 <div class="heading6">
-                  <h4><a   >	Outcome</a></h4>
-                  <p>Successfully onboarded 250 women within three months, meeting workforce requirements effectively.</p>
+                  <h4><a data-cms="caseStudies.items.1.outcomeLabel">	Outcome</a></h4>
+                  <p data-cms="caseStudies.items.1.outcomeText">Successfully onboarded 250 women within three months, meeting workforce requirements effectively.</p>
                 </div>
               </div>
             </div>
@@ -1170,8 +1185,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
         <div class="row">
           <h1 class="text-anime-style-3">
-            <img style="width: 130px;" src="https://www.coca-cola.com/content/dam/onexp/us/en/homepage/CocaColalogor.png/width3840.png" alt="">
-            
+            <img style="width: 130px;" src="https://www.coca-cola.com/content/dam/onexp/us/en/homepage/CocaColalogor.png/width3840.png" data-cms-src="caseStudies.items.2.logo" alt="">
+            <span data-cms="caseStudies.items.2.title"></span>
           </h1>
           <div class="col-lg-6">
 
@@ -1184,8 +1199,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   </div>
                 </div>
                 <div class="heading6">
-                  <h4><a   >Challenge</a></h4>
-                  <p>Hire skilled personnel for three greenfield plants across India (Sanand, Siliguri, Hyderabad).</p>
+                  <h4><a data-cms="caseStudies.items.2.challengeLabel">Challenge</a></h4>
+                  <p data-cms="caseStudies.items.2.challengeText">Hire skilled personnel for three greenfield plants across India (Sanand, Siliguri, Hyderabad).</p>
                 </div>
               </div>
             </div>
@@ -1198,8 +1213,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   </div>
                 </div>
                 <div class="heading6">
-                  <h4><a   >Solution</a></h4>
-                  <p>Evaluated over 2,500 candidates with Chemical and Food Technology Diplomas.</p>
+                  <h4><a data-cms="caseStudies.items.2.solutionLabel">Solution</a></h4>
+                  <p data-cms="caseStudies.items.2.solutionText">Evaluated over 2,500 candidates with Chemical and Food Technology Diplomas.</p>
                 </div>
               </div>
             </div>
@@ -1213,21 +1228,21 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   </div>
                 </div>
                 <div class="heading6">
-                  <h4><a   >Outcome</a></h4>
-                  <p>Delivered 250 hires within three months, ensuring timely operational readiness.</p>
+                  <h4><a data-cms="caseStudies.items.2.outcomeLabel">Outcome</a></h4>
+                  <p data-cms="caseStudies.items.2.outcomeText">Delivered 250 hires within three months, ensuring timely operational readiness.</p>
                 </div>
               </div>
             </div>
- 
+
 
           </div>
           <div class="col-lg-6">
             <div class="images-all">
               <div class="image1" data-aos="flip-right" data-aos-duration="800">
-                <img style="width: 533px; height: 540px;" src="/assets/service/Bulk Hiring Service/Coco Cola 1.png" alt="">
+                <img style="width: 533px; height: 540px;" src="/assets/service/Bulk Hiring Service/Coco Cola 1.png" data-cms-src="caseStudies.items.2.image1" alt="">
               </div>
               <div class="image2" data-aos="zoom-out" data-aos-duration="1000">
-                <img style="width: 270px; height: 270px;" src="/assets/service/Bulk Hiring Service/Coco Cola 2.png" alt="">
+                <img style="width: 270px; height: 270px;" src="/assets/service/Bulk Hiring Service/Coco Cola 2.png" data-cms-src="caseStudies.items.2.image2" alt="">
               </div>
             </div>
           </div>
@@ -1245,9 +1260,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="row">
               <div class="col-lg-7 m-auto text-center">
                   <div class="heading4">
-                     
-                      <h2 style="color: black;" class="text-anime-style-3">Our Bulk Hiring Process</h2>
-                      
+
+                      <h2 style="color: black;" class="text-anime-style-3" data-cms="process.heading">Our Bulk Hiring Process</h2>
+
                   </div>
               </div>
           </div>
@@ -1256,28 +1271,28 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="row" style="max-width: 1000px; margin: auto;">
               <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="900">
                   <div class="solution4-box">
-                     
+
                       <div class="icon" style="top: -30px;">
-                          <img loading="lazy" src="/assets/resources/solution4-icon1 (1).png" style="width: 40px;" alt="">
+                          <img loading="lazy" src="/assets/resources/solution4-icon1 (1).png" style="width: 40px;" data-cms-src="process.steps.0.icon" alt="">
                       </div>
                       <div class="heading4">
-                          <h4><a  >Requirement Analysis</a></h4>
+                          <h4><a data-cms="process.steps.0.title">Requirement Analysis</a></h4>
                           <div class="space16"></div>
-                          <p>Understand workforce needs, role-specific requirements, and timelines.</p>
+                          <p data-cms="process.steps.0.description">Understand workforce needs, role-specific requirements, and timelines.</p>
                       </div>
                   </div>
               </div>
 
               <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1100">
                   <div class="solution4-box">
-                      
+
                       <div class="icon" style="top: -30px;">
-                          <img loading="lazy" src="/assets/resources/solution4-icon2 (1).png" style="width: 40px;" alt="">
+                          <img loading="lazy" src="/assets/resources/solution4-icon2 (1).png" style="width: 40px;" data-cms-src="process.steps.1.icon" alt="">
                       </div>
                       <div class="heading4">
-                          <h4><a  >Talent Sourcing</a></h4>
+                          <h4><a data-cms="process.steps.1.title">Talent Sourcing</a></h4>
                           <div class="space16"></div>
-                          <p>Identify candidates through extensive networks, partnerships, and databases.</p>
+                          <p data-cms="process.steps.1.description">Identify candidates through extensive networks, partnerships, and databases.</p>
                       </div>
                   </div>
               </div>
@@ -1285,31 +1300,31 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
           </div>
           <div class="row" style="max-width: 1000px; margin: auto; padding-top: 50px;">
-             
+
             <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="700">
               <div class="solution4-box">
-                 
+
                   <div class="icon" style="top: -30px;">
-                      <img loading="lazy" src="/assets/resources/solution4-icon3 (1).png" style="width: 40px;" alt="">
+                      <img loading="lazy" src="/assets/resources/solution4-icon3 (1).png" style="width: 40px;" data-cms-src="process.steps.2.icon" alt="">
                   </div>
                   <div class="heading4">
-                      <h4><a  >Assessment & Screening</a></h4>
+                      <h4><a data-cms="process.steps.2.title">Assessment & Screening</a></h4>
                       <div class="space16"></div>
-                      <p>Utilize customized evaluations, including cognitive, technical, and physical readiness tests.</p>
+                      <p data-cms="process.steps.2.description">Utilize customized evaluations, including cognitive, technical, and physical readiness tests.</p>
                   </div>
               </div>
           </div>
 
           <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1100">
             <div class="solution4-box">
-               
+
                 <div class="icon" style="top: -30px;">
-                    <img loading="lazy" src="/assets/all-icons/consumer-centric.png" style="width: 40px;" style="width: 40px;"alt="">
+                    <img loading="lazy" src="/assets/all-icons/consumer-centric.png" style="width: 40px;" data-cms-src="process.steps.3.icon" alt="">
                 </div>
                 <div class="heading4">
-                    <h4><a  >Selection & Onboarding</a></h4>
+                    <h4><a data-cms="process.steps.3.title">Selection & Onboarding</a></h4>
                     <div class="space16"></div>
-                    <p>Manage documentation, orientation, and integration for a hassle-free onboarding experience.</p>
+                    <p data-cms="process.steps.3.description">Manage documentation, orientation, and integration for a hassle-free onboarding experience.</p>
                 </div>
             </div>
         </div>
@@ -1340,18 +1355,36 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="row align-items-center tes5-bg" style="background-image: url(/assets/img/bg/tes5-bg.png);">
             <div class="col-lg-6">
               <div class="image overlay-anim">
-                <img loading="lazy" src="/assets/icons/hpt/testimonial2-img.png" alt="">
+                <img loading="lazy" src="/assets/icons/hpt/testimonial2-img.png" data-cms-src="testimonials.image" alt="">
               </div>
             </div>
 
             <div class="col-lg-6">
               <div class="heading2">
-                <span class="span" data-aos="zoom-in-left" data-aos-duration="700">Clients Testimonials</span>
-                <h2 class="text-anime-style-3">What Our Customer’s <br> Say About Us</h2>
+                <span class="span" data-aos="zoom-in-left" data-aos-duration="700" data-cms="testimonials.eyebrow">Clients Testimonials</span>
+                <h2 class="text-anime-style-3" data-cms-html="testimonials.heading">What Our Customer’s <br> Say About Us</h2>
               </div>
 
               <div class="space40"></div>
-              <div class="tes2-slider owl-carousel">
+              <div class="tes2-slider owl-carousel" data-cms-list="testimonials.items">
+                <template data-cms-template>
+                  <div class="tes2-signle-slider">
+                    <div class="icon">
+                      <img loading="lazy" data-cms-field-src="icon" src="" alt="">
+                    </div>
+                    <div class="heading">
+                      <p data-cms-field="quote"></p>
+                    </div>
+                    <div class="bottom-area">
+                      <div class="image-bottom">
+                        <img loading="lazy" data-cms-field-src="image" src="" alt="">
+                      </div>
+                      <div class="heading-bottom">
+                        <h5><span data-cms-field="name"></span> <span data-cms-field="role"></span></h5>
+                      </div>
+                    </div>
+                  </div>
+                </template>
                 <div class="tes2-signle-slider">
                   <div class="icon">
                     <img loading="lazy" src="/assets/img/icons/tes2-icon.png" alt="">
@@ -1368,7 +1401,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="tes2-signle-slider">
                   <div class="icon">
                     <img loading="lazy" src="/assets/img/icons/tes2-icon.png" alt="">
@@ -1386,7 +1419,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   </div>
                 </div>
 
-               
+
               </div>
             </div>
           </div>
@@ -1402,16 +1435,15 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <article>
           <div class="heading1">
             <div class="space30"></div>
-            <h2 style="text-align: center;">Get Started </h2>
-            <p style="text-align: center;">Need a reliable partner to manage your large-scale hiring needs? Let’s make it happen.</p>
-            
+            <h2 style="text-align: center;" data-cms="getStarted.heading">Get Started </h2>
+            <p style="text-align: center;" data-cms="getStarted.paragraph">Need a reliable partner to manage your large-scale hiring needs? Let’s make it happen.</p>
 
-            
-            
+
+
               <div class="space16"></div>
               <div class="button" style="display: flex; justify-content: center;">
-                 <a href="/contact.html"> <button type="submit" class="theme-btn1">
-                    Contact Us Today
+                 <a href="/contact.html" data-cms-href="getStarted.btnLink"> <button type="submit" class="theme-btn1">
+                    <span data-cms="getStarted.btnText">Contact Us Today</span>
                     <span><i class="fa-solid fa-arrow-right"></i></span>
                   </button></a>
 
@@ -1433,75 +1465,75 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           
                       <div class="">
                         <div class="heading1-w">
-                          <h2 style="text-align: center; color: black;">FAQs</h2>
+                          <h2 style="text-align: center; color: black;" data-cms="faq.heading">FAQs</h2>
                           <div class="space16"></div>
-                         
+
                         </div>
                       </div>
 
                         <div class="faq-all-area">
-                          
+
                             <div class="accordion accordion1 accordion-flush" id="accordionFlushExample">
                               <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" data-cms="faq.items.0.question">
                                         1. What is bulk hiring?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body" data-cms="faq.items.0.answer">
                                         Bulk hiring is the process of recruiting a large number of candidates quickly and efficiently to meet organizational scaling needs.
                                     </div>
                                 </div>
                             </div>
-                        
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" data-cms="faq.items.1.question">
                                         2. Which industries benefit from bulk hiring?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body" data-cms="faq.items.1.answer">
                                         Industries like manufacturing, pharmaceuticals, FMCG, IT, and logistics benefit from bulk hiring solutions to meet operational demands.
                                     </div>
                                 </div>
                             </div>
-                        
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" data-cms="faq.items.2.question">
                                         3. How do you ensure the quality of hires in bulk recruitment?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body" data-cms="faq.items.2.answer">
                                         We use cutting-edge assessments, including psychometric tests and aptitude evaluations, to ensure every candidate aligns with your quality standards.
                                     </div>
                                 </div>
                             </div>
-                        
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" data-cms="faq.items.3.question">
                                         4. What is the typical timeline for bulk hiring projects?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body" data-cms="faq.items.3.answer">
                                         Timelines vary based on project size, but our efficient processes ensure quick turnarounds without compromising quality.
                                     </div>
                                 </div>
                             </div>
-                        
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingFive">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive" data-cms="faq.items.4.question">
                                         5. Can you handle multi-location hiring projects?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body" data-cms="faq.items.4.answer">
                                         Yes, we specialize in multi-location hiring and have successfully delivered projects across diverse geographies like Tamil Nadu, Vizag, and Hyderabad.
                                     </div>
                                 </div>
@@ -1535,36 +1567,36 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="col-lg-4 col-md-6 col-12">
             <div class="single-footer-items footer-logo-area">
               <div class="footer-logo">
-                <a href="/"><img style="width: 150px" src="/assets/logo.png" alt="" /></a>
+                <a href="/"><img style="width: 150px" src="/assets/logo.png" data-cms-src="shared.footer.logoImage" alt="" /></a>
               </div>
               <div class="space20"></div>
               <div class="heading1-w">
-                <p>
+                <p data-cms="shared.footer.tagline">
                   Transforming Businesses, Empowering Teams, Driving Excellence.
                 </p>
               </div>
               <ul class="social-icon">
                 <li>
-                  <a href="https://www.linkedin.com/company/136419/"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://www.linkedin.com/company/136419/" data-cms-href="shared.social.linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/CEO_GROUPS"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="https://twitter.com/CEO_GROUPS" data-cms-href="shared.social.twitter"><i class="fa-brands fa-x-twitter"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA"><i
+                  <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA" data-cms-href="shared.social.youtube"><i
                       class="fa-brands fa-youtube"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/ceo_hr_consultancy/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/ceo_hr_consultancy/" data-cms-href="shared.social.instagram"><i class="fa-brands fa-instagram"></i></a>
                 </li>
               </ul>
             </div>
           </div>
-  
+
           <div class="col-lg col-md-6 col-12">
             <div class="single-footer-items">
-              <h3>Quick Links</h3>
-  
+              <h3 data-cms="shared.footer.quickLinksTitle">Quick Links</h3>
+
               <ul class="menu-list">
                 <li><a href="/service.html">Service</a></li>
                 <li><a href="/hpt-resources.html">HPT Resources</a></li>
@@ -1574,11 +1606,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               </ul>
             </div>
           </div>
-  
+
           <div class="col-lg col-md-6 col-12">
             <div class="single-footer-items pl-5">
-              <h3>Explore</h3>
-  
+              <h3 data-cms="shared.footer.exploreTitle">Explore</h3>
+
               <ul class="menu-list">
                 <li><a href="/">Home </a></li>
                 <li><a href="/about.html">About Us</a></li>
@@ -1591,27 +1623,27 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               </ul>
             </div>
           </div>
-  
+
           <div class="col-lg-3 col-md-6 col-12">
             <div class="single-footer-items">
-              <h3>Contact Us</h3>
-  
+              <h3 data-cms="shared.footer.contactTitle">Contact Us</h3>
+
               <div class="contact-box">
                 <div class="icon">
                   <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
                 </div>
                 <div class="pera">
                   <!-- <a href="tel:+91- 8939983080">+91- 8939983080</a> -->
-                  <a href="tel:+91 4449006000">+91 4449006000</a>
+                  <a href="tel:+91 4449006000" data-cms="shared.contact.phone1">+91 4449006000</a>
                 </div>
               </div>
-  
+
               <div class="contact-box">
                 <div class="icon">
                   <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
                 </div>
                 <div class="pera">
-                  <a href="tel:+91- 8939983080">+91 8939983080</a>
+                  <a href="tel:+91- 8939983080" data-cms="shared.contact.phone2">+91 8939983080</a>
                   <!-- <a href="tel:+91 4449006000">+91 4449006000</a> -->
                 </div>
               </div>
@@ -1620,32 +1652,32 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   <img loading="lazy" src="/assets/img/icons/footer-icon2.png" alt="" />
                 </div>
                 <div class="pera">
-                  <a href="mailto:info@ceohrconsultancy.com">info@ceohrconsultancy.com</a>
+                  <a href="mailto:info@ceohrconsultancy.com" data-cms="shared.contact.email">info@ceohrconsultancy.com</a>
                 </div>
               </div>
-  
+
               <div class="contact-box">
                 <div class="icon">
                   <img loading="lazy" src="/assets/img/icons/footer-icon3.png" alt="" />
                 </div>
                 <div class="pera">
-                  <a>9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
+                  <a data-cms="shared.contact.address">9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
                     Tamil Nadu, India – 600116</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-  
+
         <div class="space70"></div>
       </div>
-  
+
       <div class="copyright-area _relative">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-12">
               <div class="coppyright">
-                <p>© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
+                <p data-cms="shared.footer.copyright">© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
               </div>
             </div>
           </div>
@@ -1708,7 +1740,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         // alert("Network error: " + error.message);
       });
   });
-  
+
   </script>
+
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
 </body>
 </html>

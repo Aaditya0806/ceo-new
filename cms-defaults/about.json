@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "About Us | HR Consulting & Organizational Development Experts",
+    "description": "Discover 25+ years of expertise in building High-Performance Teams, streamlining HR processes, and delivering transformational results.",
+    "keywords": "High-Performance Teams, HR solutions for MSMEs, Organizational development services, Recruitment and bulk hiring, •\tOutsourced HR management"
+  },
+  "banner": {
+    "heading": "About Us",
+    "breadcrumbHome": "Home ",
+    "breadcrumbCurrent": "About Us"
+  },
+  "hero": {
+    "eyebrowIcon": "/assets/img/icons/span10.png",
+    "eyebrow": "About Us",
+    "heading": "Who We Are",
+    "paragraph": "Since 1999, we have been a trusted consulting partner for organizations across India and Southeast Asia. With over two decades of expertise and a proven track record, we specialize in",
+    "btnText": "Learn More About Expertise",
+    "btnLink": "/industries-we-serve.html"
+  },
+  "whoWeAre": {
+    "eyebrow": "About Us",
+    "heading": "Who We Are ",
+    "items": [
+      { "icon": "assets/img/icons/about3-icon1.png", "text": "Building High-Performance Teams (HPT)." },
+      { "icon": "assets/img/icons/about3-icon2.png", "text": "Streamlining HR processes." },
+      { "icon": "assets/img/icons/about3-icon3.png", "text": "Driving organizational transformation." }
+    ]
+  },
+  "missionVision": {
+    "missionTitle": "Our Mission ",
+    "missionText": "To transform organizations by creating empowered, self-sufficient teams, fostering operational excellence, and building a culture of accountability and collaboration.",
+    "visionTitle": "Our Vision ",
+    "visionText": "To be the most trusted and innovative partner in organizational development, delivering measurable results and inspiring change at every level of the organization."
+  },
+  "coreValues": {
+    "eyebrow": "Our Core  ",
+    "heading": "Our Core Values ",
+    "items": [
+      {
+        "icon": "assets/all-white-icon/business.png",
+        "title": "Integrity ",
+        "description": "We uphold the highest standards of honesty and ethical behavior "
+      },
+      {
+        "icon": "assets/all-white-icon/goal.png",
+        "title": "Excellence ",
+        "description": "We are committed to delivering exceptional value through our expertise and innovation. "
+      },
+      {
+        "icon": "assets/all-white-icon/succession-planning.png",
+        "title": "Collaboration ",
+        "description": "We believe in the power of teamwork to achieve extraordinary outcomes "
+      },
+      {
+        "icon": "assets/all-white-icon/empowerment.png",
+        "title": "Empowerment  ",
+        "description": "We focus on empowering individuals and teams to take ownership and deliver their best. "
+      },
+      {
+        "icon": "assets/all-white-icon/actionable.png",
+        "title": "Sustainability   ",
+        "description": "We aim to create lasting impacts for organizations and communities. "
+      }
+    ]
+  },
+  "whatSetsUsApart": {
+    "heading": "What Sets Us Apart ",
+    "cards": [
+      {
+        "icon": "assets/all-icons/experience.png",
+        "title": "Decades of Expertise",
+        "description": "Over 25 years of hands-on experience in HR and organizational consulting."
+      },
+      {
+        "icon": "assets/img/icons/mission-icon1.png",
+        "title": "Proven Results",
+        "description": " Trusted by global brands like GE, Dr. Reddy's, and Philips for delivering measurable ROI."
+      },
+      {
+        "icon": "assets/all-icons/aptitude.png",
+        "title": "Industry Recognition",
+        "description": " Renowned for implementing Self-Managed Teams and High-Performance Work Systems."
+      },
+      {
+        "icon": "assets/img/icons/mission-icon2.png",
+        "title": "Comprehensive Services",
+        "description": "From High-Performance Teams to Bulk Hiring, we provide end-to-end, tailored solutions. "
+      }
+    ]
+  },
+  "achievements": {
+    "heading": "Our Achievements",
+    "items": [
+      { "text": "Empowered over 25,000 underprivileged students with employment opportunities" },
+      { "text": "Conducted over 500,000 assessments successfully" },
+      { "text": "Partnered with top-tier organizations in diverse sectors, including manufacturing, pharmaceuticals, and IT." },
+      { "text": "Delivered award-winning transformations through HPT/SMT implementations" }
+    ]
+  },
+  "stats": [
+    { "icon": "assets/img/icons/hero10-icon1.png", "label": "Employment", "value": "25,000" },
+    { "icon": "assets/img/icons/hero10-icon1.png", "label": "Assessments", "value": "500,000" }
+  ],
+  "leadershipClients": {
+    "leadershipTitle": "Our Leadership Team  ",
+    "leadershipText": "Comprising seasoned professionals with extensive expertise in organizational development and HR consulting, our leadership team drives our mission and inspires excellence across the organization.",
+    "clientsTitle": "Our Clients  ",
+    "clientsText": "We are privileged to work with industry leaders, including GE, Dr. Reddy's, Philips, and many more, across various sectors and geographies."
+  },
+  "cta": {
+    "heading": "Join Us on Our Journey",
+    "paragraph": "Unlock your organization’s true potential. Partner with us to build stronger teams, enhance operational efficiency, and achieve sustainable growth. ",
+    "btnText": "Explore Our Services",
+    "btnLink": "/contact.html"
+  },
+  "faq": {
+    "heading": "FAQs",
+    "items": [
+      {
+        "question": "1.\tWhat makes your HR consulting services unique?",
+        "answer": "We specialize in building High-Performance Teams, delivering tailored solutions with measurable ROI, and partnering with global brands for over 25 years. "
+      },
+      {
+        "question": "2.\tWhich industries do you work with?",
+        "answer": "We serve a wide range of industries, including manufacturing, pharmaceuticals, IT, and more. "
+      },
+      {
+        "question": "3.\tWhat are High-Performance Teams (HPT)?",
+        "answer": "High-Performance Teams are self-managed groups designed to boost accountability, productivity, and organizational success. "
+      }
+    ]
+  }
+}

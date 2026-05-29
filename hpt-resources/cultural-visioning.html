@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
+  <meta name="cms-page" content="hpt_cultural_visioning" />
+  <title data-cms="meta.title">
     Cultural Visioning for HPT | Build a Shared Culture | CEO HR
   </title>
   <meta name="description"
-    content="Establish a shared cultural framework with Cultural Visioning. Enhance alignment, employee engagement, and growth for High-Performance Teams" />
+    content="Establish a shared cultural framework with Cultural Visioning. Enhance alignment, employee engagement, and growth for High-Performance Teams" / data-cms-attr="meta.description|content">
   <meta name="keywords" content="Cultural visioning
       High-Performance Teams framework
       Organizational culture alignment
       Employee engagement strategies
     Enablers and disablers analysis
       
-     " />
+     " / data-cms-attr="meta.keywords|content">
 
   <!--=====FAB ICON=======-->
   <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -612,7 +613,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     data-aos-duration="700"
                     >HPT Resources
                   </span>
-                       <h1>Cultural Visioning
+                       <h1 data-cms="hero.heading">Cultural Visioning
                         The Foundation of High-Performance Teams</h1>
                        <div class="space16"></div>
                        <p>Core
@@ -1777,6 +1778,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

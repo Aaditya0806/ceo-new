@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
+  <meta name="cms-page" content="hpt_star_caps" />
+  <title data-cms="meta.title">
     STAR Caps Leadership | Empower Teams | CEO HR
   </title>
   <meta name="description"
-    content="Explore STAR Caps: A rotational leadership model fostering shared accountability, skill development, and operational excellence in High-Performance Teams." />
+    content="Explore STAR Caps: A rotational leadership model fostering shared accountability, skill development, and operational excellence in High-Performance Teams." / data-cms-attr="meta.description|content">
   <meta name="keywords" content="STAR Caps leadership model
       	Rotational team roles in HPT
       	QCDAMS framework responsibilities
       	Leadership development in High-Performance Teams
       Shared accountability in teams
       
-     " />
+     " / data-cms-attr="meta.keywords|content">
 
   <!--=====FAB ICON=======-->
   <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -610,7 +611,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     data-aos-duration="700"
                     >HPT Resources
                   </span>
-                       <h1>STAR Caps Empowering Teams Through Rotational Leadership</h1>
+                       <h1 data-cms="hero.heading">STAR Caps Empowering Teams Through Rotational Leadership</h1>
                        <div class="space16"></div>
                        <p>Foster shared leadership, accountability, and skill development with STAR Caps—a rotational leadership
                         model inspired by the U.S. Navy SEALs.</p>
@@ -1906,6 +1907,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

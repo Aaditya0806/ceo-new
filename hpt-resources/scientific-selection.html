@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+  <meta name="cms-page" content="hpt_scientific_selection" />
+    <title data-cms="meta.title">
         Scientific Selection for High-Performance Teams | CEO HR Consultancy  
     </title>
-    <meta
-      name="description"
+    <meta name="description"
       content="Discover how scientific selection empowers organizations to hire for attitude and potential, building adaptable and motivated High-Performance Teams."
-    />
-    <meta
-      name="keywords"
+    / data-cms-attr="meta.description|content">
+    <meta name="keywords"
       content="Scientific selection for HPT
       Attitude-based hiring strategy
       	Evidence-based hiring process
       Workforce optimization through selection
      "
-    />
+    / data-cms-attr="meta.keywords|content">
 
     <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -618,7 +617,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     data-aos-duration="700"
                     >HPT Resources
                   </span>
-                       <h1>Scientific Selection The Foundation of Building HPT</h1>
+                       <h1 data-cms="hero.heading">Scientific Selection The Foundation of Building HPT</h1>
                        <div class="space16"></div>
                        <p>Precision, fairness, and strategic alignment—empowering organizations to hire for potential, not just skills.</p>
                       
@@ -1685,5 +1684,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 </html>

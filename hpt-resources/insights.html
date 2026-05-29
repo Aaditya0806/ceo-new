@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+  <meta name="cms-page" content="hpt_insights" />
+    <title data-cms="meta.title">
         Insights for Transparent Feedback | Employee Engagement | CEO HR
     </title>
     <meta name="description"
-        content="Empower employees with anonymous feedback through Insights. Foster trust, collaboration, and organizational growth with transparent communication" />
+        content="Empower employees with anonymous feedback through Insights. Foster trust, collaboration, and organizational growth with transparent communication" / data-cms-attr="meta.description|content">
     <meta name="keywords" content="	•	Anonymous employee feedback platform
     •	Workplace insights process
     •	Organizational culture improvement
@@ -17,7 +18,7 @@
     
   
       
-     " />
+     " / data-cms-attr="meta.keywords|content">
 
     <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -588,7 +589,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           data-aos-duration="700"
                           >HPT Resources
                         </span>
-                             <h1> Insights Driving Transparent Feedback and Growth 
+                             <h1 data-cms="hero.heading"> Insights Driving Transparent Feedback and Growth 
                             </h1>
                              <div class="space16"></div>
                              <p> Empowering employees with an anonymous platform to share feedback, fostering trust, inclusivity, and organizational excellence. </p>
@@ -1545,6 +1546,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Comprehensive HR Services | High-Performance Teams | Recruitment</title>
+    <meta name="cms-page" content="service" />
+    <title data-cms="meta.title">Comprehensive HR Services | High-Performance Teams | Recruitment</title>
     <meta
     name="description"
+    data-cms-attr="meta.description|content"
     content="Discover expert HR solutions: High-Performance Teams, Bulk Hiring, Assessments, and Outsourced HR for MSMEs. Transform your workforce with tailored strategies."
   />
   <meta
     name="keywords"
+    data-cms-attr="meta.keywords|content"
     content=" •	High-Performance Teams
     •	HR recruitment services
     •	Bulk hiring solutions
     •	Bulk assessment services
-    •	Outsourced HR for MSMEs    
+    •	Outsourced HR for MSMEs
     "
   />
 
@@ -129,14 +132,14 @@
     <div style=" width: 100%;height: 100%; display: flex; justify-content: center; align-items: center; ">
       <div class="modal-content">
         <span onclick="requestConsultationclose()" class="close">&times;</span>
-        <h2 style="text-align: center;">Request Consultation</h2>
+        <h2 style="text-align: center;" data-cms="shared.consultationModal.heading">Request Consultation</h2>
         <form id="consultationForm">
-            <input type="text" name="name" id="rname" placeholder="Your Name" required>
-            <input type="email" name="email" id="remail" placeholder="Your Email" required>
-            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" required>
-            <input type="text" name="company" id="rcompany" placeholder="Company Name" required>
-            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" required></textarea>
-            <button type="submit">Submit</button>
+            <input type="text" name="name" id="rname" placeholder="Your Name" data-cms-attr="shared.consultationModal.placeholderName|placeholder" required>
+            <input type="email" name="email" id="remail" placeholder="Your Email" data-cms-attr="shared.consultationModal.placeholderEmail|placeholder" required>
+            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" data-cms-attr="shared.consultationModal.placeholderPhone|placeholder" required>
+            <input type="text" name="company" id="rcompany" placeholder="Company Name" data-cms-attr="shared.consultationModal.placeholderCompany|placeholder" required>
+            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" data-cms-attr="shared.consultationModal.placeholderDescription|placeholder" required></textarea>
+            <button type="submit" data-cms="shared.consultationModal.btnText">Submit</button>
         </form>
     </div>
     </div>
@@ -575,11 +578,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="row">
           <div class="col-lg-6 m-auto text-center">
             <div class="main-heading">
-              <h1>Our Service</h1>
+              <h1 data-cms="hero.heading">Our Service</h1>
               <div class="pages-intro">
                 <a href="/">Home </a>
                 <span><i class="fa-regular fa-angle-right"></i></span>
-                <p>Our Service</p>
+                <p data-cms="hero.breadcrumb">Our Service</p>
               </div>
             </div>
           </div>
@@ -590,7 +593,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
     <!--=====ABOUT AREA START=======-->
 
-  
+
     <section class="_relative">
       <div class="hero10-sliders">
         <div class="hero10-single">
@@ -598,7 +601,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             <div class="row">
               <div class="col-lg-12 col-md-10">
                 <div class="main-heading">
-                  <h1 style="text-align: center">Services</h1>
+                  <h1 style="text-align: center" data-cms="hero.bannerHeading">Services</h1>
                   <div class="space16"></div>
                 </div>
               </div>
@@ -614,7 +617,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="col-lg-12">
             <div class="heading1 choose1-heading">
               <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
-              <h2 class="text-anime-style-3" style="text-align: center">
+              <h2 class="text-anime-style-3" style="text-align: center" data-cms="services.hpt.title">
                 High-Performance Teams / Self-Managed Teams
               </h2>
               <div class="space16"></div>
@@ -622,6 +625,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 data-aos="fade-left"
                 data-aos-duration="900"
                 style="text-align: center"
+                data-cms="services.hpt.description"
               >
                 Empower your organization with teams that thrive on
                 accountability, collaboration, and efficiency. Our proven
@@ -639,6 +643,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         <h3
                           class="text-anime-style-3"
                           style="text-align: center; perspective: 400px"
+                          data-cms="services.hpt.featuresHeading"
                         >
                         Key Features
                         </h3>
@@ -659,7 +664,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box" >
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.hpt.features.0">
                                 Cultural visioning and team alignment
                               </p>
                             </div>
@@ -677,8 +682,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
-                                
+                              <p data-cms="services.hpt.features.1">
+
                                 Peer-based performance and recognition frameworks
                               </p>
                             </div>
@@ -701,7 +706,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.hpt.features.2">
                                 Team-based scorecards and rewards
 
                               </p>
@@ -719,7 +724,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.hpt.features.3">
                                 Self-governance systems like HVAT
 
 
@@ -734,7 +739,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     class="row align-items-start"
                     style="justify-content: center"
                   >
-                   
+
                     <div class="col-lg-6">
                       <div class="heading1 work1-heading">
                         <div
@@ -744,7 +749,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.hpt.features.4">
                                 Leader preparation through the "Learn-Teach-Learn" methodology
 
                               </p>
@@ -759,7 +764,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="space30"></div>
               <div style="display: flex; justify-content: center;">
                 <div class="button">
-                  <a href="/services/High-Performance-Team-and-self-managed.html" class="theme-btn16"   >Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a href="/services/High-Performance-Team-and-self-managed.html" class="theme-btn16" data-cms-href="services.hpt.readMoreLink" data-cms="services.hpt.readMoreText">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
 
               </div>
@@ -773,9 +778,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="col-lg-12">
             <div class="heading1 choose1-heading">
               <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
-              <h2 class="text-anime-style-3">Recruitment</h2>
+              <h2 class="text-anime-style-3" data-cms="services.recruitment.title">Recruitment</h2>
               <div class="space16"></div>
-              <p data-aos="fade-left" data-aos-duration="900">
+              <p data-aos="fade-left" data-aos-duration="900" data-cms="services.recruitment.description">
                 Find the right talent to propel your organization forward. From
                 junior engineers to C-suite executives, we specialize in
                 sourcing, assessing, and placing candidates tailored to your
@@ -791,11 +796,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         <h3
                           class="text-anime-style-3"
                           style="text-align: center; perspective: 400px"
+                          data-cms="services.recruitment.featuresHeading"
                         >
                         Key Features
                         </h3>
 
-                    
+
 
                         <div class="space10"></div>
                       </div>
@@ -811,7 +817,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box" >
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.recruitment.features.0">
                                 Executive search and headhunting
 
                               </p>
@@ -830,8 +836,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
-                                
+                              <p data-cms="services.recruitment.features.1">
+
                                 Role-based competency assessments
 
                               </p>
@@ -846,7 +852,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     class="row align-items-start"
                     style="justify-content: center"
                   >
-                   
+
                     <div class="col-lg-6">
                       <div class="heading1 work1-heading">
                         <div
@@ -856,7 +862,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.recruitment.features.2">
                                 Industry-specific recruitment strategies
 
                               </p>
@@ -871,7 +877,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="space30"></div>
               <div style="display: flex; justify-content: center;">
                 <div class="button">
-                  <a href="/services/Recruitment-service.html" class="theme-btn16"   >Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a href="/services/Recruitment-service.html" class="theme-btn16" data-cms-href="services.recruitment.readMoreLink" data-cms="services.recruitment.readMoreText">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
 
               </div>
@@ -886,9 +892,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="col-lg-12">
             <div class="heading1 choose1-heading">
               <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
-              <h2 class="text-anime-style-3">Bulk Hiring</h2>
+              <h2 class="text-anime-style-3" data-cms="services.bulkHiring.title">Bulk Hiring</h2>
               <div class="space16"></div>
-              <p data-aos="fade-left" data-aos-duration="900">
+              <p data-aos="fade-left" data-aos-duration="900" data-cms="services.bulkHiring.description">
                 Scale your workforce effectively with our streamlined bulk
                 hiring solutions. We ensure the rapid acquisition of top-tier
                 talent for large-scale operational needs without compromising on
@@ -903,11 +909,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         <h3
                           class="text-anime-style-3"
                           style="text-align: center; perspective: 400px"
+                          data-cms="services.bulkHiring.featuresHeading"
                         >
                         Key Features
                         </h3>
 
-                    
+
 
                         <div class="space10"></div>
                       </div>
@@ -923,7 +930,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box" >
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.bulkHiring.features.0">
                                 Proven processes for high-volume recruitment
 
                               </p>
@@ -942,8 +949,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
-                                
+                              <p data-cms="services.bulkHiring.features.1">
+
                                 End-to-end candidate management
 
 
@@ -959,7 +966,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     class="row align-items-start"
                     style="justify-content: center"
                   >
-                   
+
                     <div class="col-lg-6">
                       <div class="heading1 work1-heading">
                         <div
@@ -969,7 +976,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.bulkHiring.features.2">
                                 Industry and role-specific hiring strategies
 
                               </p>
@@ -984,7 +991,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="space30"></div>
               <div style="display: flex; justify-content: center;">
                 <div class="button">
-                  <a href="/services/Bulk-Hiring-Services.html" class="theme-btn16"   >Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a href="/services/Bulk-Hiring-Services.html" class="theme-btn16" data-cms-href="services.bulkHiring.readMoreLink" data-cms="services.bulkHiring.readMoreText">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
 
               </div>
@@ -996,9 +1003,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="col-lg-12">
             <div class="heading1 choose1-heading">
               <!-- <span class="span" data-aos="fade-left" data-aos-duration="700">About Us </span> -->
-              <h2 class="text-anime-style-3">Bulk Assessment</h2>
+              <h2 class="text-anime-style-3" data-cms="services.bulkAssessment.title">Bulk Assessment</h2>
               <div class="space16"></div>
-              <p data-aos="fade-left" data-aos-duration="900">
+              <p data-aos="fade-left" data-aos-duration="900" data-cms-html="services.bulkAssessment.description">
                 Revolutionizing talent evaluation for large-scale recruitment,
                 our Bulk Assessment services combine expertise with cutting-edge
                 technology to deliver precise and reliable results. <br />
@@ -1020,11 +1027,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         <h3
                           class="text-anime-style-3"
                           style="text-align: center; perspective: 400px"
+                          data-cms="services.bulkAssessment.featuresHeading"
                         >
                         Key Features
                         </h3>
 
-                    
+
 
                         <div class="space10"></div>
                       </div>
@@ -1040,7 +1048,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box" >
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.bulkAssessment.features.0">
                                 Psychometric and skill-based assessments
 
                               </p>
@@ -1059,8 +1067,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
-                                
+                              <p data-cms="services.bulkAssessment.features.1">
+
                                 Customized assessment frameworks
 
 
@@ -1077,7 +1085,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     class="row align-items-start"
                     style="justify-content: center"
                   >
-                   
+
                     <div class="col-lg-6">
                       <div class="heading1 work1-heading">
                         <div
@@ -1087,7 +1095,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.bulkAssessment.features.2">
                                 Logical reasoning, spatial ability, and technical skills evaluation
 
 
@@ -1109,11 +1117,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         <h3
                           class="text-anime-style-3"
                           style="text-align: center; perspective: 400px"
+                          data-cms="services.bulkAssessment.testsHeading"
                         >
-                        Types of Tests 
+                        Types of Tests
                         </h3>
 
-                    
+
 
                         <div class="space10"></div>
                       </div>
@@ -1129,7 +1138,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box" >
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.bulkAssessment.tests.0">
                                 Psycho-Diagnostic Assessments (stress tolerance, focus)
 
                               </p>
@@ -1148,8 +1157,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
-                                
+                              <p data-cms="services.bulkAssessment.tests.1">
+
                                 General Aptitude Tests (cognitive abilities)
 
 
@@ -1171,8 +1180,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box" >
                             <div class="heading1">
-                              <p>
-                                
+                              <p data-cms="services.bulkAssessment.tests.2">
+
                                 Domain Proficiency Assessments (technical expertise)
 
                               </p>
@@ -1191,8 +1200,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
-                                
+                              <p data-cms="services.bulkAssessment.tests.3">
+
                                 	Neuromuscular Tests (physical readiness)
 
                               </p>
@@ -1207,7 +1216,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     class="row align-items-start"
                     style="justify-content: center"
                   >
-                   
+
                     <div class="col-lg-6">
                       <div class="heading1 work1-heading">
                         <div
@@ -1217,7 +1226,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         >
                           <div class="work1-box">
                             <div class="heading1">
-                              <p>
+                              <p data-cms="services.bulkAssessment.tests.4">
                                 Group Task Exercises (teamwork and leadership)
                               </p>
                             </div>
@@ -1231,7 +1240,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="space30"></div>
               <div style="display: flex; justify-content: center;">
                 <div class="button">
-                  <a href="/services/Bulk-Assessmest-Service.html" class="theme-btn16"   >Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a href="/services/Bulk-Assessmest-Service.html" class="theme-btn16" data-cms-href="services.bulkAssessment.readMoreLink" data-cms="services.bulkAssessment.readMoreText">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
 
               </div>
@@ -2194,5 +2203,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 </html>

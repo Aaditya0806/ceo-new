@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Tools for HR and Organizational Success | CEO HR Consultancy
+  <meta name="cms-page" content="free_tool" />
+    <title data-cms="meta.title">Free Tools for HR and Organizational Success | CEO HR Consultancy
     </title>
     <meta name="description"
-        content="Explore free tools by CEO HR Consultancy, including engagement surveys, compliance audits, and talent assessments. Register now to streamline your organization’s growth." />
+        content="Explore free tools by CEO HR Consultancy, including engagement surveys, compliance audits, and talent assessments. Register now to streamline your organization’s growth." / data-cms-attr="meta.description|content">
     <meta name="keywords" content="Free HR tools for organizations
         Employee engagement surveys and feedback tools
       	Labor compliance self-audit solutions
-      " />
+      " / data-cms-attr="meta.keywords|content">
 
 
     <!--=====FAB ICON=======-->
@@ -625,7 +626,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                  <div class="col-lg-6 col-md-10">
                      <div class="main-heading">
                      
-                         <h1>Discover Our Free Tools for Organizational Success
+                         <h1 data-cms="hero.heading">Discover Our Free Tools for Organizational Success
                           and Innovation</h1>
                          <div class="space16"></div>
                          <p>Enhance organizational efficiency, compliance, and employee engagement with our exclusive suite of free tools. Available to registered users with an official email ID and mobile number.</p>
@@ -1413,6 +1414,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

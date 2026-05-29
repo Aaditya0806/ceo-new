@@ -3,10 +3,11 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Get in touch with CEO HR Consultancy for inquiries, service requests, or collaborations. Reach us via phone, email, or through our regional offices.">
+  <meta name="cms-page" content="contact" />
+     <meta name="description" content="Get in touch with CEO HR Consultancy for inquiries, service requests, or collaborations. Reach us via phone, email, or through our regional offices." data-cms-attr="meta.description|content">
      <meta name="keywords" content="Contact CEO HR ,Consultancy HR consulting inquiries, Organizational development services contact
-     ">
-     <title>Contact Us | CEO HR Consultancy</title>
+     " data-cms-attr="meta.keywords|content">
+     <title data-cms="meta.title">Contact Us | CEO HR Consultancy</title>
 
      <!--=====FAB ICON=======-->
      <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon">
@@ -692,7 +693,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <div class="row">
                     <div class="col-lg-6 m-auto text-center">
                         <div class="main-heading">
-                            <h1>Contact Us</h1>
+                            <h1 data-cms="hero.heading">Contact Us</h1>
                             <div class="pages-intro">
                                 <a href="/">Home </a>
                                 <span><i class="fa-regular fa-angle-right"></i></span>
@@ -1983,6 +1984,10 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script
     });
     
     </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
    
 </body>
 </html>
