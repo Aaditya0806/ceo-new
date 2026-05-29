@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
+  <meta name="cms-page" content="hpt_team_formation" />
+  <title data-cms="meta.title">
     Team Formation for HPT | Build Cohesive Teams | CEO HR Consultancy
   </title>
   <meta name="description"
-    content="Transform individuals into cohesive High-Performance Teams. Learn about team formation, charters, and synergy to align with organizational goals." />
+    content="Transform individuals into cohesive High-Performance Teams. Learn about team formation, charters, and synergy to align with organizational goals." / data-cms-attr="meta.description|content">
   <meta name="keywords" content="High-Performance Teams
       Team formation process
       Team Charter development
@@ -16,7 +17,7 @@
       Organizational alignment
        supervision in High-Performance Teams
       
-     " />
+     " / data-cms-attr="meta.keywords|content">
 
   <!--=====FAB ICON=======-->
   <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -601,7 +602,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     data-aos-duration="700"
                     >HPT Resources
                   </span>
-                       <h1>Team Formation The Cornerstone of High-Performance Teams</h1>
+                       <h1 data-cms="hero.heading">Team Formation The Cornerstone of High-Performance Teams</h1>
                        <div class="space16"></div>
                        <p>Build cohesive,
                         purpose-driven teams that align with organizational goals and achieve extraordinary outcomes.</p>
@@ -1772,6 +1773,10 @@ Teams achieve peak efficiency and handle tasks constructively</p>
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

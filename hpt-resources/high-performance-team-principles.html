@@ -4,17 +4,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
+  <meta name="cms-page" content="hpt_principles" />
+  <title data-cms="meta.title">
     High-Performance Teams (HPT) Principles | Core Values for Success
   </title>
   <meta name="description"
-    content="Discover the core principles of High-Performance Teams (HPT), including shared information, egalitarianism, performance-reward linkage, and knowledge development, driving team and organizational success." />
+    content="Discover the core principles of High-Performance Teams (HPT), including shared information, egalitarianism, performance-reward linkage, and knowledge development, driving team and organizational success." / data-cms-attr="meta.description|content">
   <meta name="keywords" content="High-Performance Teams principles
       Shared information in HPT
       	Egalitarianism in teams
       Knowledge development for teams
       
-     " />
+     " / data-cms-attr="meta.keywords|content">
 
   <!--=====FAB ICON=======-->
   <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -612,7 +613,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     data-aos-duration="700"
                     >HPT Resources
                   </span>
-                       <h1>High-Performance Team Principles.</h1>
+                       <h1 data-cms="hero.heading">High-Performance Team Principles.</h1>
                        <div class="space16"></div>
                        <p>Core
                         principles that drive
@@ -1320,6 +1321,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

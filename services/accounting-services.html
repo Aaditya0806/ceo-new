@@ -3,20 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accounting Services | High-Performance Teams | Recruitment</title>
-    <!-- <meta
-    name="description"
+  <meta name="cms-page" content="service_accounting" />
+    <title data-cms="meta.title">Accounting Services | High-Performance Teams | Recruitment</title>
+    <!-- <meta name="description"
     content="Discover expert HR solutions: High-Performance Teams, Bulk Hiring, Assessments, and Outsourced HR for MSMEs. Transform your workforce with tailored strategies."
-  />
-  <meta
-    name="keywords"
+  / data-cms-attr="meta.description|content">
+  <meta name="keywords"
     content=" •	High-Performance Teams
     •	HR recruitment services
     •	Bulk hiring solutions
     •	Bulk assessment services
     •	Outsourced HR for MSMEs    
     "
-  /> -->
+  / data-cms-attr="meta.keywords|content"> -->
 
     <!--=====FAB ICON=======-->
     <link
@@ -575,7 +574,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="row">
           <div class="col-lg-6 m-auto text-center">
             <div class="main-heading">
-              <h1>Our Service</h1>
+              <h1 data-cms="hero.heading">Our Service</h1>
               <div class="pages-intro">
                 <a href="/">Home </a>
                 <span><i class="fa-regular fa-angle-right"></i></span>
@@ -2016,5 +2015,9 @@ If you want clarity, control, and confidence in your financial operations, our t
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 </html>

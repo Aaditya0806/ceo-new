@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+  <meta name="cms-page" content="hpt_learn_teach_learn" />
+    <title data-cms="meta.title">
         Learn-Teach-Learn Framework | CEO HR Consultancy
     </title>
     <meta name="description"
-        content="Explore the Learn-Teach-Learn (LTL) framework for continuous learning and high-performance culture. Foster knowledge sharing, skill enhancement, and leadership growth." />
+        content="Explore the Learn-Teach-Learn (LTL) framework for continuous learning and high-performance culture. Foster knowledge sharing, skill enhancement, and leadership growth." / data-cms-attr="meta.description|content">
     <meta name="keywords" content="•	Learn-Teach-Learn framework
     •	Continuous learning in organizations
     •	High-performance culture development
@@ -16,7 +17,7 @@
     •	Leadership training and development
     
       
-     " />
+     " / data-cms-attr="meta.keywords|content">
 
     <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -585,7 +586,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       data-aos-duration="700"
                       >HPT Resources
                     </span>
-                         <h1>Learn-Teach-Learn Driving Continuous Learning and HP Culture</h1>
+                         <h1 data-cms="hero.heading">Learn-Teach-Learn Driving Continuous Learning and HP Culture</h1>
                          <div class="space16"></div>
                          <!-- <p>A revolutionary approach to collaboration, innovation, and accountability, driving sustainable
                           organizational success.</p> -->
@@ -1935,6 +1936,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

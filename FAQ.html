@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+    <meta name="cms-page" content="faq" />
+    <title data-cms="meta.title">
       FAQs | Organizational Development and HR Solutions | CEO HR Consultancy
     </title>
     <meta
       name="description"
+      data-cms-attr="meta.description|content"
       content="Find answers to your questions about High-Performance Teams, recruitment, compliance, and more. Contact CEO HR Consultancy for tailored solutions."
     />
     <meta
       name="keywords"
+      data-cms-attr="meta.keywords|content"
       content="Frequently Asked Questions about HPT
       • Organizational development FAQs
       • Compliance and HR management FAQs"
@@ -581,7 +584,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="row">
           <div class="col-lg-10 m-auto text-center">
             <div class="main-heading">
-              <h1>Frequently Asked Questions</h1>
+              <h1 data-cms="hero.heading">Frequently Asked Questions</h1>
               <div class="pages-intro">
                 <a href="/">Home </a>
                 <span><i class="fa-regular fa-angle-right"></i></span>
@@ -1331,5 +1334,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 </html>

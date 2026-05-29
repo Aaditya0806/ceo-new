@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HPT Resources | High-Performance Teams Framework & Principles</title>
-    <meta
-    name="description"
+  <meta name="cms-page" content="hpt_resources_index" />
+    <title data-cms="meta.title">HPT Resources | High-Performance Teams Framework & Principles</title>
+    <meta name="description"
     content="Explore comprehensive HPT resources covering principles, QCDSMA metrics, workforce planning, and team dynamics. Transform your organization with proven strategies."
-  />
-  <meta
-    name="keywords"
+  / data-cms-attr="meta.description|content">
+  <meta name="keywords"
     content=" •	High-Performance Teams framework
     •	QCDSMA principles in HPT
     •	Workforce planning for organizational success
     "
-  />
+  / data-cms-attr="meta.keywords|content">
 
     <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -579,7 +578,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="row">
           <div class="col-lg-6 m-auto text-center">
             <div class="main-heading">
-              <h1>HPT Resources</h1>
+              <h1 data-cms="hero.heading">HPT Resources</h1>
               <div class="pages-intro">
                 <a href="/">Home </a>
                 <span><i class="fa-regular fa-angle-right"></i></span>
@@ -2194,5 +2193,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 </html>

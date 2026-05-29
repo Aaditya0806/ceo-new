@@ -3,10 +3,11 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>About Us | HR Consulting & Organizational Development Experts</title>
+     <meta name="cms-page" content="about" />
+     <title data-cms="meta.title">About Us | HR Consulting & Organizational Development Experts</title>
 
-     <meta name="description" content="Discover 25+ years of expertise in building High-Performance Teams, streamlining HR processes, and delivering transformational results.">
-     <meta name="keywords" content="High-Performance Teams, HR solutions for MSMEs, Organizational development services, Recruitment and bulk hiring, •	Outsourced HR management">
+     <meta name="description" data-cms-attr="meta.description|content" content="Discover 25+ years of expertise in building High-Performance Teams, streamlining HR processes, and delivering transformational results.">
+     <meta name="keywords" data-cms-attr="meta.keywords|content" content="High-Performance Teams, HR solutions for MSMEs, Organizational development services, Recruitment and bulk hiring, •	Outsourced HR management">
      
      <!-- Open Graph / Facebook -->
      <meta property="og:title" content="About Us | HR Consulting & Organizational Development Experts">
@@ -131,14 +132,14 @@
     <div style=" width: 100%;height: 100%; display: flex; justify-content: center; align-items: center; ">
       <div class="modal-content">
         <span onclick="requestConsultationclose()" class="close">&times;</span>
-        <h2 style="text-align: center;">Request Consultation</h2>
+        <h2 style="text-align: center;" data-cms="shared.consultationModal.heading">Request Consultation</h2>
         <form id="consultationForm">
-            <input type="text" name="name" id="rname" placeholder="Your Name" required>
-            <input type="email" name="email" id="remail" placeholder="Your Email" required>
-            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" required>
-            <input type="text" name="company" id="rcompany" placeholder="Company Name" required>
-            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" required></textarea>
-            <button type="submit">Submit</button>
+            <input type="text" name="name" id="rname" placeholder="Your Name" data-cms-attr="shared.consultationModal.placeholderName|placeholder" required>
+            <input type="email" name="email" id="remail" placeholder="Your Email" data-cms-attr="shared.consultationModal.placeholderEmail|placeholder" required>
+            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" data-cms-attr="shared.consultationModal.placeholderPhone|placeholder" required>
+            <input type="text" name="company" id="rcompany" placeholder="Company Name" data-cms-attr="shared.consultationModal.placeholderCompany|placeholder" required>
+            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" data-cms-attr="shared.consultationModal.placeholderDescription|placeholder" required></textarea>
+            <button type="submit" data-cms="shared.consultationModal.btnText">Submit</button>
         </form>
     </div>
     </div>
@@ -589,11 +590,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <div class="row">
                     <div class="col-lg-6 m-auto text-center">
                         <div class="main-heading">
-                            <h1>About Us</h1>
+                            <h1 data-cms="banner.heading">About Us</h1>
                             <div class="pages-intro">
-                                <a href="/">Home </a>
+                                <a href="/" data-cms="banner.breadcrumbHome">Home </a>
                                 <span><i class="fa-regular fa-angle-right"></i></span>
-                                <p>About Us</p>
+                                <p data-cms="banner.breadcrumbCurrent">About Us</p>
                             </div>
                         </div>
                     </div>
@@ -621,20 +622,20 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   <div class="col-lg-6 col-md-10">
                     <div class="main-heading">
                       <span class="span"
-                        ><img loading="lazy" src="/assets/img/icons/span10.png" alt="" />
-                        About Us</span
+                        ><img loading="lazy" src="/assets/img/icons/span10.png" data-cms-src="hero.eyebrowIcon" alt="" />
+                        <span data-cms="hero.eyebrow">About Us</span></span
                       >
-                      <h1>
+                      <h1 data-cms="hero.heading">
                         Who We Are
                       </h1>
                       <div class="space16"></div>
-                      <p>
+                      <p data-cms="hero.paragraph">
                         Since 1999, we have been a trusted consulting partner for organizations across India and Southeast Asia. With over two decades of expertise and a proven track record, we specialize in
                       </p>
                       <div class="space30"></div>
                       <div class="button">
-                        <a href="/industries-we-serve.html" class="theme-btn16"
-                          >Learn More About Expertise
+                        <a href="/industries-we-serve.html" class="theme-btn16" data-cms-href="hero.btnLink"
+                           data-cms="hero.btnText">Learn More About Expertise
                           <span><i class="fa-solid fa-arrow-right"></i></span
                         ></a>
                       </div>
@@ -661,13 +662,25 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         <div class="heading1 about3-heading">
                           <div style="display: flex; justify-content: center;">
 
-                            <span class="span">About Us</span>
+                            <span class="span" data-cms="whoWeAre.eyebrow">About Us</span>
                           </div>
-                          <h2 style="text-align: center;">Who We Are </h2>
+                          <h2 style="text-align: center;" data-cms="whoWeAre.heading">Who We Are </h2>
                           <div class="space16"></div>
-                     
-        
-                         <div class="row" style="justify-content: center;">
+
+
+                         <div class="row" style="justify-content: center;" data-cms-list="whoWeAre.items">
+                          <template data-cms-template>
+                            <div class="about3-icon-box col-lg-6" style="display: flex; align-items:center; ">
+                              <div class="">
+                                <div class="icon">
+                                  <img loading="lazy" data-cms-field-src="icon" src="" alt="">
+                                </div>
+                              </div>
+                              <div class="heading1">
+                                <h5><a href="#" data-cms-field="text"></a></h5>
+                              </div>
+                            </div>
+                          </template>
                           <div class="about3-icon-box col-lg-6 " style="display: flex; align-items:center; ">
                             <div class="">
                               <div class="icon">
@@ -679,7 +692,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                               <!-- <p>we are your strategic partner in talent acquisition. With a steadfast commitment to excellence</p> -->
                             </div>
                           </div>
-        
+
                           <div class="about3-icon-box col-lg-6" style="display: flex; align-items:center; ">
                             <div class="">
                               <div class="icon">
@@ -725,29 +738,29 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                             <!-- <img loading="lazy" src="/assets/About us/3_mission.png" alt=""> -->
                           </div>
                           <div class="heading-area" style="position: relative;margin-left: 0;">
-                           
+
                             <div class="heading1">
-                              <h4><a>Our Mission </a></h4>
+                              <h4><a data-cms="missionVision.missionTitle">Our Mission </a></h4>
                               <div class="space16"></div>
-                              <p>To transform organizations by creating empowered, self-sufficient teams, fostering operational excellence, and building a culture of accountability and collaboration.</p>
+                              <p data-cms="missionVision.missionText">To transform organizations by creating empowered, self-sufficient teams, fostering operational excellence, and building a culture of accountability and collaboration.</p>
                               <div class="blog1-border"></div>
                               <!-- <a href="blog-details.html" class="learn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a> -->
                             </div>
                           </div>
                         </div>
                       </div>
-          
+
                       <div class="col-lg-6">
                         <div class="blog1-box overlay-anim aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="900">
                           <div class="image">
                             <!-- <img loading="lazy" src="/assets/About us/4_vision.png" alt=""> -->
                           </div>
                           <div class="heading-area" style="position: relative;margin-left: 0;">
-                           
+
                             <div class="heading1">
-                              <h4><a>Our Vision </a></h4>
+                              <h4><a data-cms="missionVision.visionTitle">Our Vision </a></h4>
                               <div class="space16"></div>
-                              <p>To be the most trusted and innovative partner in organizational development, delivering measurable results and inspiring change at every level of the organization.</p>
+                              <p data-cms="missionVision.visionText">To be the most trusted and innovative partner in organizational development, delivering measurable results and inspiring change at every level of the organization.</p>
                               <div class="blog1-border"></div>
                               <!-- <a href="blog-details.html" class="learn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a> -->
                             </div>
@@ -768,8 +781,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     <div class="row">
                       <div class="col-lg-8 m-auto text-center">
                         <div class="heading1-w">
-                          <span class="span">Our Core  </span>
-                          <h2>Our Core Values </h2>
+                          <span class="span" data-cms="coreValues.eyebrow">Our Core  </span>
+                          <h2 data-cms="coreValues.heading">Our Core Values </h2>
                           <div class="space16"></div>
                           <!-- <p> With our proven track record and commitment to excellence, we're here to support your <br> organization's  growth and help you achieve your hiring goals.</p> -->
                         </div>
@@ -801,18 +814,18 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           </div>
                           <div class="hover-area">
                             <div class="icon">
-                              <img loading="lazy" src="assets/all-white-icon/business.png" style="width: 40px;" alt="">
+                              <img loading="lazy" src="assets/all-white-icon/business.png" data-cms-src="coreValues.items.0.icon" style="width: 40px;" alt="">
                             </div>
                             <div class="space16"></div>
                             <div class="heading1-w">
-                              <h4><a style="color: white;">Integrity </a></h4>
+                              <h4><a style="color: white;" data-cms="coreValues.items.0.title">Integrity </a></h4>
                               <div class="space16"></div>
-                              <p>We uphold the highest standards of honesty and ethical behavior </p>
+                              <p data-cms="coreValues.items.0.description">We uphold the highest standards of honesty and ethical behavior </p>
                             </div>
                           </div>
                         </div>
                       </div>
-        
+
                       <div class="col-lg-4 col-md-6">
                         <div class="service1-box active" style="height: 300px;">
                           <div class="image overlay-anim">
@@ -820,18 +833,18 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           </div>
                           <div class="hover-area">
                             <div class="icon">
-                              <img loading="lazy" src="assets/all-white-icon/goal.png" style="width: 40px;" alt="">
+                              <img loading="lazy" src="assets/all-white-icon/goal.png" data-cms-src="coreValues.items.1.icon" style="width: 40px;" alt="">
                             </div>
                             <div class="space16"></div>
                             <div class="heading1-w">
-                              <h4><a style="color: white;" >Excellence </a></h4>
+                              <h4><a style="color: white;" data-cms="coreValues.items.1.title">Excellence </a></h4>
                               <div class="space16"></div>
-                              <p>We are committed to delivering exceptional value through our expertise and innovation. </p>
+                              <p data-cms="coreValues.items.1.description">We are committed to delivering exceptional value through our expertise and innovation. </p>
                             </div>
                           </div>
                         </div>
                       </div>
-        
+
                       <div class="col-lg-4 col-md-6">
                         <div class="service1-box active" style="height: 300px;">
                           <div class="image overlay-anim">
@@ -839,20 +852,20 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           </div>
                           <div class="hover-area">
                             <div class="icon">
-                              <img loading="lazy" src="assets/all-white-icon/succession-planning.png" style="width: 40px;" alt="">
+                              <img loading="lazy" src="assets/all-white-icon/succession-planning.png" data-cms-src="coreValues.items.2.icon" style="width: 40px;" alt="">
                             </div>
                             <div class="space16"></div>
                             <div class="heading1-w">
-                              <h4><a style="color: white;">Collaboration </a></h4>
+                              <h4><a style="color: white;" data-cms="coreValues.items.2.title">Collaboration </a></h4>
                               <div class="space16"></div>
-                              <p>We believe in the power of teamwork to achieve extraordinary outcomes </p>
+                              <p data-cms="coreValues.items.2.description">We believe in the power of teamwork to achieve extraordinary outcomes </p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    
- 
-        
+
+
+
                     </div>
 
                     <div style="display: flex; justify-content: center; align-content: center; gap: 30px;">
@@ -863,13 +876,13 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           </div>
                           <div class="hover-area">
                             <div class="icon">
-                              <img loading="lazy" src="assets/all-white-icon/empowerment.png" style="width: 40px;" alt="">
+                              <img loading="lazy" src="assets/all-white-icon/empowerment.png" data-cms-src="coreValues.items.3.icon" style="width: 40px;" alt="">
                             </div>
                             <div class="space16"></div>
                             <div class="heading1-w">
-                              <h4><a style="color: white;">Empowerment  </a></h4>
+                              <h4><a style="color: white;" data-cms="coreValues.items.3.title">Empowerment  </a></h4>
                               <div class="space16"></div>
-                              <p>We focus on empowering individuals and teams to take ownership and deliver their best. </p>
+                              <p data-cms="coreValues.items.3.description">We focus on empowering individuals and teams to take ownership and deliver their best. </p>
                             </div>
                           </div>
                         </div>
@@ -881,13 +894,13 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           </div>
                           <div class="hover-area">
                             <div class="icon">
-                              <img loading="lazy" src="assets/all-white-icon/actionable.png" style="width: 40px;" alt="">
+                              <img loading="lazy" src="assets/all-white-icon/actionable.png" data-cms-src="coreValues.items.4.icon" style="width: 40px;" alt="">
                             </div>
                             <div class="space16"></div>
                             <div class="heading1-w">
-                              <h4><a style="color: white;">Sustainability   </a></h4>
+                              <h4><a style="color: white;" data-cms="coreValues.items.4.title">Sustainability   </a></h4>
                               <div class="space16"></div>
-                              <p>We aim to create lasting impacts for organizations and communities. </p>
+                              <p data-cms="coreValues.items.4.description">We aim to create lasting impacts for organizations and communities. </p>
                             </div>
                           </div>
                         </div>
@@ -906,7 +919,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       <div class="col-lg-7 m-auto text-center">
                         <div class="heading1">
                           <!-- <span class="span">Our Mission</span> -->
-                          <h2>What Sets Us Apart </h2>
+                          <h2 data-cms="whatSetsUsApart.heading">What Sets Us Apart </h2>
                           <div class="space16"></div>
                           <!-- <p> We believe that by connecting talented professionals with leading companies, we can create opportunities for growth, innovation</p> -->
                         </div>
@@ -914,7 +927,21 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     </div>
 
                     <div class="space30"></div>
-                    <div class="row">
+                    <div class="row" data-cms-list="whatSetsUsApart.cards">
+                      <template data-cms-template>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="mission-box">
+                            <div class="icon">
+                              <img loading="lazy" data-cms-field-src="icon" src="" alt="">
+                            </div>
+                            <div class="heading1">
+                              <h5><a href="#" data-cms-field="title"></a></h5>
+                              <div class="space16"></div>
+                              <p data-cms-field="description"></p>
+                            </div>
+                          </div>
+                        </div>
+                      </template>
                       <div class="col-lg-6 col-md-6">
                         <div class="mission-box">
                           <div class="icon">
@@ -953,7 +980,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           </div>
                         </div>
                       </div>
-                      
+
                       <div class="col-lg-6 col-md-6">
                         <div class="mission-box">
                           <div class="icon">
@@ -980,65 +1007,74 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
           <div class="col-lg-12">
             <div class="heading1 work1-heading">
-               
-              <h2 class="text-anime-style-3" style="text-align: center;">Our Achievements</h2>
-               
+
+              <h2 class="text-anime-style-3" style="text-align: center;" data-cms="achievements.heading">Our Achievements</h2>
+
 
               <div class="space10"></div>
 
-              <div class="row" style="justify-content: center;">
+              <div class="row" style="justify-content: center;" data-cms-list="achievements.items">
+                <template data-cms-template>
+                  <div class="col-lg-6" data-aos="fade-left" data-aos-duration="900">
+                    <div class="work1-box">
+                      <div class="heading1">
+                        <p data-cms-field="text"></p>
+                      </div>
+                    </div>
+                  </div>
+                </template>
                 <div class="col-lg-6" data-aos="fade-left" data-aos-duration="900">
                   <div class="work1-box">
-                     
+
                     <div class="heading1">
-                       
+
                       <p>
                         Empowered over 25,000 underprivileged students with employment opportunities
                       </p>
                     </div>
                   </div>
                 </div>
-  
-  
+
+
                 <div class="col-lg-6" data-aos="fade-left" data-aos-duration="900">
                   <div class="work1-box">
-                     
+
                     <div class="heading1">
-                       
+
                       <p>
                         Conducted over 500,000 assessments successfully
-                                             
+
                       </p>
                     </div>
                   </div>
                 </div>
-  
-  
+
+
                 <div class="col-lg-6" data-aos="fade-left" data-aos-duration="900">
                   <div class="work1-box">
-                     
+
                     <div class="heading1">
-                       
+
                       <p>
                         Partnered with top-tier organizations in diverse sectors, including manufacturing, pharmaceuticals, and IT.
-                       
-  
-                         
+
+
+
                       </p>
                     </div>
                   </div>
                 </div>
-  
-  
+
+
                 <div class="col-lg-6" data-aos="fade-left" data-aos-duration="900">
                   <div class="work1-box">
-                     
+
                     <div class="heading1">
-                       
+
                       <p>
-                        
+
                         Delivered award-winning transformations through HPT/SMT implementations
-  
+
                       </p>
                     </div>
                   </div>
@@ -1064,22 +1100,22 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             <div class="col-md-4">
               <div class="single-box">
                 <div class="icon">
-                  <img loading="lazy" src="assets/img/icons/hero10-icon1.png" alt="">
+                  <img loading="lazy" src="assets/img/icons/hero10-icon1.png" data-cms-src="stats.0.icon" alt="">
                 </div>
                 <div class="heading">
-                  <h5>Employment</h5>
-                  <p>25,000</p>
+                  <h5 data-cms="stats.0.label">Employment</h5>
+                  <p data-cms="stats.0.value">25,000</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="single-box">
                 <div class="icon">
-                  <img loading="lazy" src="assets/img/icons/hero10-icon1.png" alt="">
+                  <img loading="lazy" src="assets/img/icons/hero10-icon1.png" data-cms-src="stats.1.icon" alt="">
                 </div>
                 <div class="heading">
-                  <h5>Assessments</h5>
-                  <p>500,000</p>
+                  <h5 data-cms="stats.1.label">Assessments</h5>
+                  <p data-cms="stats.1.value">500,000</p>
                 </div>
               </div>
             </div>
@@ -1102,29 +1138,29 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             <div class="row">
               <div class="col-lg-6" style="">
                 <div class="blog1-box overlay-anim aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="800">
-                  
+
                   <div class="heading-area" style="position: relative;margin-left: 0;">
-                   
+
                     <div class="heading1">
-                      <h4><a>Our Leadership Team  </a></h4>
+                      <h4><a data-cms="leadershipClients.leadershipTitle">Our Leadership Team  </a></h4>
                       <div class="space16"></div>
-                      <p>Comprising seasoned professionals with extensive expertise in organizational development and HR consulting, our leadership team drives our mission and inspires excellence across the organization.</p>
+                      <p data-cms="leadershipClients.leadershipText">Comprising seasoned professionals with extensive expertise in organizational development and HR consulting, our leadership team drives our mission and inspires excellence across the organization.</p>
                       <div class="blog1-border"></div>
                       <!-- <a href="blog-details.html" class="learn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a> -->
                     </div>
                   </div>
                 </div>
               </div>
-  
+
               <div class="col-lg-6">
                 <div class="blog1-box overlay-anim aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="900">
-                 
+
                   <div class="heading-area" style="position: relative; margin-left: 0;">
-                   
+
                     <div class="heading1">
-                      <h4><a>Our Clients  </a></h4>
+                      <h4><a data-cms="leadershipClients.clientsTitle">Our Clients  </a></h4>
                       <div class="space16"></div>
-                      <p>We are privileged to work with industry leaders, including GE, Dr. Reddy's, Philips, and many more, across various sectors and geographies.</p>
+                      <p data-cms="leadershipClients.clientsText">We are privileged to work with industry leaders, including GE, Dr. Reddy's, Philips, and many more, across various sectors and geographies.</p>
                       <div class="space30"></div>
                       <div class="blog1-border"></div>
                       <!-- <a href="blog-details.html" class="learn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a> -->
@@ -1146,18 +1182,18 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="row cta-border align-items-center" style="flex-direction: column; align-items: center; justify-content: center;">
                 <div class="col-lg-12">
                   <div class="heading1-w">
-                    <h2 style="text-align: center;">Join Us on Our Journey</h2>
+                    <h2 style="text-align: center;" data-cms="cta.heading">Join Us on Our Journey</h2>
                     <div class="space16"></div>
-                    <p style="text-align: center;">Unlock your organization’s true potential. Partner with us to build stronger teams, enhance operational efficiency, and achieve sustainable growth. </p>
+                    <p style="text-align: center;" data-cms="cta.paragraph">Unlock your organization’s true potential. Partner with us to build stronger teams, enhance operational efficiency, and achieve sustainable growth. </p>
                   </div>
                 </div>
 
                 <div class="" style="width: 100%; display: flex; justify-content: center; align-items: center;">
-                 
-                  
-                          
+
+
+
                         <div class="button" style="width: 300px; margin-top: 50px;">
-                          <button  class="theme-btn1 " style="width: fit-content;"><a href="/contact.html" style="color: white; width: fit-content;">Explore Our Services</a> <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                          <button  class="theme-btn1 " style="width: fit-content;"><a href="/contact.html" data-cms-href="cta.btnLink" style="color: white; width: fit-content;" data-cms="cta.btnText">Explore Our Services</a> <span><i class="fa-solid fa-arrow-right"></i></span></button>
                         </div>
                  
                
@@ -1178,12 +1214,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="row">
                   <div class="col-lg-8 m-auto">
                       <div class="service-details-area">
-            
+
                         <div class="">
                           <div class="heading1-w">
-                            <h2 style="text-align: center; color: black;">FAQs</h2>
+                            <h2 style="text-align: center; color: black;" data-cms="faq.heading">FAQs</h2>
                             <div class="space16"></div>
-                           
+
                           </div>
                         </div>
 
@@ -1191,35 +1227,35 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                               <div class="accordion accordion1 accordion-flush" id="accordionFlushExample">
                                   <div class="accordion-item active">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" data-cms="faq.items.0.question">
                                         1.	What makes your HR consulting services unique?
                                       </button>
                                     </h2>
                                     <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                      <div class="accordion-body">We specialize in building High-Performance Teams, delivering tailored solutions with measurable ROI, and partnering with global brands for over 25 years. </div>
+                                      <div class="accordion-body" data-cms="faq.items.0.answer">We specialize in building High-Performance Teams, delivering tailored solutions with measurable ROI, and partnering with global brands for over 25 years. </div>
                                     </div>
                                   </div>
                                   <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingTwo">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" data-cms="faq.items.1.question">
                                       2.	Which industries do you work with?
                                       </button>
                                     </h2>
                                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                      <div class="accordion-body">We serve a wide range of industries, including manufacturing, pharmaceuticals, IT, and more. </div>
+                                      <div class="accordion-body" data-cms="faq.items.1.answer">We serve a wide range of industries, including manufacturing, pharmaceuticals, IT, and more. </div>
                                     </div>
                                   </div>
                                   <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingThree">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" data-cms="faq.items.2.question">
                                         3.	What are High-Performance Teams (HPT)?
                                       </button>
                                     </h2>
                                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                      <div class="accordion-body">High-Performance Teams are self-managed groups designed to boost accountability, productivity, and organizational success. </div>
+                                      <div class="accordion-body" data-cms="faq.items.2.answer">High-Performance Teams are self-managed groups designed to boost accountability, productivity, and organizational success. </div>
                                     </div>
                                   </div>
-                                
+
 
                                 </div>
 
@@ -1241,36 +1277,36 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-footer-items footer-logo-area">
                       <div class="footer-logo">
-                        <a href="/"><img style="width: 150px" src="/assets/logo.png" alt="" /></a>
+                        <a href="/"><img style="width: 150px" src="/assets/logo.png" data-cms-src="shared.footer.logoImage" alt="" /></a>
                       </div>
                       <div class="space20"></div>
                       <div class="heading1-w">
-                        <p>
+                        <p data-cms="shared.footer.tagline">
                           Transforming Businesses, Empowering Teams, Driving Excellence.
                         </p>
                       </div>
                       <ul class="social-icon">
                         <li>
-                          <a href="https://www.linkedin.com/company/136419/"><i class="fa-brands fa-linkedin-in"></i></a>
+                          <a href="https://www.linkedin.com/company/136419/" data-cms-href="shared.social.linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
                         </li>
                         <li>
-                          <a href="https://twitter.com/CEO_GROUPS"><i class="fa-brands fa-x-twitter"></i></a>
+                          <a href="https://twitter.com/CEO_GROUPS" data-cms-href="shared.social.twitter"><i class="fa-brands fa-x-twitter"></i></a>
                         </li>
                         <li>
-                          <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA"><i
+                          <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA" data-cms-href="shared.social.youtube"><i
                               class="fa-brands fa-youtube"></i></a>
                         </li>
                         <li>
-                          <a href="https://www.instagram.com/ceo_hr_consultancy/"><i class="fa-brands fa-instagram"></i></a>
+                          <a href="https://www.instagram.com/ceo_hr_consultancy/" data-cms-href="shared.social.instagram"><i class="fa-brands fa-instagram"></i></a>
                         </li>
                       </ul>
                     </div>
                   </div>
-          
+
                   <div class="col-lg col-md-6 col-12">
                     <div class="single-footer-items">
-                      <h3>Quick Links</h3>
-          
+                      <h3 data-cms="shared.footer.quickLinksTitle">Quick Links</h3>
+
                       <ul class="menu-list">
                         <li><a href="/service.html">Service</a></li>
                         <li><a href="/hpt-resources.html">HPT Resources</a></li>
@@ -1280,11 +1316,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       </ul>
                     </div>
                   </div>
-          
+
                   <div class="col-lg col-md-6 col-12">
                     <div class="single-footer-items pl-5">
-                      <h3>Explore</h3>
-          
+                      <h3 data-cms="shared.footer.exploreTitle">Explore</h3>
+
                       <ul class="menu-list">
                         <li><a href="/">Home </a></li>
                         <li><a href="/about.html">About Us</a></li>
@@ -1297,18 +1333,18 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       </ul>
                     </div>
                   </div>
-          
+
                   <div class="col-lg-3 col-md-6 col-12">
                     <div class="single-footer-items">
-                      <h3>Contact Us</h3>
-          
+                      <h3 data-cms="shared.footer.contactTitle">Contact Us</h3>
+
                       <div class="contact-box">
                         <div class="icon">
                           <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
                         </div>
                         <div class="pera">
                           <!-- <a href="tel:+91- 8939983080">+91- 8939983080</a> -->
-                          <a href="tel:+91 4449006000">+91 4449006000</a>
+                          <a href="tel:+91 4449006000" data-cms="shared.contact.phone1">+91 4449006000</a>
                         </div>
                       </div>
                       <div class="contact-box">
@@ -1316,42 +1352,42 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
                         </div>
                         <div class="pera">
-                          <a href="tel:+91- 8939983080">+91 8939983080</a>
+                          <a href="tel:+91- 8939983080" data-cms="shared.contact.phone2">+91 8939983080</a>
                           <!-- <a href="tel:+91 4449006000">+91 4449006000</a> -->
                         </div>
                       </div>
-          
+
                       <div class="contact-box">
                         <div class="icon">
                           <img loading="lazy" src="/assets/img/icons/footer-icon2.png" alt="" />
                         </div>
                         <div class="pera">
-                          <a href="mailto:info@ceohrconsultancy.com">info@ceohrconsultancy.com</a>
+                          <a href="mailto:info@ceohrconsultancy.com" data-cms="shared.contact.email">info@ceohrconsultancy.com</a>
                         </div>
                       </div>
-          
+
                       <div class="contact-box">
                         <div class="icon">
                           <img loading="lazy" src="/assets/img/icons/footer-icon3.png" alt="" />
                         </div>
                         <div class="pera">
-                          <a>9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
+                          <a data-cms="shared.contact.address">9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
                             Tamil Nadu, India – 600116</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-          
+
                 <div class="space70"></div>
               </div>
-          
+
               <div class="copyright-area _relative">
                 <div class="container">
                   <div class="row align-items-center">
                     <div class="col-md-12">
                       <div class="coppyright">
-                        <p>© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
+                        <p data-cms="shared.footer.copyright">© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
                       </div>
                     </div>
                   </div>
@@ -1416,7 +1452,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         // alert("Network error: " + error.message);
       });
   });
-  
+
   </script>
+
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
 </body>
 </html>

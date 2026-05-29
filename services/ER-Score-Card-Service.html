@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+  <meta name="cms-page" content="service_er_score_card" />
+    <title data-cms="meta.title">
         ER Score Card Services | Manage Industrial Relations | CEO HR
     </title>
-    <meta
-      name="description"
+    <meta name="description"
       content="Enhance workplace harmony and compliance with the ER Score Card. Conduct audits, improve IR, and foster employee well-being with actionable insights."
-    />
-    <meta
-      name="keywords"
+    / data-cms-attr="meta.description|content">
+    <meta name="keywords"
       content="ER Score Card services
       • Employee relations management tool
       • Industrial relations audits
       • Compliance and workplace harmony
       • Employee engagement and welfare solutions"
-    />
+    / data-cms-attr="meta.keywords|content">
 
 
     <!--=====FAB ICON=======-->
@@ -642,7 +641,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       data-aos-duration="700"
                       >Service
                     </span>
-                         <h1>Proactively Manage
+                         <h1 data-cms="hero.heading">Proactively Manage
                           Industrial Relations
                           and Enhance
                           Workplace Harmony</h1>
@@ -1600,5 +1599,9 @@ With Android-based audits and cloud synchronization, the ER Score Card provides 
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 </html>

@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+    <meta name="cms-page" content="industries" />
+    <title data-cms="meta.title">
       Industries We Serve | Tailored HR Solutions | CEO HR Consultancy
     </title>
     <meta
       name="description"
+      data-cms-attr="meta.description|content"
       content="Explore CEO HR Consultancy's tailored HR solutions for manufacturing, pharmaceuticals, IT, aviation, and FMCG. Partner with industry leaders for measurable outcomes."
     />
     <meta
       name="keywords"
+      data-cms-attr="meta.keywords|content"
       content="
       HR consultancy for manufacturing
       • Workforce optimization in pharmaceuticals
@@ -128,14 +131,14 @@
     <div style=" width: 100%;height: 100%; display: flex; justify-content: center; align-items: center; ">
       <div class="modal-content">
         <span onclick="requestConsultationclose()" class="close">&times;</span>
-        <h2 style="text-align: center;">Request Consultation</h2>
+        <h2 style="text-align: center;" data-cms="shared.consultationModal.heading">Request Consultation</h2>
         <form id="consultationForm">
-            <input type="text" name="name" id="rname" placeholder="Your Name" required>
-            <input type="email" name="email" id="remail" placeholder="Your Email" required>
-            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" required>
-            <input type="text" name="company" id="rcompany" placeholder="Company Name" required>
-            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" required></textarea>
-            <button type="submit">Submit</button>
+            <input type="text" name="name" id="rname" placeholder="Your Name" data-cms-attr="shared.consultationModal.placeholderName|placeholder" required>
+            <input type="email" name="email" id="remail" placeholder="Your Email" data-cms-attr="shared.consultationModal.placeholderEmail|placeholder" required>
+            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" data-cms-attr="shared.consultationModal.placeholderPhone|placeholder" required>
+            <input type="text" name="company" id="rcompany" placeholder="Company Name" data-cms-attr="shared.consultationModal.placeholderCompany|placeholder" required>
+            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" data-cms-attr="shared.consultationModal.placeholderDescription|placeholder" required></textarea>
+            <button type="submit" data-cms="shared.consultationModal.btnText">Submit</button>
         </form>
     </div>
     </div>
@@ -593,11 +596,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="row">
           <div class="col-lg-10 m-auto text-center">
             <div class="main-heading">
-              <h1>Frequently Asked Questions</h1>
+              <h1 data-cms="banner.heading">Frequently Asked Questions</h1>
               <div class="pages-intro">
-                <a href="/">Home </a>
+                <a href="/" data-cms="banner.breadcrumbHome">Home </a>
                 <span><i class="fa-regular fa-angle-right"></i></span>
-                <p>Frequently Asked Questions</p>
+                <p data-cms="banner.breadcrumbCurrent">Frequently Asked Questions</p>
               </div>
             </div>
           </div>
@@ -620,22 +623,22 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="col-lg-6 col-md-10">
                 <div class="main-heading">
                   <span class="span"
-                    ><img loading="lazy" src="/assets/img/icons/span10.png" alt="" />
-                    Industries we serve</span
+                    ><img loading="lazy" src="/assets/img/icons/span10.png" data-cms-src="hero.eyebrowIcon" alt="" />
+                    <span data-cms="hero.eyebrow">Industries we serve</span></span
                   >
-                  <h1>
+                  <h1 data-cms="hero.heading">
                     Partnering with Industry <br />
                     Leaders Across Diverse Sectors
                   </h1>
                   <div class="space16"></div>
-                  <p>
+                  <p data-cms="hero.paragraph">
                     Empowering organizations across industries with tailored
                     solutions that deliver measurable results.
                   </p>
                   <div class="space30"></div>
                   <div class="button">
-                    <a href="/about.html" class="theme-btn16"
-                      >Learn More About Expertise
+                    <a href="/about.html" class="theme-btn16" data-cms-href="hero.btnLink"
+                       data-cms="hero.btnText">Learn More About Expertise
                       <span><i class="fa-solid fa-arrow-right"></i></span
                     ></a>
                   </div>
@@ -683,10 +686,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
     <div class="space30"></div>
     <div class="container">
       <div class="row heading3">
-        <h2 style="text-align: center" class="text-anime-style-3">
+        <h2 style="text-align: center" class="text-anime-style-3" data-cms="impact.heading">
           Driving Impact Across Diverse Sectors
         </h2>
-        <p style="text-align: center">
+        <p style="text-align: center" data-cms="impact.paragraph">
           At CEO HR Consultancy, we collaborate with industry leaders to deliver
           impactful solutions tailored to their unique challenges. From
           manufacturing giants to pharmaceutical innovators, our extensive
@@ -703,7 +706,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
           <div class="col-lg-12">
             <div class="heading3 about3-heading">
-              <h2 class="" style="text-align: center;">Why Choose CEO HR Consultancy?</h2>
+              <h2 class="" style="text-align: center;" data-cms="whyChooseUs.heading">Why Choose CEO HR Consultancy?</h2>
               <div class="space16"></div>
 
               <div class="row">
@@ -715,14 +718,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   >
                     <div class="">
                       <div class="icon">
-                        <img loading="lazy" src="/assets/img/icons/about3-icon1.png" alt="" />
+                        <img loading="lazy" src="/assets/img/icons/about3-icon1.png" data-cms-src="whyChooseUs.items.0.icon" alt="" />
                       </div>
                     </div>
                     <div class="heading3">
                       <h5>
-                        <a href="">Industry Expertise</a>
+                        <a href="" data-cms="whyChooseUs.items.0.title">Industry Expertise</a>
                       </h5>
-                      <p>Decades of experience across diverse sectors.</p>
+                      <p data-cms="whyChooseUs.items.0.description">Decades of experience across diverse sectors.</p>
                     </div>
                   </div>
 
@@ -733,14 +736,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   >
                     <div class="">
                       <div class="icon">
-                        <img loading="lazy" src="/assets/img/icons/about3-icon2.png" alt="" />
+                        <img loading="lazy" src="/assets/img/icons/about3-icon2.png" data-cms-src="whyChooseUs.items.1.icon" alt="" />
                       </div>
                     </div>
                     <div class="heading3">
                       <h5>
-                        <a href=" ">Proven Results</a>
+                        <a href=" " data-cms="whyChooseUs.items.1.title">Proven Results</a>
                       </h5>
-                      <p>
+                      <p data-cms="whyChooseUs.items.1.description">
                         Demonstrated success with measurable impact for our
                         clients.
                       </p>
@@ -756,14 +759,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   >
                     <div class="">
                       <div class="icon">
-                        <img loading="lazy" src="/assets/img/icons/about3-icon1.png" alt="" />
+                        <img loading="lazy" src="/assets/img/icons/about3-icon1.png" data-cms-src="whyChooseUs.items.2.icon" alt="" />
                       </div>
                     </div>
                     <div class="heading3">
                       <h5>
-                        <a href="">Customized Solutions</a>
+                        <a href="" data-cms="whyChooseUs.items.2.title">Customized Solutions</a>
                       </h5>
-                      <p>
+                      <p data-cms="whyChooseUs.items.2.description">
                         Tailored strategies to meet unique industry challenges.
                       </p>
                     </div>
@@ -776,14 +779,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   >
                     <div class="">
                       <div class="icon">
-                        <img loading="lazy" src="/assets/img/icons/about3-icon2.png" alt="" />
+                        <img loading="lazy" src="/assets/img/icons/about3-icon2.png" data-cms-src="whyChooseUs.items.3.icon" alt="" />
                       </div>
                     </div>
                     <div class="heading3">
                       <h5>
-                        <a href="">Comprehensive Support</a>
+                        <a href="" data-cms="whyChooseUs.items.3.title">Comprehensive Support</a>
                       </h5>
-                      <p>
+                      <p data-cms="whyChooseUs.items.3.description">
                         End-to-end services from recruitment to operational
                         excellence.
                       </p>
@@ -825,9 +828,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="col-lg-8 m-auto text-center">
             <div class="heading10">
               <span class="span" data-aos="zoom-in-left" data-aos-duration="700"
-                ><img loading="lazy" src="assets/img/icons/span10.png" alt="" /> Clients</span
+                ><img loading="lazy" src="assets/img/icons/span10.png" data-cms-src="clients.eyebrowIcon" alt="" /> <span data-cms="clients.eyebrow">Clients</span></span
               >
-              <h2 class="text-anime-style-3">
+              <h2 class="text-anime-style-3" data-cms="clients.heading">
                 Some of Our Esteemed Clients Include
               </h2>
             </div>
@@ -835,10 +838,22 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         </div>
 
         <div class="space30"></div>
-        <h2 id="esteeemed-client" class="text-anime-style-3" style="font-weight: 700">
+        <h2 id="esteeemed-client" class="text-anime-style-3" style="font-weight: 700" data-cms="clients.manufacturing.heading">
           Manufacturing
         </h2>
-        <div class="row">
+        <div class="row" data-cms-list="clients.manufacturing.items">
+          <template data-cms-template>
+            <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="800">
+              <div class="case-box">
+                <div class="image">
+                  <img loading="lazy" data-cms-field-src="image" src="" alt="" />
+                </div>
+                <div class="hover-area">
+                  <h6 data-cms-field="name"></h6>
+                </div>
+              </div>
+            </div>
+          </template>
           <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="1100">
             <div class="case-box">
               <div class="image">
@@ -2065,5 +2080,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 </html>

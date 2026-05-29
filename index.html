@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Transform HR Processes | Build High-Performance Teams</title>
-  <meta name="description"
+  <meta name="cms-page" content="home" />
+  <title data-cms="meta.title">Transform HR Processes | Build High-Performance Teams</title>
+  <meta name="description" data-cms-attr="meta.description|content"
     content="Streamline HR processes and build High-Performance Teams with expert solutions. Trusted by global brands since 1999" />
-  <meta name="keywords"
+  <meta name="keywords" data-cms-attr="meta.keywords|content"
     content="High-Performance Teams, HR solutions for MSMEs, Organizational development services, Recruitment and bulk hiring, •	Outsourced HR management" />
 
  
@@ -122,14 +123,14 @@
     <div style=" width: 100%;height: 100%; display: flex; justify-content: center; align-items: center; ">
       <div class="modal-content">
         <span onclick="requestConsultationclose()" class="close">&times;</span>
-        <h2 style="text-align: center;">Request Consultation</h2>
+        <h2 style="text-align: center;" data-cms="shared.consultationModal.heading">Request Consultation</h2>
         <form id="consultationForm">
-            <input type="text" name="name" id="rname" placeholder="Your Name" required>
-            <input type="email" name="email" id="remail" placeholder="Your Email" required>
-            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" required>
-            <input type="text" name="company" id="rcompany" placeholder="Company Name" required>
-            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" required></textarea>
-            <button type="submit">Submit</button>
+            <input type="text" name="name" id="rname" placeholder="Your Name" data-cms-attr="shared.consultationModal.placeholderName|placeholder" required>
+            <input type="email" name="email" id="remail" placeholder="Your Email" data-cms-attr="shared.consultationModal.placeholderEmail|placeholder" required>
+            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" data-cms-attr="shared.consultationModal.placeholderPhone|placeholder" required>
+            <input type="text" name="company" id="rcompany" placeholder="Company Name" data-cms-attr="shared.consultationModal.placeholderCompany|placeholder" required>
+            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" data-cms-attr="shared.consultationModal.placeholderDescription|placeholder" required></textarea>
+            <button type="submit" data-cms="shared.consultationModal.btnText">Submit</button>
         </form>
     </div>
     </div>
@@ -569,11 +570,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="col-lg-6">
           <div class="main-heading">
             <!-- <span class="span" data-aos="fade-right" data-aos-duration="800">Staffing Power Your Success </span> -->
-            <h1 class="text-anime-style-3">
+            <h1 class="text-anime-style-3" data-cms="hero.heading">
               Transforming Businesses, Empowering Teams, Driving Excellence
             </h1>
             <div class="space16"></div>
-            <p data-aos="fade-right" data-aos-duration="1000">
+            <p data-aos="fade-right" data-aos-duration="1000" data-cms="hero.paragraph">
               Your trusted partner in building High-Performance Teams,
               streamlining HR processes, and achieving organizational
               transformation since 1999.
@@ -581,9 +582,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
             <div class="space30"></div>
             <div class="hero1-buttons" data-aos="fade-right" data-aos-duration="1200">
-              <a class="theme-btn1" href="/service.html">Explore Our Services
+              <a class="theme-btn1" href="/service.html" data-cms-href="hero.primaryBtnLink" data-cms="hero.primaryBtnText">Explore Our Services
                 <span><i class="fa-solid fa-arrow-right"></i></span></a>
-              <a class="theme-btn2" href="/contact.html">Get in Touch
+              <a class="theme-btn2" href="/contact.html" data-cms-href="hero.secondaryBtnLink" data-cms="hero.secondaryBtnText">Get in Touch
                 <span><i class="fa-solid fa-arrow-right"></i></span></a>
             </div>
           </div>
@@ -592,14 +593,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="col-lg-6">
           <div class="hero1-images">
             <div class="image1">
-              <img loading="lazy" src="assets/img/bg/hero1-main-bg.png" alt="8" />
+              <img loading="lazy" src="assets/img/bg/hero1-main-bg.png" data-cms-src="hero.bgImage" alt="8" />
             </div>
             <div class="image2 overlay-anim" data-aos="zoom-in-up" data-aos-duration="700">
-              <img loading="lazy" src="/assets/deen.png" style="width: 500px;" alt="9" />
+              <img loading="lazy" src="/assets/deen.png" data-cms-src="hero.mainImage" style="width: 500px;" alt="9" />
               <!-- <img loading="lazy" src="/assets/1_hero1-main-img-final.png"  alt="" /> -->
             </div>
             <div class="image3 shape-animaiton2" data-aos="zoom-in-up" data-aos-duration="700">
-             <a href="/team.html"> <img loading="lazy" src="assets/review-img.png" style="max-width: 360px; max-height: 224px;" alt="10" /></a>
+             <a href="/team.html" data-cms-href="hero.reviewLink"> <img loading="lazy" src="assets/review-img.png" data-cms-src="hero.reviewImage" style="max-width: 360px; max-height: 224px;" alt="10" /></a>
             </div>
             <div class="image4 shape-animaiton3">
               <img loading="lazy" src="assets/img/shapes/hero1-shape.png" alt="11" />
@@ -650,26 +651,26 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="1200">
             <div class="icon-box ">
               <div class="icon">
-                <img loading="lazy" src="assets/img/icons/choose1-icon3.png" alt="12" />
+                <img loading="lazy" src="assets/img/icons/choose1-icon3.png" data-cms-src="stats.0.icon" alt="12" />
               </div>
               <div class="heading1">
-                <h3><span class="counter">25</span>+</h3>
+                <h3><span class="counter" data-cms="stats.0.number">25</span><span data-cms="stats.0.suffix">+</span></h3>
                 <div class="space10"></div>
-                <p>Years Experience</p>
+                <p data-cms="stats.0.label">Years Experience</p>
               </div>
             </div>
           </div>
-         
+
           <div class="col-lg-12">
             <div class="aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="900">
               <div class="icon-box">
                 <div class="icon">
-                  <img loading="lazy" src="assets/img/icons/choose1-icon2.png" alt="13" />
+                  <img loading="lazy" src="assets/img/icons/choose1-icon2.png" data-cms-src="stats.1.icon" alt="13" />
                 </div>
                 <div class="heading1">
-                  <h3><span class="counter">500</span>+</h3>
+                  <h3><span class="counter" data-cms="stats.1.number">500</span><span data-cms="stats.1.suffix">+</span></h3>
                   <div class="space10"></div>
-                  <p>Clients</p>
+                  <p data-cms="stats.1.label">Clients</p>
                 </div>
               </div>
             </div>
@@ -683,12 +684,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="700">
             <div class="icon-box">
               <div class="icon">
-                <img loading="lazy" src="assets/img/icons/choose1-icon1.png" alt="14" />
+                <img loading="lazy" src="assets/img/icons/choose1-icon1.png" data-cms-src="stats.2.icon" alt="14" />
               </div>
               <div class="heading1">
-                <h3><span class="counter">150</span>+</h3>
+                <h3><span class="counter" data-cms="stats.2.number">150</span><span data-cms="stats.2.suffix">+</span></h3>
                 <div class="space10"></div>
-                <p>Professionals</p>
+                <p data-cms="stats.2.label">Professionals</p>
               </div>
             </div>
           </div>
@@ -698,12 +699,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             <div class="aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="1200">
               <div class="icon-box icon-box2">
                 <div class="icon">
-                  <img loading="lazy" src="assets/img/icons/choose1-icon3.png" alt="15" />
+                  <img loading="lazy" src="assets/img/icons/choose1-icon3.png" data-cms-src="stats.3.icon" alt="15" />
                 </div>
                 <div class="heading1">
-                  <h3><span class="counter">1999</span></h3>
+                  <h3><span class="counter" data-cms="stats.3.number">1999</span><span data-cms="stats.3.suffix"></span></h3>
                   <div class="space10"></div>
-                  <p>Since</p>
+                  <p data-cms="stats.3.label">Since</p>
                 </div>
               </div>
             </div>
@@ -737,12 +738,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
         <div class="col-lg-6">
           <div class="heading1 choose1-heading">
-            <span class="span aos-init aos-animate" data-aos="fade-left" data-aos-duration="700">About Us</span>
-            <h2 class="text-anime-style-3" style="perspective: 400px">
+            <span class="span aos-init aos-animate" data-aos="fade-left" data-aos-duration="700" data-cms="whoWeAre.eyebrow">About Us</span>
+            <h2 class="text-anime-style-3" style="perspective: 400px" data-cms="whoWeAre.heading">
               Who We Are
             </h2>
             <div class="space16"></div>
-            <p data-aos="fade-left" data-aos-duration="900" class="aos-init aos-animate">
+            <p data-aos="fade-left" data-aos-duration="900" class="aos-init aos-animate" data-cms="whoWeAre.paragraph">
               With 25+ years of expertise, 500+ clients across six countries, and a team of 150+ professionals, we specialize in
             </p>
 
@@ -750,14 +751,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             <div class="row aos-init aos-animate" data-aos="fade-left" data-aos-duration="800">
               <div class="col-lg-12">
                 <ul class="icon-list">
-                  <li>
+                  <li data-cms="whoWeAre.bullets.0">
                     <span><i class="fa-solid fa-check"></i></span> Organizational Development
                   </li>
                 </ul>
               </div>
               <div class="col-lg-12">
                 <ul class="icon-list">
-                  <li>
+                  <li data-cms="whoWeAre.bullets.1">
                     <span><i class="fa-solid fa-check"></i></span>
                     Recruitment & Bulk Hiring
                   </li>
@@ -765,7 +766,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               </div>
               <div class="col-lg-12">
                 <ul class="icon-list">
-                  <li>
+                  <li data-cms="whoWeAre.bullets.2">
                     <span><i class="fa-solid fa-check"></i></span> Outsourced HR Management for MSMEs
                   </li>
                 </ul>
@@ -774,7 +775,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             </div>
             <div class="space30"></div>
             <div class="aos-init" data-aos="fade-left" data-aos-duration="1100">
-              <a class="theme-btn1" href="about.html">About US <span><i class="fa-solid fa-arrow-right"></i></span></a>
+              <a class="theme-btn1" href="about.html" data-cms-href="whoWeAre.btnLink" data-cms="whoWeAre.btnText">About US <span><i class="fa-solid fa-arrow-right"></i></span></a>
             </div>
           </div>
         </div>
@@ -789,7 +790,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="col-lg-8 m-auto text-center">
           <div class="heading5">
             <!-- <span class="span aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="700">Our Service</span> -->
-            <h2 class="text-anime-style-3" style="perspective: 400px;">
+            <h2 class="text-anime-style-3" style="perspective: 400px;" data-cms="whyChooseUs.heading">
               Why Choose Us
             </h2>
             <div class="space16"></div>
@@ -801,18 +802,29 @@ document.getElementById("consultationForm").addEventListener("submit", function(
       </div>
 
       <div class="space30"></div>
-      <div class="row" style="justify-content: center;">
+      <div class="row" style="justify-content: center;" data-cms-list="whyChooseUs.cards">
+        <template data-cms-template>
+          <div class="col-lg-4 col-md-6">
+            <div class="service5-box">
+              <div class="icon">
+                <img loading="lazy" data-cms-field-src="icon" src="" style="width: 40px;" alt="" />
+              </div>
+              <div class="heading5">
+                <div class="space16"></div>
+                <p data-cms-field="text"></p>
+              </div>
+            </div>
+          </div>
+        </template>
         <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="700">
           <div class="service5-box">
             <div class="icon">
               <img loading="lazy" src="/assets/resources/service2-iocn1.png" style="width: 40px;"  alt="16">
             </div>
             <div class="heading5">
-              <!-- <h4><a>Teamwork </a></h4> -->
               <div class="space16"></div>
               <p>Proven
                 track record in building High-Performance Teams (HPT).</p>
-              <!-- <a class="learn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a> -->
             </div>
           </div>
         </div>
@@ -823,12 +835,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <img loading="lazy" src="/assets/resources/service2-iocn2.png" style="width: 40px;" alt="17">
             </div>
             <div class="heading5">
-              <!-- <h4><a>Perseverance </a></h4> -->
               <div class="space16"></div>
               <p>Comprehensive, end-to-end HR solutions tailored for
                 MSMEs.
               </p>
-              <!-- <a class="learn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a> -->
             </div>
           </div>
         </div>
@@ -839,12 +849,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <img loading="lazy" src="/assets/resources/service2-iocn3.png" style="width: 40px;" alt="18">
             </div>
             <div class="heading5">
-              <!-- <h4><a>Innovation &amp; Creativity </a></h4> -->
               <div class="space16"></div>
               <p>Trusted
                 by global brands for delivering measurable results.
               </p>
-              <!-- <a class="learn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a> -->
             </div>
           </div>
         </div>
@@ -862,7 +870,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
     <div class="container">
       <div class="col-lg-12">
         <div class="heading1">
-          <h2 class="" style="text-align: center;">Our Core Services</h2>
+          <h2 class="" style="text-align: center;" data-cms="coreServices.heading">Our Core Services</h2>
           <div class="space16"></div>
         </div>
       </div>
@@ -876,14 +884,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="work1-box">
                 <div class="">
                   <div class="icon">
-                    <img loading="lazy" src="assets/img/icons/work1-icon1.png" alt="20" />
+                    <img loading="lazy" src="assets/img/icons/work1-icon1.png" data-cms-src="coreServices.cards.0.icon" alt="20" />
                   </div>
                 </div>
                 <div class="heading1">
                   <h4>
-                    <a href="/services/High-Performance-Team-and-self-managed.html">High-Performance Teams/Self-Managed Teams</a>
+                    <a href="/services/High-Performance-Team-and-self-managed.html" data-cms-href="coreServices.cards.0.link" data-cms="coreServices.cards.0.title">High-Performance Teams/Self-Managed Teams</a>
                   </h4>
-                  <p>
+                  <p data-cms="coreServices.cards.0.description">
                     Empower your team with proven strategies for productivity
                     and accountability.
                   </p>
@@ -894,21 +902,21 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="work1-box">
                 <div class="">
                   <div class="icon">
-                    <img loading="lazy" src="assets/img/icons/work1-icon3.png" alt="19" />
+                    <img loading="lazy" src="assets/img/icons/work1-icon3.png" data-cms-src="coreServices.cards.1.icon" alt="19" />
                   </div>
                 </div>
                 <div class="heading1">
                   <h4>
-                    <a href="/services/Outsourced-HR-Management-for-MSME.html">Outsourced HR Management for MSMEs</a>
+                    <a href="/services/Outsourced-HR-Management-for-MSME.html" data-cms-href="coreServices.cards.1.link" data-cms="coreServices.cards.1.title">Outsourced HR Management for MSMEs</a>
                   </h4>
-                  <p>
+                  <p data-cms="coreServices.cards.1.description">
                     Streamline your HR processes from onboarding to exit,
                     allowing you to focus on your core business.
                   </p>
                 </div>
               </div>
             </div>
-          
+
 
 
 
@@ -923,14 +931,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="work1-box">
                 <div class="">
                   <div class="icon">
-                    <img loading="lazy" src="assets/resources/solution4-icon2 (1).png" style="width: 35px;" alt="21" />
+                    <img loading="lazy" src="assets/resources/solution4-icon2 (1).png" data-cms-src="coreServices.cards.2.icon" style="width: 35px;" alt="21" />
                   </div>
                 </div>
                 <div class="heading1">
                   <h4>
-                    <a href="/services/Operational-Excellence-Services.html">Operational Excellence & Employee Engagement</a>
+                    <a href="/services/Operational-Excellence-Services.html" data-cms-href="coreServices.cards.2.link" data-cms="coreServices.cards.2.title">Operational Excellence & Employee Engagement</a>
                   </h4>
-                  <p>
+                  <p data-cms="coreServices.cards.2.description">
                     Drive efficiency, enhance employee satisfaction, and
                     achieve your organizational goals.
                   </p>
@@ -942,12 +950,12 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="work1-box">
                 <div class="">
                   <div class="icon">
-                    <img loading="lazy" src="assets/resources/solution4-icon3 (1).png" style="width: 35px;" alt="22" />
+                    <img loading="lazy" src="assets/resources/solution4-icon3 (1).png" data-cms-src="coreServices.cards.3.icon" style="width: 35px;" alt="22" />
                   </div>
                 </div>
                 <div class="heading1">
-                  <h4><a href="/services/Recruitment-service.html">Recruitment & Bulk Hiring</a></h4>
-                  <p>
+                  <h4><a href="/services/Recruitment-service.html" data-cms-href="coreServices.cards.3.link" data-cms="coreServices.cards.3.title">Recruitment & Bulk Hiring</a></h4>
+                  <p data-cms="coreServices.cards.3.description">
                     Identify and onboard top talent, from GETs to CEOs, with
                     precision and speed.
                   </p>
@@ -967,21 +975,21 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="work1-box">
                 <div class="">
                   <div class="icon">
-                    <img loading="lazy" src="assets/all-icons/analytic.png" style="width: 35px;" alt="21" />
+                    <img loading="lazy" src="assets/all-icons/analytic.png" data-cms-src="coreServices.cards.4.icon" style="width: 35px;" alt="21" />
                   </div>
                 </div>
                 <div class="heading1">
                   <h4>
-                    <a href="/services/Operational-Excellence-Services.html">Learning & Skill Development Solutions</a>
+                    <a href="/services/Operational-Excellence-Services.html" data-cms-href="coreServices.cards.4.link" data-cms="coreServices.cards.4.title">Learning & Skill Development Solutions</a>
                   </h4>
-                  <p>
+                  <p data-cms="coreServices.cards.4.description">
                     Equip your workforce with targeted training and leadership development programs.
                   </p>
                   <div class="space16"></div>
                 </div>
               </div>
             </div>
-          
+
           </div>
         </div>
        </div>
@@ -994,24 +1002,35 @@ document.getElementById("consultationForm").addEventListener("submit", function(
       <div class="row" style="align-items: start;">
         <div class="col-lg-7 m-auto text-center">
           <div class="heading1">
-            <!-- <span class="span">Our Mission</span> -->
-            <h2> Why Work With Us
+            <h2 data-cms="whyWorkWithUs.heading"> Why Work With Us
             </h2>
             <div class="space16"></div>
-            <p> Delivering Results That Matter</p>
+            <p data-cms="whyWorkWithUs.subheading"> Delivering Results That Matter</p>
           </div>
         </div>
       </div>
 
       <div class="space30"></div>
-      <div class="row" style="align-items: center;">
+      <div class="row" style="align-items: center;" data-cms-list="whyWorkWithUs.cards">
+        <template data-cms-template>
+          <div class="col-lg-4 col-md-6">
+            <div class="mission-box">
+              <div class="icon">
+                <img loading="lazy" data-cms-field-src="icon" src="" alt="">
+              </div>
+              <div class="heading1">
+                <div class="space16"></div>
+                <p data-cms-field="text"></p>
+              </div>
+            </div>
+          </div>
+        </template>
         <div class="col-lg-4 col-md-6">
           <div class="mission-box">
             <div class="icon">
               <img loading="lazy" src="/assets/img/icons/mission-icon1.png" alt="23">
             </div>
             <div class="heading1">
-              <!-- <h5><a href="#">Transparency and Trust </a></h5> -->
               <div class="space16"></div>
               <p>
                 Empowered 25,000+ underprivileged students with job opportunities.</p>
@@ -1026,7 +1045,6 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <img loading="lazy" src="/assets/img/icons/mission-icon2.png" alt="24">
             </div>
             <div class="heading1">
-              <!-- <h5><a href="#">Improved Efficiency</a></h5> -->
               <div class="space16"></div>
               <p>
                 Partnered with leading brands, including GE, Strides Pharma, and PepsiCo.</p>
@@ -1039,7 +1057,6 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <img loading="lazy" src="/assets/img/icons/mission-icon3.png" alt="25">
             </div>
             <div class="heading1">
-              <!-- <h5><a href="#">Sustained Success </a></h5> -->
               <div class="space16"></div>
               <p>
                 Delivered measurable ROI through innovative HR and organizational solutions
@@ -1056,23 +1073,25 @@ document.getElementById("consultationForm").addEventListener("submit", function(
       <div class="row">
         <div class="col-lg-8 m-auto text-center">
           <div class="heading4-w">
-            <!-- <span class="span aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">Our Service</span> -->
-            <h2 class="text-anime-style-3" style="perspective: 400px;">
+            <h2 class="text-anime-style-3" style="perspective: 400px;" data-cms="successPriority.heading">
               Your Success, Our Priority
 
             </h2>
-            <!-- <div class="space16"></div>
-              <p data-aos="fade-up" data-aos-duration="1100" class="aos-init aos-animate" style="color: white;">The HPT
-                Reward & Recognition system is designed to</p> -->
           </div>
         </div>
       </div>
 
       <div class="space30"></div>
 
-     
-
-      <section class="newsection-5">
+      <section class="newsection-5" data-cms-list="successPriority.cards">
+        <template data-cms-template>
+          <div class="card2">
+            <img loading="lazy" data-cms-field-src="image" src="" alt="">
+            <div class="text">
+              <p data-cms-field="text"></p>
+            </div>
+          </div>
+        </template>
         <div class="card2">
           <img loading="lazy" src="/assets/home/laptop.png" alt="APIs">
           <div class="text">
@@ -1105,6 +1124,15 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
   <!--=====TESTIMONIAL AREA START=======-->
 
+  <style>
+    /* Center the testimonial card inside the slick-slider track */
+    .tes1 .tes1-slider .slick-track { display: flex; align-items: stretch; }
+    .tes1 .single-slider { width: 100%; }
+    .tes1 .single-slider > .row { justify-content: center; margin-left: 0; margin-right: 0; }
+    .tes1 .single-slider [class*="col-"] { max-width: 760px; margin-left: auto; margin-right: auto; float: none; }
+    .tes1 .single-slider .pera, .tes1 .single-slider .pera p,
+    .tes1 .single-slider .bottom-heading { text-align: center; }
+  </style>
   <section class="tes1" style="margin-top: 30px; margin-bottom: 100px">
     <div class="container">
       <div class="row align-items-center" style="justify-content: center;">
@@ -1112,29 +1140,22 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="heading1">
             <div style="display: flex; justify-content: center;">
 
-              <span class="span" data-aos="zoom-in-left" data-aos-duration="800">Testimonial</span>
+              <span class="span" data-aos="zoom-in-left" data-aos-duration="800" data-cms="testimonials.eyebrow">Testimonial</span>
             </div>
-            <h2 class=""  style="text-align: center;">What Our Clients Say</h2>
+            <h2 class=""  style="text-align: center;" data-cms="testimonials.heading">What Our Clients Say</h2>
             <div class="space16"></div>
           </div>
         </div>
 
-        
+
       </div>
 
       <div class="space30"></div>
       <div class="row">
-        <div class="tes1-slider" data-aos="fade-up" data-aos-duration="900">
+        <div class="tes1-slider" data-aos="fade-up" data-aos-duration="900" data-cms-list="testimonials.items" style="justify-content: center;">
           <div class="single-slider">
-            <div class="row">
-              <div class="col-md-12">
-                <!-- <ul class="stars">
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                    </ul> -->
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-8 text-center">
                 <div class="pera">
                   <p>
                     “High-Performance Teams have been our game changer. The
@@ -1147,18 +1168,28 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   <p>Director, GE Supply Chain</p>
                 </div>
               </div>
-
-              <!-- <div class="col-md-4">
-                    <div class="tes1-image">
-                      <img loading="lazy" src="assets/img/testimonial/tes1-img1.png" alt="">
-                    </div>
-                  </div> -->
             </div>
           </div>
+          <!-- <template data-cms-template>
+            <div class="single-slider">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8 text-center">
+                  <div class="pera">
+                    <p data-cms-field="quote"></p>
+                  </div>
+                  <div class="bottom-heading">
+                    <h4><a href="#" data-cms-field="name"></a></h4>
+                    <p data-cms-field="role"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template> -->
+          
         </div>
       </div>
       <div class="ReadMoreTestimonials" style="display: flex; justify-content: center; margin-top: 20px;">
-        <a class="theme-btn1" href="/testimonial.html">Read More Testimonials
+        <a class="theme-btn1" href="/testimonial.html" data-cms-href="testimonials.readMoreLink" data-cms="testimonials.readMoreText">Read More Testimonials
           <span><i class="fa-solid fa-arrow-right"></i></span></a>
       </div>
     </div>
@@ -1175,11 +1206,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           ">
         <div class="col-lg-12">
           <div class="heading1-w">
-            <h2 style="text-align: center">
+            <h2 style="text-align: center" data-cms="cta.heading">
               Ready to Transform Your Business?
             </h2>
             <div class="space16"></div>
-            <p style="text-align: center">
+            <p style="text-align: center" data-cms="cta.paragraph">
               Let us help you build a stronger, more efficient, and motivated
               workforce.
             </p>
@@ -1194,7 +1225,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             ">
           <div class="button" style="width: 300px; margin-top: 50px;display: flex; justify-content: center;">
             <button class="theme-btn1" style="width: fit-content">
-              <a href="/contact.html" style="color: white; width: fit-content">Schedule a Consultation</a>
+              <a href="/contact.html" data-cms-href="cta.btnLink" style="color: white; width: fit-content" data-cms="cta.btnText">Schedule a Consultation</a>
               <span><i class="fa-solid fa-arrow-right"></i></span>
             </button>
           </div>
@@ -1214,7 +1245,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="service-details-area">
             <div class="">
               <div class="heading1-w">
-                <h2 style="text-align: center; color: black">FAQs</h2>
+                <h2 style="text-align: center; color: black" data-cms="faq.heading">FAQs</h2>
                 <div class="space16"></div>
               </div>
             </div>
@@ -1224,13 +1255,13 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <div class="accordion-item active">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" data-cms="faq.items.0.question">
                       1. What are High-Performance Teams (HPT)?
                     </button>
                   </h2>
                   <div id="flush-collapseOne" class="accordion-collapse collapse show"
                     aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
+                    <div class="accordion-body" data-cms="faq.items.0.answer">
                       High-Performance Teams are self-managed groups designed
                       to enhance productivity, accountability, and
                       organizational success.
@@ -1240,13 +1271,13 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" data-cms="faq.items.1.question">
                       2. What industries do you serve?
                     </button>
                   </h2>
                   <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
+                    <div class="accordion-body" data-cms="faq.items.1.answer">
                       We work with a diverse range of industries, including
                       manufacturing, healthcare, retail, and technology.
                     </div>
@@ -1255,13 +1286,13 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" data-cms="faq.items.2.question">
                       3. How can Outsourced HR Management help MSMEs?
                     </button>
                   </h2>
                   <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
+                    <div class="accordion-body" data-cms="faq.items.2.answer">
                       Our tailored HR solutions manage everything from
                       recruitment to exit, enabling MSMEs to focus on their
                       core business operations.
@@ -1286,27 +1317,27 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="col-lg-4 col-md-6 col-12">
           <div class="single-footer-items footer-logo-area">
             <div class="footer-logo">
-              <a href="/"><img style="width: 150px" src="/assets/logo.png" alt="27" /></a>
+              <a href="/"><img style="width: 150px" src="/assets/logo.png" data-cms-src="shared.footer.logoImage" alt="27" /></a>
             </div>
             <div class="space20"></div>
             <div class="heading1-w">
-              <p>
+              <p data-cms="shared.footer.tagline">
                 Transforming Businesses, Empowering Teams, Driving Excellence.
               </p>
             </div>
             <ul class="social-icon">
               <li>
-                <a href="https://www.linkedin.com/company/136419/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/company/136419/" data-cms-href="shared.social.linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
               </li>
               <li>
-                <a href="https://twitter.com/CEO_GROUPS"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://twitter.com/CEO_GROUPS" data-cms-href="shared.social.twitter"><i class="fa-brands fa-x-twitter"></i></a>
               </li>
               <li>
-                <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA"><i
+                <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA" data-cms-href="shared.social.youtube"><i
                     class="fa-brands fa-youtube"></i></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/ceo_hr_consultancy/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/ceo_hr_consultancy/" data-cms-href="shared.social.instagram"><i class="fa-brands fa-instagram"></i></a>
               </li>
             </ul>
           </div>
@@ -1314,7 +1345,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
         <div class="col-lg col-md-6 col-12">
           <div class="single-footer-items">
-            <h3>Quick Links</h3>
+            <h3 data-cms="shared.footer.quickLinksTitle">Quick Links</h3>
 
             <ul class="menu-list">
               <li><a href="/service.html">Service</a></li>
@@ -1328,7 +1359,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
         <div class="col-lg col-md-6 col-12">
           <div class="single-footer-items pl-5">
-            <h3>Explore</h3>
+            <h3 data-cms="shared.footer.exploreTitle">Explore</h3>
 
             <ul class="menu-list">
               <li><a href="/">Home </a></li>
@@ -1345,15 +1376,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
         <div class="col-lg-3 col-md-6 col-12">
           <div class="single-footer-items">
-            <h3>Contact Us</h3>
+            <h3 data-cms="shared.footer.contactTitle">Contact Us</h3>
 
             <div class="contact-box">
               <div class="icon">
                 <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="28" />
               </div>
               <div class="pera">
-                <!-- <a href="tel:+91- 8939983080">+91- 8939983080</a> -->
-                <a href="tel:+91- 4449006000">+91 4449006000</a>
+                <a href="tel:+91- 4449006000" data-cms="shared.contact.phone1">+91 4449006000</a>
               </div>
             </div>
             <div class="contact-box">
@@ -1361,8 +1391,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="29" />
               </div>
               <div class="pera">
-                <a href="tel:+91- 8939983080">+91 8939983080</a>
-                <!-- <a href="tel:+91 4449006000">+91 4449006000</a> -->
+                <a href="tel:+91- 8939983080" data-cms="shared.contact.phone2">+91 8939983080</a>
               </div>
             </div>
 
@@ -1371,7 +1400,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <img loading="lazy" src="/assets/img/icons/footer-icon2.png" alt="30" />
               </div>
               <div class="pera">
-                <a href="mailto:info@ceohrconsultancy.com">info@ceohrconsultancy.com</a>
+                <a href="mailto:info@ceohrconsultancy.com" data-cms="shared.contact.email">info@ceohrconsultancy.com</a>
               </div>
             </div>
 
@@ -1380,7 +1409,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <img loading="lazy" src="/assets/img/icons/footer-icon3.png" alt="31" />
               </div>
               <div class="pera">
-                <a>9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
+                <a data-cms="shared.contact.address">9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
                   Tamil Nadu, India – 600116</a>
               </div>
             </div>
@@ -1396,7 +1425,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="row align-items-center">
           <div class="col-md-12">
             <div class="coppyright">
-              <p>© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
+              <p data-cms="shared.footer.copyright">© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
             </div>
           </div>
         </div>
@@ -1460,6 +1489,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
 </body>
 
 </html>

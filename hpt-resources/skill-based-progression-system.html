@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+  <meta name="cms-page" content="hpt_skill_progression" />
+    <title data-cms="meta.title">
         Skill-Based Progression System | Employee Development | CEO HR Consultancy
     </title>
     <meta name="description"
-        content="Discover how the Skill-Based Progression System (SBPS) develops a versatile workforce by fostering multi-skilling, career progression, and continuous improvement." />
+        content="Discover how the Skill-Based Progression System (SBPS) develops a versatile workforce by fostering multi-skilling, career progression, and continuous improvement." / data-cms-attr="meta.description|content">
     <meta name="keywords" content="STAR Caps leadership model
       	Rotational team roles in HPT
       	QCDAMS framework responsibilities
       	Leadership development in High-Performance Teams
       Shared accountability in teams
       
-     " />
+     " / data-cms-attr="meta.keywords|content">
 
     <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -588,7 +589,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     data-aos-duration="700"
                     >HPT Resources
                   </span>
-                       <h1>Skill-Based Progression System Building a Versatile Workforce</h1>
+                       <h1 data-cms="hero.heading">Skill-Based Progression System Building a Versatile Workforce</h1>
                        <div class="space16"></div>
                        <p>Develop a multi-skilled workforce ready to tackle evolving challenges
                         with the Skill-Based Progression System (SBPS), a structured approach to enhancing employee
@@ -1977,6 +1978,10 @@ Proficiency
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

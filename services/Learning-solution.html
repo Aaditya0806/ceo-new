@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+  <meta name="cms-page" content="service_learning_solution" />
+    <title data-cms="meta.title">
       Learning Solutions | Workforce Training & Leadership Development | CEO HR
     </title>
-    <meta
-      name="description"
+    <meta name="description"
       content="Equip your workforce with tailored training programs from CEO HR Consultancy. Enhance skills, improve performance, and drive organizational success."
-    />
-    <meta
-      name="keywords"
+    / data-cms-attr="meta.description|content">
+    <meta name="keywords"
       content="Tailored employee training programs
       • Leadership development solutions
       • Middle management training
       • Workforce learning and development
       • Training for front-line employees"
-    />
+    / data-cms-attr="meta.keywords|content">
 
     <!--=====FAB ICON=======-->
          <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -600,7 +599,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         data-aos-duration="700"
                         >Service
                       </span>
-                           <h1> Empower Your Workforce with Tailored Training Programs
+                           <h1 data-cms="hero.heading"> Empower Your Workforce with Tailored Training Programs
                           </h1>
                            <div class="space16"></div>
                            <p>Customized learning solutions designed to enhance skills,
@@ -1680,5 +1679,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 </html>

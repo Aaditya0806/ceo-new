@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "title": "Bulk Hiring Services | Efficient Workforce Solutions | CEO HR Consultancy",
+    "description": "Scalable bulk hiring services for workforce acquisition. Trusted by OLA Electric, Pfizer, and Coke India for efficient and quality-focused hiring solutions.",
+    "keywords": "Bulk hiring solutions\n      • Large-scale workforce recruitment\n      • Talent acquisition for manufacturing\n      • High-volume hiring services\n      • Workforce scaling solutions"
+  },
+  "hero": {
+    "eyebrow": "Service",
+    "heading": "Efficient Solutions for Large-Scale Workforce Acquisition",
+    "primaryBtnText": "Request A Consultation",
+    "primaryBtnLink": "/contact.html",
+    "secondaryBtnText": "Explore Other Services",
+    "secondaryBtnLink": "/service.html"
+  },
+  "intro": {
+    "paragraph": "At <strong>CEO HR Consultancy</strong>, we deliver bulk hiring solutions tailored for organizations requiring rapid and efficient workforce scaling. With over two decades of experience and advanced tools, we ensure every hire meets your quality standards and aligns with your business goals"
+  },
+  "whyChooseUs": {
+    "heading": "Why Choose CEO HR Consultancy?",
+    "cards": [
+      {
+        "icon": "/assets/img/icons/about3-icon1.png",
+        "title": "Scalable Solutions",
+        "description": "Manage projects ranging from 100 to 10,000+ hires."
+      },
+      {
+        "icon": "/assets/img/icons/about3-icon2.png",
+        "title": "Diverse Talent Pool",
+        "description": "Access candidates across varied skill sets and geographies."
+      },
+      {
+        "icon": "/assets/img/icons/about3-icon3.png",
+        "title": "Quick Turnaround",
+        "description": "Efficient processes to meet tight deadlines without compromising quality."
+      },
+      {
+        "icon": "/assets/img/icons/about3-icon5.png",
+        "title": "Customized Assessments",
+        "description": "Tailored tests to evaluate domain expertise, aptitude, and job-specific skills."
+      },
+      {
+        "icon": "/assets/img/icons/about3-icon4.png",
+        "title": "Seamless Integration",
+        "description": "Ensure new hires are equipped to contribute from day one."
+      }
+    ]
+  },
+  "expertise": {
+    "heading": "Our Expertise in Bulk Hiring",
+    "cards": [
+      {
+        "icon": "/assets/Communication/i7.png",
+        "title": "Comprehensive Talent Pool",
+        "description": "Access a diverse database of pre-screened candidates across industries and roles."
+      },
+      {
+        "icon": "/assets/WHAT-IS-HPT/E-1.png",
+        "title": "Customized Hiring Processes",
+        "description": "Tailored strategies designed to meet specific requirements, timelines, and scales."
+      },
+      {
+        "icon": "/assets/WHAT-IS-HPT/E-3.png",
+        "title": "End-to-End Management",
+        "description": "From sourcing to onboarding, we manage every aspect of the  hiring process for a seamless experience."
+      },
+      {
+        "icon": "/assets/Communication/i6.png",
+        "title": "Cutting-Edge Assessment Tools",
+        "description": "Advanced evaluation techniques, including psychometric tests, neuromuscular tests, aptitude tests, and group exercises, to identify best-fit candidates."
+      }
+    ]
+  },
+  "provenTrackRecord": {
+    "heading": "Proven Track Record",
+    "items": [
+      "45,000+ placements successfully completed across industries.",
+      "Expertise in sectors such as manufacturing, pharmaceuticals, FMCG, and IT."
+    ]
+  },
+  "caseStudies": {
+    "heading": "Case Studies",
+    "items": [
+      {
+        "logo": "https://assets.olaelectric.com/others/Olalogo.svg",
+        "title": "Electrics",
+        "challengeLabel": "Challenge",
+        "challengeText": "Navigate the post-COVID hiring landscape to scale operations for their E-Scooter manufacturing facility.",
+        "solutionLabel": "Solution",
+        "solutionText": "Assessed nearly 10,000 female candidates across Tamil Nadu, onboarding 1,950 talented individuals.",
+        "outcomeLabel": "Impact",
+        "outcomeText": "Enabled seamless commissioning of the facility with a workforce ready to deliver from day one.",
+        "image1": "/assets/service/Bulk Hiring Service/OLA 1.png",
+        "image2": "/assets/service/Bulk Hiring Service/OLA 2.png"
+      },
+      {
+        "logo": "https://www.pfizer.com/profiles/pfecpfizercomus_profile/themes/pfcorporate_helix/public/assets/images/Pfizer_Logo_Blue_RGB.svg",
+        "title": "",
+        "challengeLabel": "Challenge",
+        "challengeText": "Staff a greenfield plant in Vizag with qualified female candidates within a 150 km range.",
+        "solutionLabel": "Solution",
+        "solutionText": "Assessed over 2,500 candidates with Intermediate Science qualifications.",
+        "outcomeLabel": "\tOutcome",
+        "outcomeText": "Successfully onboarded 250 women within three months, meeting workforce requirements effectively.",
+        "image1": "/assets/service/Bulk Hiring Service/Pfizer 1.png",
+        "image2": "/assets/service/Bulk Hiring Service/Pfizer 2.png"
+      },
+      {
+        "logo": "https://www.coca-cola.com/content/dam/onexp/us/en/homepage/CocaColalogor.png/width3840.png",
+        "title": "",
+        "challengeLabel": "Challenge",
+        "challengeText": "Hire skilled personnel for three greenfield plants across India (Sanand, Siliguri, Hyderabad).",
+        "solutionLabel": "Solution",
+        "solutionText": "Evaluated over 2,500 candidates with Chemical and Food Technology Diplomas.",
+        "outcomeLabel": "Outcome",
+        "outcomeText": "Delivered 250 hires within three months, ensuring timely operational readiness.",
+        "image1": "/assets/service/Bulk Hiring Service/Coco Cola 1.png",
+        "image2": "/assets/service/Bulk Hiring Service/Coco Cola 2.png"
+      }
+    ]
+  },
+  "process": {
+    "heading": "Our Bulk Hiring Process",
+    "steps": [
+      {
+        "icon": "/assets/resources/solution4-icon1 (1).png",
+        "title": "Requirement Analysis",
+        "description": "Understand workforce needs, role-specific requirements, and timelines."
+      },
+      {
+        "icon": "/assets/resources/solution4-icon2 (1).png",
+        "title": "Talent Sourcing",
+        "description": "Identify candidates through extensive networks, partnerships, and databases."
+      },
+      {
+        "icon": "/assets/resources/solution4-icon3 (1).png",
+        "title": "Assessment & Screening",
+        "description": "Utilize customized evaluations, including cognitive, technical, and physical readiness tests."
+      },
+      {
+        "icon": "/assets/all-icons/consumer-centric.png",
+        "title": "Selection & Onboarding",
+        "description": "Manage documentation, orientation, and integration for a hassle-free onboarding experience."
+      }
+    ]
+  },
+  "testimonials": {
+    "image": "/assets/icons/hpt/testimonial2-img.png",
+    "eyebrow": "Clients Testimonials",
+    "heading": "What Our Customer’s <br> Say About Us",
+    "items": [
+      {
+        "icon": "/assets/img/icons/tes2-icon.png",
+        "quote": "“The CEO Bulk Assessment team played a pivotal role in helping us navigate the challenging post-COVID hiring landscape. Their efforts were instrumental in enabling us to commission our OLA E-Scooter manufacturing facility seamlessly.”",
+        "image": "/assets/img/testimonial/tes2-img.png",
+        "name": "Mr. Balachandar N",
+        "role": "/  SVP & Chief People Officer, OLA Group"
+      },
+      {
+        "icon": "/assets/img/icons/tes2-icon.png",
+        "quote": "“Thank you for enabling us to hire 122 women PATs (SMTs) for our 2023 batch. Your support was instrumental in achieving this milestone.””",
+        "image": "/assets/img/testimonial/tes2-img.png",
+        "name": "Mr. Umanath Kumar",
+        "role": "/ Country Manager for Leadership, Talent, DE&I, HRBP & HR Projects, Pfizer Global Supply (PGS)"
+      }
+    ]
+  },
+  "getStarted": {
+    "heading": "Get Started",
+    "paragraph": "Need a reliable partner to manage your large-scale hiring needs? Let’s make it happen.",
+    "btnText": "Contact Us Today",
+    "btnLink": "/contact.html"
+  },
+  "faq": {
+    "heading": "FAQs",
+    "items": [
+      {
+        "question": "1. What is bulk hiring?",
+        "answer": "Bulk hiring is the process of recruiting a large number of candidates quickly and efficiently to meet organizational scaling needs."
+      },
+      {
+        "question": "2. Which industries benefit from bulk hiring?",
+        "answer": "Industries like manufacturing, pharmaceuticals, FMCG, IT, and logistics benefit from bulk hiring solutions to meet operational demands."
+      },
+      {
+        "question": "3. How do you ensure the quality of hires in bulk recruitment?",
+        "answer": "We use cutting-edge assessments, including psychometric tests and aptitude evaluations, to ensure every candidate aligns with your quality standards."
+      },
+      {
+        "question": "4. What is the typical timeline for bulk hiring projects?",
+        "answer": "Timelines vary based on project size, but our efficient processes ensure quick turnarounds without compromising quality."
+      },
+      {
+        "question": "5. Can you handle multi-location hiring projects?",
+        "answer": "Yes, we specialize in multi-location hiring and have successfully delivered projects across diverse geographies like Tamil Nadu, Vizag, and Hyderabad."
+      }
+    ]
+  }
+}

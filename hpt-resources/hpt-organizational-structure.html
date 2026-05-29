@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
+  <meta name="cms-page" content="hpt_org_structure" />
+  <title data-cms="meta.title">
     HPT Organizational Structure | Empower Teams for Operational Excellence
   </title>
   <meta name="description"
-    content="Explore the High-Performance Team (HPT) organizational structure, featuring Value Chain Teams, QCDSMA integration, and distributed leadership for sustained success." />
+    content="Explore the High-Performance Team (HPT) organizational structure, featuring Value Chain Teams, QCDSMA integration, and distributed leadership for sustained success." / data-cms-attr="meta.description|content">
   <meta name="keywords" content="HPT organizational structure
       	High-Performance Team principles
       QCDSMA integration in teams
       	Value Chain Teams benefits
        in High-Performance Teams
       
-     " />
+     " / data-cms-attr="meta.keywords|content">
 
   <!--=====FAB ICON=======-->
   <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -609,7 +610,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     data-aos-duration="700"
                     >HPT Resources
                   </span>
-                       <h1>HPT Organizational Structure.</h1>
+                       <h1 data-cms="hero.heading">HPT Organizational Structure.</h1>
                        <div class="space16"></div>
                        <p>A revolutionary approach to collaboration, innovation, and accountability, driving sustainable
                         organizational success.</p>
@@ -1536,6 +1537,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

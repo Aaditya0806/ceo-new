@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
+  <meta name="cms-page" content="hpt_what_is" />
+  <title data-cms="meta.title">
     What is High-Performance Teams (HPT)? | Framework, Principles, and Benefits
   </title>
-  <meta name="description"
+  <meta name="description" data-cms-attr="meta.description|content"
     content="Discover what High-Performance Teams (HPT) are, their principles, key features, and how they drive productivity, innovation, and operational excellence in organizations." />
-  <meta name="keywords" content="High-Performance Teams framework
+  <meta name="keywords" data-cms-attr="meta.keywords|content" content="High-Performance Teams framework
      Operational excellence through HPT
      HPT benefits for organizational success
      " />
@@ -124,14 +125,14 @@
     <div style=" width: 100%;height: 100%; display: flex; justify-content: center; align-items: center; ">
       <div class="modal-content">
         <span onclick="requestConsultationclose()" class="close">&times;</span>
-        <h2 style="text-align: center;">Request Consultation</h2>
+        <h2 style="text-align: center;" data-cms="shared.consultationModal.heading">Request Consultation</h2>
         <form id="consultationForm">
-            <input type="text" name="name" id="rname" placeholder="Your Name" required>
-            <input type="email" name="email" id="remail" placeholder="Your Email" required>
-            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" required>
-            <input type="text" name="company" id="rcompany" placeholder="Company Name" required>
-            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" required></textarea>
-            <button type="submit">Submit</button>
+            <input type="text" name="name" id="rname" placeholder="Your Name" data-cms-attr="shared.consultationModal.placeholderName|placeholder" required>
+            <input type="email" name="email" id="remail" placeholder="Your Email" data-cms-attr="shared.consultationModal.placeholderEmail|placeholder" required>
+            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" data-cms-attr="shared.consultationModal.placeholderPhone|placeholder" required>
+            <input type="text" name="company" id="rcompany" placeholder="Company Name" data-cms-attr="shared.consultationModal.placeholderCompany|placeholder" required>
+            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" data-cms-attr="shared.consultationModal.placeholderDescription|placeholder" required></textarea>
+            <button type="submit" data-cms="shared.consultationModal.btnText">Submit</button>
         </form>
     </div>
     </div>
@@ -593,23 +594,24 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       class="span"
                       data-aos="zoom-in-right"
                       data-aos-duration="700"
+                      data-cms="hero.eyebrow"
                       >HPT Resources
                     </span>
-                         <h1>High-Performance Teams A Transformative Approach</h1>
+                         <h1 data-cms="hero.heading">High-Performance Teams A Transformative Approach</h1>
                          <div class="space16"></div>
-                         <p>Redefining organizational success by
+                         <p data-cms="hero.paragraph">Redefining organizational success by
                           integrating people, work, technology, and information for
                           exceptional performance.</p>
-                        
+
                      </div>
                  </div>
                  <div class="space30"></div>
                <div class="col-lg-12 col-md-10" style="display: flex; gap: 20px; flex-wrap: wrap;">
                 <div class="button">
-                  <a href="/contact.html" class="theme-btn16"   >Request A Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a href="/contact.html" class="theme-btn16" data-cms-href="hero.primaryBtnLink"   data-cms="hero.primaryBtnText">Request A Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
               <div class="button">
-                  <a href="/hpt-resources.html" class="theme-btn16"   >Explore Other Resources <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a href="/hpt-resources.html" class="theme-btn16" data-cms-href="hero.secondaryBtnLink"   data-cms="hero.secondaryBtnText">Explore Other Resources <span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
                </div>
              </div>
@@ -631,7 +633,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                          <p>Redefining organizational success by
                           integrating people, work, technology, and information for
                           exceptional performance.</p>
-                        
+
                      </div>
                  </div>
                  <div class="space30"></div>
@@ -662,11 +664,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                 <div class="service-details-area">
                     <article>
 
-                        <h2 style="text-align: center; font-weight: 700;">
+                        <h2 style="text-align: center; font-weight: 700;" data-cms="introduction.heading">
                           Introduction to HPT
                         </h2>
                         <div class="space16"></div>
-                        <p style="text-align: center; font-size: 20px; ">
+                        <p style="text-align: center; font-size: 20px; " data-cms-html="introduction.paragraph">
                           <b>High-Performance Teams (HPT)</b> represent a transformative organizational architecture that seamlessly integrates work, people, technology, and information. This synergy creates a high-functioning ecosystem designed to achieve operational excellence and align with strategic goals.
 
                         </p>
@@ -688,7 +690,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="heading6">
             <!-- <span class="span aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="700"><img
                 src="/assets/img/icons/span6.svg" alt=""> Recruitment Technologies</span> -->
-            <h2 class="text-anime-style-3" style="perspective: 400px;">
+            <h2 class="text-anime-style-3" style="perspective: 400px;" data-cms="defining.heading">
               Defining HPT
             </h2>
           </div>
@@ -702,29 +704,29 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             <div class="others-boxs">
               <div class="">
                 <div class="icon">
-                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-1.png" style="width: 46px; height: 46px;" alt="">
+                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-1.png" data-cms-src="defining.cards.0.icon" style="width: 46px; height: 46px;" alt="">
                 </div>
               </div>
               <div class="heading6">
-                <h4><a>A Strategic Framework</a></h4>
-                <p>Combines HR practices, work structures, and processes to maximize employee knowledge, skills,
+                <h4><a data-cms="defining.cards.0.title">A Strategic Framework</a></h4>
+                <p data-cms="defining.cards.0.description">Combines HR practices, work structures, and processes to maximize employee knowledge, skills,
                   commitment, and flexibility.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-6">
-        
+
           <div class="aos-init" data-aos="fade-right" data-aos-duration="1000">
             <div class="others-boxs">
               <div class="">
                 <div class="icon">
-                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-2.png" style="width: 46px; height: 46px;" alt="">
+                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-2.png" data-cms-src="defining.cards.1.icon" style="width: 46px; height: 46px;" alt="">
                 </div>
               </div>
               <div class="heading6">
-                <h4><a>A Holistic System</a></h4>
-                <p>Composed of interrelated components that work together to achieve organizational goals, regardless of
+                <h4><a data-cms="defining.cards.1.title">A Holistic System</a></h4>
+                <p data-cms="defining.cards.1.description">Composed of interrelated components that work together to achieve organizational goals, regardless of
                   size or scale.</p>
               </div>
             </div>
@@ -732,18 +734,18 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
         </div>
         <div class="col-lg-6">
-        
-        
+
+
           <div class="aos-init" data-aos="fade-right" data-aos-duration="1200">
             <div class="others-boxs">
               <div class="">
                 <div class="icon">
-                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-3.png" style="width: 46px; height: 46px;" alt="">
+                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-3.png" data-cms-src="defining.cards.2.icon" style="width: 46px; height: 46px;" alt="">
                 </div>
               </div>
               <div class="heading6">
-                <h4><a>A Collaborative Ecosystem</a></h4>
-                <p>
+                <h4><a data-cms="defining.cards.2.title">A Collaborative Ecosystem</a></h4>
+                <p data-cms="defining.cards.2.description">
 
                   Leverages individual and collective strengths to deliver measurable outcomes and sustained success.
                 </p>
@@ -763,8 +765,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="heading6">
             <!-- <span class="span aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="700"><img
                 src="/assets/img/icons/span6.svg" alt=""> Recruitment Technologies</span> -->
-            <h2 class="text-anime-style-3" style="perspective: 400px;">
-              Key Features of HPT 
+            <h2 class="text-anime-style-3" style="perspective: 400px;" data-cms="keyFeatures.heading">
+              Key Features of HPT
             </h2>
           </div>
         </div>
@@ -777,46 +779,46 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             <div class="others-boxs">
               <div class="">
                 <div class="icon">
-                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-1.png" style="width: 46px; height: 46px;" alt="">
+                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-1.png" data-cms-src="keyFeatures.cards.0.icon" style="width: 46px; height: 46px;" alt="">
                 </div>
               </div>
               <div class="heading6">
-                <h4><a>1.	Optimized Fit Among Elements</a></h4>
-                <p>Alignment of work, technology, people, and information for operational excellence.</p>
+                <h4><a data-cms="keyFeatures.cards.0.title">1.	Optimized Fit Among Elements</a></h4>
+                <p data-cms="keyFeatures.cards.0.description">Alignment of work, technology, people, and information for operational excellence.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-6">
-        
+
           <div class="aos-init" data-aos="fade-right" data-aos-duration="1000">
             <div class="others-boxs">
               <div class="">
                 <div class="icon">
-                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-2.png" style="width: 46px; height: 46px;" alt="">
+                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-2.png" data-cms-src="keyFeatures.cards.1.icon" style="width: 46px; height: 46px;" alt="">
                 </div>
               </div>
               <div class="heading6">
-                <h4><a>2.	Empowered Workforce</a></h4>
-                <p>	Teams operate autonomously, fostering accountability and ownership.</p>
+                <h4><a data-cms="keyFeatures.cards.1.title">2.	Empowered Workforce</a></h4>
+                <p data-cms="keyFeatures.cards.1.description">	Teams operate autonomously, fostering accountability and ownership.</p>
               </div>
             </div>
           </div>
 
         </div>
         <div class="col-lg-6">
-        
-        
+
+
           <div class="aos-init" data-aos="fade-right" data-aos-duration="1200">
             <div class="others-boxs">
               <div class="">
                 <div class="icon">
-                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-3.png" style="width: 46px; height: 46px;" alt="">
+                  <img loading="lazy" src="/assets/WHAT-IS-HPT/E-3.png" data-cms-src="keyFeatures.cards.2.icon" style="width: 46px; height: 46px;" alt="">
                 </div>
               </div>
               <div class="heading6">
-                <h4><a>3.	Interconnected Systems</a></h4>
-                <p>
+                <h4><a data-cms="keyFeatures.cards.2.title">3.	Interconnected Systems</a></h4>
+                <p data-cms="keyFeatures.cards.2.description">
 
                   Each component supports the other, ensuring synergy and sustainability.
                 </p>
@@ -826,18 +828,18 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
         </div>
         <div class="col-lg-6">
-        
-        
+
+
           <div class="aos-init" data-aos="fade-right" data-aos-duration="1200">
             <div class="others-boxs">
               <div class="">
                 <div class="icon">
-                  <img loading="lazy" src="/assets/all-icons/enhance.png" style="width: 46px; height: 46px;" alt="">
+                  <img loading="lazy" src="/assets/all-icons/enhance.png" data-cms-src="keyFeatures.cards.3.icon" style="width: 46px; height: 46px;" alt="">
                 </div>
               </div>
               <div class="heading6">
-                <h4><a>4.	Continuous Improvement</a></h4>
-                <p>
+                <h4><a data-cms="keyFeatures.cards.3.title">4.	Continuous Improvement</a></h4>
+                <p data-cms="keyFeatures.cards.3.description">
 
                   o	A focus on learning, adaptability, and innovation to meet evolving challenges.
                 </p>
@@ -857,37 +859,37 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <div class="col-lg-12">
           <div class="heading4 about4-heading" style="width: 100%;">
             <!-- <span class="span aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="700">About Us</span> -->
-            <h2 class="text-anime-style-3" style="perspective: 400px; color: black; text-align: center;" >
+            <h2 class="text-anime-style-3" style="perspective: 400px; color: black; text-align: center;" data-cms="benefits.heading" >
               Benefits of HPT
             </h2>
             <div class="about4-border"></div>
 <div class="row" style="justify-content: center;">
-  
+
   <div class="about4-box aos-init col-lg-6" data-aos="fade-left" data-aos-duration="800">
     <div class="">
       <div class="icon">
-        <img loading="lazy" src="/assets/resources/service2-iocn3.png" style="width: 40px;" alt="">
+        <img loading="lazy" src="/assets/resources/service2-iocn3.png" data-cms-src="benefits.cards.0.icon" style="width: 40px;" alt="">
       </div>
     </div>
     <div class="heading4">
-      <h5><a>
+      <h5><a data-cms="benefits.cards.0.title">
           Enhanced Productivity</a></h5>
       <div class="space10"></div>
-      <p>Streamlined workflows and empowered teams consistently deliver superior results.</p>
+      <p data-cms="benefits.cards.0.description">Streamlined workflows and empowered teams consistently deliver superior results.</p>
     </div>
   </div>
 
   <div class="about4-box aos-init col-lg-6" data-aos="fade-left" data-aos-duration="1100">
     <div class="">
       <div class="icon">
-        <img loading="lazy" src="/assets/resources/solution4-icon2 (1).png" style="width: 40px;" alt="">
+        <img loading="lazy" src="/assets/resources/solution4-icon2 (1).png" data-cms-src="benefits.cards.1.icon" style="width: 40px;" alt="">
       </div>
     </div>
     <div class="heading4">
-      <h5><a>
+      <h5><a data-cms="benefits.cards.1.title">
           Flexibility and Adaptability</a></h5>
       <div class="space10"></div>
-      <p>Agile teams respond effectively to market changes and internal demands.
+      <p data-cms="benefits.cards.1.description">Agile teams respond effectively to market changes and internal demands.
 
 
       </p>
@@ -896,27 +898,27 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   <div class="about4-box aos-init col-lg-6" data-aos="fade-left" data-aos-duration="800">
     <div class="">
       <div class="icon">
-        <img loading="lazy" src="/assets/resources/solution4-icon1 (1).png" style="width: 40px;" alt="">
+        <img loading="lazy" src="/assets/resources/solution4-icon1 (1).png" data-cms-src="benefits.cards.2.icon" style="width: 40px;" alt="">
       </div>
     </div>
     <div class="heading4">
-      <h5><a>
+      <h5><a data-cms="benefits.cards.2.title">
           Improved Morale and Engagement</a></h5>
       <div class="space10"></div>
-      <p>A culture of collaboration and recognition fosters employee satisfaction and retention</p>
+      <p data-cms="benefits.cards.2.description">A culture of collaboration and recognition fosters employee satisfaction and retention</p>
     </div>
   </div>
   <div class="about4-box aos-init col-lg-6" data-aos="fade-left" data-aos-duration="800">
     <div class="">
       <div class="icon">
-        <img loading="lazy" src="/assets/resources/service2-iocn2.png" style="width: 40px;" alt="">
+        <img loading="lazy" src="/assets/resources/service2-iocn2.png" data-cms-src="benefits.cards.3.icon" style="width: 40px;" alt="">
       </div>
     </div>
     <div class="heading4">
-      <h5><a>
+      <h5><a data-cms="benefits.cards.3.title">
           Operational Excellence</a></h5>
       <div class="space10"></div>
-      <p>Sustains Quality, Cost, Delivery, Safety, Morale, and Availability (QCDSMA) metrics.</p>
+      <p data-cms="benefits.cards.3.description">Sustains Quality, Cost, Delivery, Safety, Morale, and Availability (QCDSMA) metrics.</p>
     </div>
   </div>
 </div>
@@ -944,7 +946,7 @@ color: black !important;
       <div class="row">
         <div class="col-lg-6 m-auto text-center">
           <div class="heading8">
-            <h2 class="text-anime-style-3" style="perspective: 400px;">
+            <h2 class="text-anime-style-3" style="perspective: 400px;" data-cms="corePrinciples.heading">
               Core Principles of HPT
 
             </h2>
@@ -956,11 +958,11 @@ color: black !important;
         <div class="col-lg-4 aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="1200">
           <div class="service-box">
             <div class="icon">
-              <img loading="lazy" src="/assets/WHAT-IS-HPT/E-4.png" style="width: 46px; height: 46px;" alt="">
+              <img loading="lazy" src="/assets/WHAT-IS-HPT/E-4.png" data-cms-src="corePrinciples.cards.0.icon" style="width: 46px; height: 46px;" alt="">
             </div>
             <div class="heading">
-              <h4><a href="  ">Employee-Centric Approach</a></h4>
-              <p>
+              <h4><a href="  " data-cms="corePrinciples.cards.0.title">Employee-Centric Approach</a></h4>
+              <p data-cms="corePrinciples.cards.0.description">
                 Equipping team members with skills, knowledge, and a sense of commitment
               </p>
             </div>
@@ -970,11 +972,11 @@ color: black !important;
         <div class="col-lg-4 aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="1000">
           <div class="service-box">
             <div class="icon">
-              <img loading="lazy" src="/assets/WHAT-IS-HPT/E-5.png" style="width: 46px; height: 46px;" alt="">
-            </div> 
+              <img loading="lazy" src="/assets/WHAT-IS-HPT/E-5.png" data-cms-src="corePrinciples.cards.1.icon" style="width: 46px; height: 46px;" alt="">
+            </div>
             <div class="heading">
-              <h4><a href="  ">Systematic Design</a></h4>
-              <p>
+              <h4><a href="  " data-cms="corePrinciples.cards.1.title">Systematic Design</a></h4>
+              <p data-cms="corePrinciples.cards.1.description">
                 Structuring workflows and processes to maximize efficiency
               </p>
             </div>
@@ -984,12 +986,12 @@ color: black !important;
         <div class="col-lg-4 aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="800">
           <div class="service-box">
             <div class="icon">
-              <img loading="lazy" src="/assets/WHAT-IS-HPT/E-6.png" style="width: 46px; height: 46px;" alt="">
+              <img loading="lazy" src="/assets/WHAT-IS-HPT/E-6.png" data-cms-src="corePrinciples.cards.2.icon" style="width: 46px; height: 46px;" alt="">
             </div>
             <div class="heading">
-              <h4><a href="  ">Goal Alignment
+              <h4><a href="  " data-cms="corePrinciples.cards.2.title">Goal Alignment
                 </a></h4>
-              <p>
+              <p data-cms="corePrinciples.cards.2.description">
                 Ensuring individual contributions drive broader organizational objectives
 
               </p>
@@ -1010,7 +1012,7 @@ color: black !important;
           <div class="heading5">
             <!-- <span class="span aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="700">Our Blog &amp;
               News</span> -->
-            <h2 class="text-anime-style-3" style="perspective: 400px;">
+            <h2 class="text-anime-style-3" style="perspective: 400px;" data-cms="role.heading">
               HPT’s Role in Organizational Success
             </h2>
             <div class="space16"></div>
@@ -1028,12 +1030,12 @@ color: black !important;
               <img loading="lazy" src="/assets/WHAT-IS-HPT/HPT_employee-centric 370X260.jpg" alt="">
             </div> -->
             <div class="heading5">
-              
-              <h4><a >Flattening Hierarchies</a></h4>
+
+              <h4><a data-cms="role.cards.0.title">Flattening Hierarchies</a></h4>
               <div class="space16"></div>
-              <p style="color: black;">Simplified decision-making reduces bottlenecks and enhances agility </p>
+              <p style="color: black;" data-cms="role.cards.0.description">Simplified decision-making reduces bottlenecks and enhances agility </p>
               <div class="space30"></div>
-          
+
             </div>
           </div>
         </div>
@@ -1044,12 +1046,12 @@ color: black !important;
               <img loading="lazy" src="/assets/WHAT-IS-HPT/HPT_innovation 370X260.jpg" alt="">
             </div> -->
             <div class="heading5">
-              
-              <h4><a >Innovation and Problem-Solving</a></h4>
+
+              <h4><a data-cms="role.cards.1.title">Innovation and Problem-Solving</a></h4>
               <div class="space16"></div>
-              <p style="color: black;">Structuring workflows and processes to maximize efficiency </p>
+              <p style="color: black;" data-cms="role.cards.1.description">Structuring workflows and processes to maximize efficiency </p>
               <div class="space30"></div>
-       
+
             </div>
           </div>
         </div>
@@ -1060,12 +1062,12 @@ color: black !important;
               <img loading="lazy" src="/assets/WHAT-IS-HPT/HPTstrategic-370X260.jpg" alt="">
             </div> -->
             <div class="heading5">
-             
-              <h4><a >Strategic Alignment</a></h4>
+
+              <h4><a data-cms="role.cards.2.title">Strategic Alignment</a></h4>
               <div class="space16"></div>
-              <p style="color: black;">Ensures all components of the organization work towards unified goals. </p>
-            
-        
+              <p style="color: black;" data-cms="role.cards.2.description">Ensures all components of the organization work towards unified goals. </p>
+
+
             </div>
           </div>
         </div>
@@ -1088,9 +1090,9 @@ color: black !important;
                 style="flex-direction: column; align-items: center; justify-content: center;">
                 <div class="col-lg-12">
                   <div class="heading1-w">
-                    <h2 style="text-align: center;">Why Choose HPT? </h2>
+                    <h2 style="text-align: center;" data-cms="whyChoose.heading">Why Choose HPT? </h2>
                     <div class="space16"></div>
-                    <p style="text-align: center;  max-width: 1000px; margin: auto;">HPT principles apply universally to
+                    <p style="text-align: center;  max-width: 1000px; margin: auto;" data-cms="whyChoose.paragraph">HPT principles apply universally to
                       businesses of all sizes, driving efficiency, adaptability, and excellence. From small enterprises
                       to large corporations, High-Performance Teams are pivotal for navigating challenges and achieving
                       strategic objectives. </p>
@@ -1119,7 +1121,7 @@ color: black !important;
 
                     <div class="">
                       <div class="heading1-w">
-                        <h2 style="text-align: center; color: black;">FAQs</h2>
+                        <h2 style="text-align: center; color: black;" data-cms="faq.heading">FAQs</h2>
                         <div class="space16"></div>
 
                       </div>
@@ -1131,13 +1133,13 @@ color: black !important;
                           <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                               data-bs-target="#flush-collapseOne" aria-expanded="false"
-                              aria-controls="flush-collapseOne">
+                              aria-controls="flush-collapseOne" data-cms="faq.items.0.question">
                               1. What are High-Performance Teams (HPT)?
                             </button>
                           </h2>
                           <div id="flush-collapseOne" class="accordion-collapse collapse show"
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">HPTs are teams that integrate work, people, technology, and
+                            <div class="accordion-body" data-cms="faq.items.0.answer">HPTs are teams that integrate work, people, technology, and
                               information to achieve exceptional performance, innovation, and strategic alignment</div>
                           </div>
                         </div>
@@ -1145,13 +1147,13 @@ color: black !important;
                           <h2 class="accordion-header" id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                               data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                              aria-controls="flush-collapseTwo">
+                              aria-controls="flush-collapseTwo" data-cms="faq.items.1.question">
                               2. What are the benefits of HPT for organizations?
                             </button>
                           </h2>
                           <div id="flush-collapseTwo" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">HPTs enhance productivity, improve employee morale, foster
+                            <div class="accordion-body" data-cms="faq.items.1.answer">HPTs enhance productivity, improve employee morale, foster
                               innovation, and ensure operational excellence through QCDSMA principles.</div>
                           </div>
                         </div>
@@ -1159,13 +1161,13 @@ color: black !important;
                           <h2 class="accordion-header" id="flush-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                               data-bs-target="#flush-collapseThree" aria-expanded="false"
-                              aria-controls="flush-collapseThree">
+                              aria-controls="flush-collapseThree" data-cms="faq.items.2.question">
                               3. How do HPTs improve organizational adaptability?
                             </button>
                           </h2>
                           <div id="flush-collapseThree" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">By fostering multiskilling, learning, and autonomous
+                            <div class="accordion-body" data-cms="faq.items.2.answer">By fostering multiskilling, learning, and autonomous
                               decision-making, HPTs enable agility and responsiveness to market changes.</div>
                           </div>
                         </div>
@@ -1197,27 +1199,27 @@ color: black !important;
         <div class="col-lg-4 col-md-6 col-12">
           <div class="single-footer-items footer-logo-area">
             <div class="footer-logo">
-              <a href="/"><img style="width: 150px" src="/assets/logo.png" alt="" /></a>
+              <a href="/"><img style="width: 150px" src="/assets/logo.png" data-cms-src="shared.footer.logoImage" alt="" /></a>
             </div>
             <div class="space20"></div>
             <div class="heading1-w">
-              <p>
+              <p data-cms="shared.footer.tagline">
                 Transforming Businesses, Empowering Teams, Driving Excellence.
               </p>
             </div>
             <ul class="social-icon">
               <li>
-                <a href="https://www.linkedin.com/company/136419/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/company/136419/" data-cms-href="shared.social.linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
               </li>
               <li>
-                <a href="https://twitter.com/CEO_GROUPS"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://twitter.com/CEO_GROUPS" data-cms-href="shared.social.twitter"><i class="fa-brands fa-x-twitter"></i></a>
               </li>
               <li>
-                <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA"><i
+                <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA" data-cms-href="shared.social.youtube"><i
                     class="fa-brands fa-youtube"></i></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/ceo_hr_consultancy/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/ceo_hr_consultancy/" data-cms-href="shared.social.instagram"><i class="fa-brands fa-instagram"></i></a>
               </li>
             </ul>
           </div>
@@ -1225,7 +1227,7 @@ color: black !important;
 
         <div class="col-lg col-md-6 col-12">
           <div class="single-footer-items">
-            <h3>Quick Links</h3>
+            <h3 data-cms="shared.footer.quickLinksTitle">Quick Links</h3>
 
             <ul class="menu-list">
               <li><a href="/service.html">Service</a></li>
@@ -1239,7 +1241,7 @@ color: black !important;
 
         <div class="col-lg col-md-6 col-12">
           <div class="single-footer-items pl-5">
-            <h3>Explore</h3>
+            <h3 data-cms="shared.footer.exploreTitle">Explore</h3>
 
             <ul class="menu-list">
               <li><a href="/">Home </a></li>
@@ -1256,7 +1258,7 @@ color: black !important;
 
         <div class="col-lg-3 col-md-6 col-12">
           <div class="single-footer-items">
-            <h3>Contact Us</h3>
+            <h3 data-cms="shared.footer.contactTitle">Contact Us</h3>
 
             <div class="contact-box">
               <div class="icon">
@@ -1264,7 +1266,7 @@ color: black !important;
               </div>
               <div class="pera">
                 <!-- <a href="tel:+91- 8939983080">+91- 8939983080</a> -->
-                <a href="tel:+91 4449006000">+91 4449006000</a>
+                <a href="tel:+91 4449006000" data-cms="shared.contact.phone1">+91 4449006000</a>
               </div>
             </div>
             <div class="contact-box">
@@ -1272,7 +1274,7 @@ color: black !important;
                 <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
               </div>
               <div class="pera">
-                <a href="tel:+91- 8939983080">+91 8939983080</a>
+                <a href="tel:+91- 8939983080" data-cms="shared.contact.phone2">+91 8939983080</a>
                 <!-- <a href="tel:+91 4449006000">+91 4449006000</a> -->
               </div>
             </div>
@@ -1282,7 +1284,7 @@ color: black !important;
                 <img loading="lazy" src="/assets/img/icons/footer-icon2.png" alt="" />
               </div>
               <div class="pera">
-                <a href="mailto:info@ceohrconsultancy.com">info@ceohrconsultancy.com</a>
+                <a href="mailto:info@ceohrconsultancy.com" data-cms="shared.contact.email">info@ceohrconsultancy.com</a>
               </div>
             </div>
 
@@ -1291,7 +1293,7 @@ color: black !important;
                 <img loading="lazy" src="/assets/img/icons/footer-icon3.png" alt="" />
               </div>
               <div class="pera">
-                <a>9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
+                <a data-cms="shared.contact.address">9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
                   Tamil Nadu, India – 600116</a>
               </div>
             </div>
@@ -1307,7 +1309,7 @@ color: black !important;
         <div class="row align-items-center">
           <div class="col-md-12">
             <div class="coppyright">
-              <p>© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
+              <p data-cms="shared.footer.copyright">© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
             </div>
           </div>
         </div>
@@ -1369,8 +1371,12 @@ color: black !important;
         // alert("Network error: " + error.message);
       });
   });
-  
+
   </script>
+
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
 </body>
 
 </html>

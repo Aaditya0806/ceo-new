@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
+  <meta name="cms-page" content="hpt_reward_recognition" />
+  <title data-cms="meta.title">
     Reward & Recognition and Celebration in High-Performance Teams
   </title>
   <meta name="description"
-    content="Explore HPT Reward & Recognition systems designed to drive high performance, engagement, and team success through celebration, recognition, and fun at work." />
+    content="Explore HPT Reward & Recognition systems designed to drive high performance, engagement, and team success through celebration, recognition, and fun at work." / data-cms-attr="meta.description|content">
   <meta name="keywords" content="•	HPT Reward & Recognition system
   •	Employee recognition and celebration in teams
   •	Fun at work and team engagement
   •	Performance-based recognition in high-performance teams
   •	Motivation and rewards for teams
   
-     " />
+     " / data-cms-attr="meta.keywords|content">
 
   <!--=====FAB ICON=======-->
   <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -588,7 +589,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     data-aos-duration="700"
                     >HPT Resources
                   </span>
-                       <h1>Reward & Recognition and Celebration in HPT</h1>
+                       <h1 data-cms="hero.heading">Reward & Recognition and Celebration in HPT</h1>
                        <div class="space16"></div>
                        <p>Foster motivation, engagement, and a culture of excellence through strategic recognition, celebration,
                         and fun at work.</p>
@@ -2004,6 +2005,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

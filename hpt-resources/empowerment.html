@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+  <meta name="cms-page" content="hpt_empowerment" />
+    <title data-cms="meta.title">
         Employee Empowerment Framework | CEO HR Consultancy
     </title>
     <meta name="description"
-        content="Discover how empowerment drives organizational success. Learn the principles and benefits of empowering employees to foster ownership, accountability, and growth." />
+        content="Discover how empowerment drives organizational success. Learn the principles and benefits of empowering employees to foster ownership, accountability, and growth." / data-cms-attr="meta.description|content">
     <meta name="keywords" content="Employee empowerment in organizations
     	Empowerment principles and practices
     	Continuous improvement through empowerment
     	Employee engagement and motivation
     	Organizational empowerment framework
     
-     " />
+     " / data-cms-attr="meta.keywords|content">
 
     <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -586,7 +587,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     data-aos-duration="700"
                     >HPT Resources
                   </span>
-                       <h1>Empowerment Unlocking Potential for Organizational Excellence.</h1>
+                       <h1 data-cms="hero.heading">Empowerment Unlocking Potential for Organizational Excellence.</h1>
                        <div class="space16"></div>
                        <p>Foster a culture of ownership, accountability, and
                         innovation through empowerment, enabling employees to reach their optimal potential and
@@ -2150,6 +2151,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

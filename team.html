@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Team | Leadership Profiles | CEO HR Consultancy</title>
+  <meta name="cms-page" content="team" />
+  <title data-cms="meta.title">Our Team | Leadership Profiles | CEO HR Consultancy</title>
   <meta name="description"
-    content="Meet the leadership team at CEO HR Consultancy. Discover experts in organizational development, HR compliance, and skill-building driving measurable outcomes.">
+    content="Meet the leadership team at CEO HR Consultancy. Discover experts in organizational development, HR compliance, and skill-building driving measurable outcomes." data-cms-attr="meta.description|content">
 
   <meta name="keywords" content="Organizational leadership team
     • HR compliance and skill development experts
-    • High-performance team implementation">
+    • High-performance team implementation" data-cms-attr="meta.keywords|content">
 
   <!--=====FAB ICON=======-->
   <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -573,7 +574,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
       <div class="row">
         <div class="col-lg-6 m-auto text-center">
           <div class="main-heading">
-            <h1>Our <i class="fas fa-telegram    "></i></h1>
+            <h1 data-cms="hero.heading">Our <i class="fas fa-telegram    "></i></h1>
             <div class="pages-intro">
               <a href="/">Home </a>
               <span><i class="fa-regular fa-angle-right"></i></span>
@@ -1278,6 +1279,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

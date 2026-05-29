@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "Clients and Testimonials | CEO HR Consultancy",
+    "description": "Discover why industry leaders like Philips, Pfizer, and GE trust CEO HR Consultancy. Explore our client success stories and impactful HR solutions.",
+    "keywords": "HR consultancy client success\n    Industry leaders and testimonials\n    Tailored HR solutions\n    High-performance team implementation"
+  },
+  "pageHeader": {
+    "title": "Client & Testimonials",
+    "crumb": "Client & Testimonials"
+  },
+  "hero": {
+    "eyebrow": "Our Clients & Testimonials",
+    "heading": "Trusted by Industry Leaders",
+    "paragraph": "Proudly partnering with respected organizations across diverse industries, delivering impactful solutions that drive measurable outcomes.",
+    "primaryBtnText": "Schedule a Consultation",
+    "primaryBtnLink": "/contact.html",
+    "secondaryBtnText": "Explore Other Services",
+    "secondaryBtnLink": "/service.html"
+  },
+  "storiesSection": {
+    "eyebrow": " testimonials",
+    "heading": "Stories From Our Client",
+    "backgroundImage": "https://www.nttdata.com/global/en/-/media/nttdataglobal/1_images/clients-cases/clients_cases-01-03.jpg?rev=74bddaaa9880401aa31e010b4a8789d1"
+  },
+  "testimonials": {
+    "items": [
+      {
+        "quote": "\"The High-Performance Teams (HPT) Way of Working implemented at our RF Coil Plant in Pune has been transformational. Your ten-pillar approach created high engagement, ownership, and minimal supervision among our frontline engineers. This intervention is recognized as one of the best culture initiatives across Philips.\"",
+        "image": "/assets/Industry We Serve/Philips.png",
+        "name": "Philips Electronics India Limited ",
+        "role": "General Manager – Human Resources, Philips <br> Electronics India Limited"
+      },
+      {
+        "quote": "\"HPT (High-Performance Teams) has been a game changer for our shop operations. CEO HR Consultancy’s expertise in designing and implementing HPTs has been instrumental in achieving our current operational excellence.\"",
+        "image": "/assets/Industry We Serve/GE.png",
+        "name": "GE Supply Chain – South Asia ",
+        "role": "Mr. K Sitaram, Director - Human Resources, <br> GE Supply Chain – South Asia"
+      },
+      {
+        "quote": "\"The SMT Model has delivered outstanding results in compliance and workforce quality. Your leadership has truly transformed our operations.\"",
+        "image": "/assets/Industry We Serve/Strides.png",
+        "name": "Strides Emerging Markets Pvt Ltd",
+        "role": "Mr. Arun Kumar, Founder and Group CEO, Strides Emerging Markets Pvt Ltd"
+      },
+      {
+        "quote": "\"Thank you for helping us hire 122 women PATs (SMTs) for our 2023 batch. This milestone was achieved with your unwavering support.\"",
+        "image": "/assets/Industry We Serve/Pfizer.png",
+        "name": "Pfizer India",
+        "role": "Mr. Umanath Kumar, Country Manager for Leadership, <br> Talent, DE&I, HRBP & HR Projects, Pfizer Global Supply (PGS)"
+      },
+      {
+        "quote": "\"Your Bulk Assessment team assessed nearly 10,000 candidates, enabling us to onboard 1,950 employees and seamlessly commission our OLA E-Scooter facility.\"",
+        "image": "https://assets.upstox.com/content/assets/images/logos/NSE_EQ%7CINE0LXG01040.png",
+        "name": "OLA Electric ",
+        "role": ""
+      },
+      {
+        "quote": "\"Your Behavior-Based Quality Compliance Culture has significantly transformed our operations with exceptional attention to detail and employee engagement strategies.\"",
+        "image": "/assets/Industry We Serve/Strides.png",
+        "name": "Strides Pharma Science ",
+        "role": ""
+      },
+      {
+        "quote": "\"The High-Performance Work System (HPWS) you implemented enhanced both operational efficiency and employee morale at our facility.\"",
+        "image": "/assets/Industry We Serve/Hydrabad Airport.png",
+        "name": "GMR Hyderabad International Airport",
+        "role": ""
+      }
+    ]
+  },
+  "esteemedClients": {
+    "heading": "Our Esteemed Clients",
+    "subheading": "We take pride in our diverse client base, reflecting our commitment to excellence and delivering value across industries.",
+    "manufacturing": {
+      "heading": "Manufacturing",
+      "items": [
+        { "name": "Saint-Gobain", "image": "/assets/Industry We Serve/Saint-Gobain .png" },
+        { "name": "Tata Motors", "image": "/assets/Industry We Serve/Tata Motors.png" },
+        { "name": "Hero Honda", "image": "/assets/Industry We Serve/Hero Honda.png" },
+        { "name": "Ashok Leyland", "image": "/assets/Industry We Serve/Ashok Leyland.png" },
+        { "name": "Tractors and Farm Equipment Limited", "image": "/assets/Industry We Serve/TAFE.png" },
+        { "name": "Alicon Castalloy", "image": "/assets/Industry We Serve/alicon.jpg" },
+        { "name": "CEAT", "image": "/assets/Industry We Serve/ceat.jpg" },
+        { "name": "India Gypsum", "image": "/assets/Industry We Serve/gypsum.jpg" },
+        { "name": "Vallabhdas Kanji", "image": "/assets/vallabhdas.png" }
+      ]
+    },
+    "pharmaceuticals": {
+      "heading": "Pharmaceuticals",
+      "items": [
+        { "name": "Pfizer", "image": "/assets/Industry We Serve/Pfizer.png" },
+        { "name": "Dr. Reddy's Laboratories", "image": "/assets/Industry We Serve/Dr. Reddy.png" },
+        { "name": "Strides Pharma Science", "image": "/assets/Industry We Serve/Strides.png" },
+        { "name": "GSK Pharmaceuticals", "image": "/assets/Industry We Serve/GSK.png" },
+        { "name": "Granules India", "image": "/assets/granules.png" }
+      ]
+    },
+    "aviation": {
+      "heading": "Aviation",
+      "items": [
+        { "name": "Delhi International Airport", "image": "/assets/Industry We Serve/Delhi Airport .png" },
+        { "name": "GMR Hyderabad International Airport", "image": "/assets/Industry We Serve/Hydrabad Airport.png" }
+      ]
+    },
+    "fmcg": {
+      "heading": "FMCG",
+      "items": [
+        { "name": "Haldiram Group", "image": "/assets/Industry We Serve/Halidrams .png" },
+        { "name": "Pepsico India Holdings", "image": "/assets/Industry We Serve/Pepsico.png" },
+        { "name": "Coca-Cola India", "image": "/assets/cocacola.png" }
+      ]
+    },
+    "technology": {
+      "heading": "Technology",
+      "items": [
+        { "name": "Philips Innovation Campus", "image": "/assets/Industry We Serve/Philips.png" },
+        { "name": "Visteon Automotive Systems", "image": "/assets/Industry We Serve/Visteon.png" },
+        { "name": "Corning Technologies India", "image": "/assets/Industry We Serve/Cornining.png" }
+      ]
+    },
+    "infrastructure": {
+      "heading": "Infrastructure and Energy",
+      "items": [
+        { "name": "Ramakrishna Mission Students Home", "image": "/assets/Industry We Serve/Ramakrishna mission.png" },
+        { "name": "Alstom Transport India", "image": "/assets/Industry We Serve/Alstom.png" },
+        { "name": "UPL Limited", "image": "/assets/Industry We Serve/UPL.png" }
+      ]
+    },
+    "others": {
+      "heading": "Others",
+      "items": [
+        { "name": "GE", "image": "/assets/Industry We Serve/GE.png" },
+        { "name": "Wabtec", "image": "/assets/Industry We Serve/Wabtec_logo.jpg" },
+        { "name": "Strides Emerging Markets", "image": "/assets/Industry We Serve/Strides.png" },
+        { "name": "Heinz India", "image": "/assets/heinz.png" }
+      ]
+    }
+  },
+  "whyChooseUs": {
+    "heading": "Why Clients Choose Us",
+    "cards": [
+      {
+        "icon": "/assets/resources/service2-iocn1.png",
+        "title": "Proven Results",
+        "description": "Decades of experience with a track record of successful projects."
+      },
+      {
+        "icon": "/assets/resources/service2-iocn2.png",
+        "title": "Tailored Solutions",
+        "description": "Custom-designed approaches for specific organizational challenges."
+      },
+      {
+        "icon": "/assets/resources/service2-iocn3.png",
+        "title": "Comprehensive Support",
+        "description": "End-to-end assistance from strategy design to implementation."
+      }
+    ]
+  },
+  "partnerWithUs": {
+    "heading": "Partner With Us",
+    "paragraph": "Join our growing list of satisfied clients and experience transformative results.",
+    "primaryBtnText": "Contact Us Today",
+    "primaryBtnLink": "/contact.html",
+    "secondaryBtnText": "Request a Consultation",
+    "secondaryBtnLink": "/contact.html"
+  },
+  "faq": {
+    "heading": "FAQs",
+    "items": [
+      {
+        "question": "1. Who are some of your prominent clients?",
+        "answer": "We’ve partnered with esteemed organizations like Tata Motors, Pfizer, Philips, and GMR Hyderabad International Airport."
+      },
+      {
+        "question": "2. What kind of results have your clients achieved?",
+        "answer": "Clients have experienced measurable outcomes such as a 20% productivity increase, seamless workforce onboarding, and improved compliance and quality."
+      },
+      {
+        "question": "3. Are there video testimonials available?",
+        "answer": "Yes, you can watch video testimonials from clients like Pepsico India Holdings and Dr. Reddy’s Laboratories."
+      },
+      {
+        "question": "4. How do you support different industries?",
+        "answer": "We offer tailored solutions for manufacturing, pharmaceuticals, FMCG, technology, and more to address specific organizational challenges."
+      }
+    ]
+  }
+}

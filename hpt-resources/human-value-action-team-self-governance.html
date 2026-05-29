@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+  <meta name="cms-page" content="hpt_human_value_action" />
+    <title data-cms="meta.title">
         Human Value Action Team (HVAT) and Self-Governance: Detailed Framework
     </title>
     <meta name="description"
-        content="A transformative approach to managing workplace discipline, fostering self-governance, and aligning behaviors with organizational values, creating a culture of collaboration and accountability." />
+        content="A transformative approach to managing workplace discipline, fostering self-governance, and aligning behaviors with organizational values, creating a culture of collaboration and accountability." / data-cms-attr="meta.description|content">
     <meta name="keywords" content="STAR Caps leadership model
       	Rotational team roles in HPT
       	QCDAMS framework responsibilities
       	Leadership development in High-Performance Teams
       Shared accountability in teams
       
-     " />
+     " / data-cms-attr="meta.keywords|content">
 
     <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
@@ -583,7 +584,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       data-aos-duration="700"
                       >HPT Resources
                     </span>
-                         <h1>Human Value Action Team and Self-Governance Detailed Framework</h1>
+                         <h1 data-cms="hero.heading">Human Value Action Team and Self-Governance Detailed Framework</h1>
                          <div class="space16"></div>
                          <!-- <p>A revolutionary approach to collaboration, innovation, and accountability, driving sustainable
                           organizational success.</p> -->
@@ -1977,6 +1978,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 
 </html>

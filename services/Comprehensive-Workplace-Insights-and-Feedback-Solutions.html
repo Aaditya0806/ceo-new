@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Employee Engagement Services | Feedback & Insights | CEO HR</title>
+    <meta name="cms-page" content="service_workplace_insights" />
+    <title data-cms="meta.title">Employee Engagement Services | Feedback & Insights | CEO HR</title>
     <meta
-      name="description"
+      name="description" data-cms-attr="meta.description|content"
       content="Unlock actionable insights with tailored employee engagement solutions. Improve retention, productivity, and workplace culture with our feedback-driven strategies."
     />
     <meta
-      name="keywords"
+      name="keywords" data-cms-attr="meta.keywords|content"
       content="Employee engagement services
       • Workplace feedback solutions
       • Employee satisfaction surveys
@@ -124,14 +125,14 @@
     <div style=" width: 100%;height: 100%; display: flex; justify-content: center; align-items: center; ">
       <div class="modal-content">
         <span onclick="requestConsultationclose()" class="close">&times;</span>
-        <h2 style="text-align: center;">Request Consultation</h2>
+        <h2 style="text-align: center;" data-cms="shared.consultationModal.heading">Request Consultation</h2>
         <form id="consultationForm">
-            <input type="text" name="name" id="rname" placeholder="Your Name" required>
-            <input type="email" name="email" id="remail" placeholder="Your Email" required>
-            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" required>
-            <input type="text" name="company" id="rcompany" placeholder="Company Name" required>
-            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" required></textarea>
-            <button type="submit">Submit</button>
+            <input type="text" name="name" id="rname" placeholder="Your Name" data-cms-attr="shared.consultationModal.placeholderName|placeholder" required>
+            <input type="email" name="email" id="remail" placeholder="Your Email" data-cms-attr="shared.consultationModal.placeholderEmail|placeholder" required>
+            <input type="tel" name="phone" id="rphone" placeholder="Your Phone Number" data-cms-attr="shared.consultationModal.placeholderPhone|placeholder" required>
+            <input type="text" name="company" id="rcompany" placeholder="Company Name" data-cms-attr="shared.consultationModal.placeholderCompany|placeholder" required>
+            <textarea name="description" id="rdes"  placeholder="Describe Your Requirement" data-cms-attr="shared.consultationModal.placeholderDescription|placeholder" required></textarea>
+            <button type="submit" data-cms="shared.consultationModal.btnText">Submit</button>
         </form>
     </div>
     </div>
@@ -626,23 +627,24 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     class="span"
                     data-aos="zoom-in-right"
                     data-aos-duration="700"
+                    data-cms="hero.slides.0.eyebrow"
                     >Service
                   </span>
-                       <h1>Unlock Actionable Insights and Transform Employee Engagement</h1>
+                       <h1 data-cms="hero.slides.0.heading">Unlock Actionable Insights and Transform Employee Engagement</h1>
                        <div class="space16"></div>
-                       <p>Gain actionable insights and valuable feedback to foster a
+                       <p data-cms="hero.slides.0.paragraph">Gain actionable insights and valuable feedback to foster a
                         motivated and productive workforce aligned with your
                         organizational objectives.</p>
-                     
+
                    </div>
                </div>
                <div class="space30"></div>
                <div class="col-lg-12 col-md-10" style="display: flex; gap: 20px; flex-wrap: wrap;">
                 <div class="button">
-                  <a href="/contact.html" class="theme-btn16"   >Request A Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a href="/contact.html" class="theme-btn16" data-cms-href="hero.slides.0.primaryBtnLink" data-cms="hero.slides.0.primaryBtnText">Request A Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
               <div class="button">
-                  <a href="/service.html" class="theme-btn16"   >Explore Other Services <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a href="/service.html" class="theme-btn16" data-cms-href="hero.slides.0.secondaryBtnLink" data-cms="hero.slides.0.secondaryBtnText">Explore Other Services <span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
                </div>
            </div>
@@ -657,23 +659,24 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     class="span"
                     data-aos="zoom-in-right"
                     data-aos-duration="700"
+                    data-cms="hero.slides.1.eyebrow"
                     >Service
                   </span>
-                       <h1>Unlock Actionable Insights and Transform Employee Engagement</h1>
+                       <h1 data-cms="hero.slides.1.heading">Unlock Actionable Insights and Transform Employee Engagement</h1>
                        <div class="space16"></div>
-                       <p>Gain actionable insights and valuable feedback to foster a
+                       <p data-cms="hero.slides.1.paragraph">Gain actionable insights and valuable feedback to foster a
                         motivated and productive workforce aligned with your
                         organizational objectives.</p>
-                     
+
                    </div>
                </div>
                <div class="space30"></div>
                <div class="col-lg-12 col-md-10" style="display: flex; gap: 20px; flex-wrap: wrap;">
                 <div class="button">
-                  <a href="/contact.html" class="theme-btn16"   >Request A Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a href="/contact.html" class="theme-btn16" data-cms-href="hero.slides.1.primaryBtnLink" data-cms="hero.slides.1.primaryBtnText">Request A Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
               <div class="button">
-                  <a href="/service.html" class="theme-btn16"   >Explore Other Services <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a href="/service.html" class="theme-btn16" data-cms-href="hero.slides.1.secondaryBtnLink" data-cms="hero.slides.1.secondaryBtnText">Explore Other Services <span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
                </div>
            </div>
@@ -692,11 +695,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
     <div class="space30"></div>
     <div class="container">
       <div class="row heading3">
-        <h2 style="text-align: center" class="text-anime-style-3">
+        <h2 style="text-align: center" class="text-anime-style-3" data-cms="intro.heading">
           Transforming Employee Engagement with Data-Driven Insights and
           Feedback
         </h2>
-        <p style="text-align: center">
+        <p style="text-align: center" data-cms="intro.paragraph">
           At CEO HR Consultancy, we recognize the vital role employee engagement
           plays in driving organizational success. Our Employee Engagement
           Services empower organizations to gather and analyze employee
@@ -724,7 +727,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
             <div class="col-lg-12">
               <div class="heading3 about3-heading">
-                <h2 class="text-anime-style-3" style="text-align: center;"> 
+                <h2 class="text-anime-style-3" style="text-align: center;" data-cms="whyChoose.heading">
                   Why Choose CEO HR Consultancy?
                 </h2>
                 <div class="space16"></div>
@@ -739,16 +742,16 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       <div class="">
                         <div class="icon">
                           <img
-                            src="/assets/img/icons/about3-icon1.png"
+                            src="/assets/img/icons/about3-icon1.png" data-cms-src="whyChoose.cards.0.icon"
                             alt=""
                           />
                         </div>
                       </div>
                       <div class="heading3">
                         <h5>
-                          <a href="">Data-Driven Insights</a>
+                          <a href="" data-cms="whyChoose.cards.0.title">Data-Driven Insights</a>
                         </h5>
-                        <p>
+                        <p data-cms="whyChoose.cards.0.description">
                           Deliver actionable feedback and solutions to address
                           challenges effectively.
                         </p>
@@ -763,16 +766,16 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       <div class="">
                         <div class="icon">
                           <img
-                            src="/assets/img/icons/about3-icon2.png"
+                            src="/assets/img/icons/about3-icon2.png" data-cms-src="whyChoose.cards.1.icon"
                             alt=""
                           />
                         </div>
                       </div>
                       <div class="heading3">
                         <h5>
-                          <a href=" ">Customizable Solutions</a>
+                          <a href=" " data-cms="whyChoose.cards.1.title">Customizable Solutions</a>
                         </h5>
-                        <p>
+                        <p data-cms="whyChoose.cards.1.description">
                           Tailor surveys to meet your organization’s unique
                           needs and objectives.
                         </p>
@@ -789,16 +792,16 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       <div class="">
                         <div class="icon">
                           <img
-                            src="/assets/img/icons/about3-icon3.png" style="width: 40px;"
+                            src="/assets/img/icons/about3-icon3.png" style="width: 40px;" data-cms-src="whyChoose.cards.2.icon"
                             alt=""
                           />
                         </div>
                       </div>
                       <div class="heading3">
                         <h5>
-                          <a href="">Proven Expertise</a>
+                          <a href="" data-cms="whyChoose.cards.2.title">Proven Expertise</a>
                         </h5>
-                        <p>
+                        <p data-cms="whyChoose.cards.2.description">
                           Decades of experience in employee engagement and
                           organizational development.
                         </p>
@@ -813,16 +816,16 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                       <div class="">
                         <div class="icon">
                           <img
-                            src="/assets/img/icons/about3-icon5.png" style="width: 40px;"
+                            src="/assets/img/icons/about3-icon5.png" style="width: 40px;" data-cms-src="whyChoose.cards.3.icon"
                             alt=""
                           />
                         </div>
                       </div>
                       <div class="heading3">
                         <h5>
-                          <a href="">End-to-End Support</a>
+                          <a href="" data-cms="whyChoose.cards.3.title">End-to-End Support</a>
                         </h5>
-                        <p>
+                        <p data-cms="whyChoose.cards.3.description">
                           From survey design to strategy implementation, we
                           provide comprehensive support.
                         </p>
@@ -841,7 +844,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="row">
             <div class="col-lg-10 m-auto text-center">
               <div class="heading8">
-                <h2 class="text-anime-style-3">
+                <h2 class="text-anime-style-3" data-cms="benefits.heading">
                   Benefits of Employee Engagement Services
                 </h2>
               </div>
@@ -856,11 +859,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             >
               <div class="service-box">
                 <div class="icon">
-                  <img loading="lazy" src="/assets/Communication/i9.png"style="width: 40px;" alt="" />
+                  <img loading="lazy" src="/assets/Communication/i9.png" data-cms-src="benefits.cards.0.icon" style="width: 40px;" alt="" />
                 </div>
                 <div class="heading">
-                  <h4><a href="  ">Enhanced Retention </a></h4>
-                  <p>
+                  <h4><a href="  " data-cms="benefits.cards.0.title">Enhanced Retention </a></h4>
+                  <p data-cms="benefits.cards.0.description">
                     Reduce attrition by addressing employee concerns
                     effectively.
                   </p>
@@ -875,11 +878,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             >
               <div class="service-box">
                 <div class="icon">
-                  <img loading="lazy" src="/assets/Communication/i1.png" style="width: 40px;" alt="" />
+                  <img loading="lazy" src="/assets/Communication/i1.png" data-cms-src="benefits.cards.1.icon" style="width: 40px;" alt="" />
                 </div>
                 <div class="heading">
-                  <h4><a href="  ">Increased Productivity</a></h4>
-                  <p>
+                  <h4><a href="  " data-cms="benefits.cards.1.title">Increased Productivity</a></h4>
+                  <p data-cms="benefits.cards.1.description">
                     Foster a motivated workforce aligned with organizational
                     goals.
                   </p>
@@ -890,14 +893,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
             <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="800">
               <div class="service-box">
                 <div class="icon">
-                  <img loading="lazy" src="/assets/Communication/i4.png" style="width: 40px;" alt="" />
+                  <img loading="lazy" src="/assets/Communication/i4.png" data-cms-src="benefits.cards.2.icon" style="width: 40px;" alt="" />
                 </div>
                 <div class="heading">
-                  <h4><a href="  ">Improved Workplace Culture</a></h4>
-                  <p>
+                  <h4><a href="  " data-cms="benefits.cards.2.title">Improved Workplace Culture</a></h4>
+                  <p data-cms="benefits.cards.2.description">
                     Build a culture of trust, collaboration, and inclusivity.
                   </p>
-                 
+
                 </div>
               </div>
             </div>
@@ -907,11 +910,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               data-aos-duration="1000">
               <div class="service-box">
                 <div class="icon">
-                  <img loading="lazy" src="/assets/Communication/i6.png" style="width: 40px;" alt="" />
+                  <img loading="lazy" src="/assets/Communication/i6.png" data-cms-src="benefits.cards.3.icon" style="width: 40px;" alt="" />
                 </div>
                 <div class="heading">
-                  <h4><a href="  ">Actionable Insights</a></h4>
-                  <p>
+                  <h4><a href="  " data-cms="benefits.cards.3.title">Actionable Insights</a></h4>
+                  <p data-cms="benefits.cards.3.description">
                     Drive meaningful changes with precise feedback and
                     recommendations.
                   </p>
@@ -938,10 +941,10 @@ document.getElementById("consultationForm").addEventListener("submit", function(
     <div class="row">
       <div class="col-lg-6 m-auto text-center">
         <div class="heading6">
-          <h2 class="text-anime-style-3">Our Comprehensive Survey
+          <h2 class="text-anime-style-3" data-cms="surveys.heading">Our Comprehensive Survey
             Solutions</h2>
             <div class="space30"></div>
-            <h3 class="text-anime-style-3">Employee Satisfaction Survey</h3>
+            <h3 class="text-anime-style-3" data-cms="surveys.satisfaction.heading">Employee Satisfaction Survey</h3>
         </div>
       </div>
     </div>
@@ -949,7 +952,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
     <div class="space30"></div>
 
     <div class="row" style="justify-content: center;">
-     
+
       <div class="col-lg-6">
         <div class="" data-aos="fade-right" data-aos-duration="800">
           <div class="others-boxs">
@@ -957,14 +960,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="icon">
                 <img
                   style="height: 40px"
-                  src="https://cdn-icons-png.flaticon.com/512/8553/8553670.png"
+                  src="https://cdn-icons-png.flaticon.com/512/8553/8553670.png" data-cms-src="surveys.satisfaction.objectiveIcon"
                   alt=""
                 />
               </div>
             </div>
             <div class="heading6">
-              <h4><a>Objective</a></h4>
-              <p>
+              <h4><a data-cms="surveys.satisfaction.objectiveTitle">Objective</a></h4>
+              <p data-cms="surveys.satisfaction.objectiveText">
                 Measure employees' overall satisfaction with their roles, work environment, and organizational culture
               </p>
             </div>
@@ -973,57 +976,57 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
       </div>
       <div class="col-lg-6">
-      
-         
+
+
         <div class="" style="height: 100%;" data-aos="fade-right" data-aos-duration="1000">
           <div class="others-boxs">
             <div class="">
               <div class="icon">
                 <img
                   style="height: 40px"
-                  src="https://cdn-icons-png.flaticon.com/512/8596/8596550.png"
+                  src="https://cdn-icons-png.flaticon.com/512/8596/8596550.png" data-cms-src="surveys.satisfaction.benefitsIcon"
                   alt=""
                 />
               </div>
             </div>
             <div class="heading6">
-              <h4><a>Benefits</a></h4>
+              <h4><a data-cms="surveys.satisfaction.benefitsTitle">Benefits</a></h4>
               <div class="space10"></div>
               <ul style="list-style: none;">
-                <li>
+                <li data-cms="surveys.satisfaction.benefitsItems.0">
                   Proactively address dissatisfaction to enhance
                   retention.
                 </li>
-                <li>Improve morale and workplace harmony.</li>
+                <li data-cms="surveys.satisfaction.benefitsItems.1">Improve morale and workplace harmony.</li>
               </ul>
             </div>
           </div>
         </div>
 
       </div>
-     
+
       <div class="col-lg-6">
-      
-     
+
+
         <div class="" data-aos="fade-right" data-aos-duration="1000">
           <div class="others-boxs">
             <div class="">
               <div class="icon">
                 <img
                   style="height: 40px"
-                  src="/assets/Simplification.svg"
+                  src="/assets/Simplification.svg" data-cms-src="surveys.satisfaction.keyFeaturesIcon"
                   alt=""
                 />
               </div>
             </div>
             <div class="heading6">
-              <h4><a>Key Features                    </a></h4>
+              <h4><a data-cms="surveys.satisfaction.keyFeaturesTitle">Key Features                    </a></h4>
               <ul style="list-style: none;">
-                <li>
+                <li data-cms="surveys.satisfaction.keyFeaturesItems.0">
                   Identify satisfaction drivers and pinpoint areas needing
                   improvement.
                 </li>
-                <li>
+                <li data-cms="surveys.satisfaction.keyFeaturesItems.1">
                   Gauge employee alignment with company values and goals.
                 </li>
               </ul>
@@ -1032,35 +1035,35 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         </div>
 
       </div>
-     
+
     </div>
 
     <div class="space30"></div>
     <div class="space30"></div>
     
-    <h3 class="text-anime-style-3" style="text-align: center;">
+    <h3 class="text-anime-style-3" style="text-align: center;" data-cms="surveys.engagement.heading">
       Employee Engagement Survey
     </h3>
     <div class="space30"></div>
     <div class="row" style="justify-content: center;">
-      
+
 
       <div class="col-lg-6">
         <div class="" data-aos="fade-right" data-aos-duration="800" >
-         
+
           <div class="others-boxs" style="height: 100%;">
             <div class="">
               <div class="icon">
                 <img
                   style="height: 40px"
-                  src="https://cdn-icons-png.flaticon.com/512/8553/8553670.png"
+                  src="https://cdn-icons-png.flaticon.com/512/8553/8553670.png" data-cms-src="surveys.engagement.objectiveIcon"
                   alt=""
                 />
               </div>
             </div>
             <div class="heading6">
-              <h4><a>Objective</a></h4>
-              <p>
+              <h4><a data-cms="surveys.engagement.objectiveTitle">Objective</a></h4>
+              <p data-cms="surveys.engagement.objectiveText">
                 Measure employees' overall satisfaction with their roles, work environment, and organizational culture
               </p>
               <div class="space16"></div>
@@ -1068,7 +1071,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           </div>
         </div>
 
-      
+
       </div>
       <div class="col-lg-6">
         <div class="" data-aos="fade-right" data-aos-duration="1000">
@@ -1077,19 +1080,19 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="icon">
                 <img
                   style="height: 40px"
-                  src="/assets/Simplification.svg"
+                  src="/assets/Simplification.svg" data-cms-src="surveys.engagement.keyFeaturesIcon"
                   alt=""
                 />
               </div>
             </div>
             <div class="heading6">
-              <h4><a>Key Features</a></h4>
+              <h4><a data-cms="surveys.engagement.keyFeaturesTitle">Key Features</a></h4>
               <ul style="list-style: none;">
-                <li>
+                <li data-cms="surveys.engagement.keyFeaturesItems.0">
                   Measure drivers such as leadership, communication, and
                   recognition.
                 </li>
-                <li>
+                <li data-cms="surveys.engagement.keyFeaturesItems.1">
                   Gather feedback to analyze how engagement impacts
                   performance and loyalty.
                 </li>
@@ -1098,9 +1101,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           </div>
         </div>
 
-    
 
-      
+
       </div>
       <div class="col-lg-6">
         <div class="" data-aos="fade-right" data-aos-duration="1000">
@@ -1109,25 +1111,25 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="icon">
                 <img
                   style="height: 40px"
-                  src="https://cdn-icons-png.flaticon.com/512/8596/8596550.png"
+                  src="https://cdn-icons-png.flaticon.com/512/8596/8596550.png" data-cms-src="surveys.engagement.benefitsIcon"
                   alt=""
                 />
               </div>
             </div>
             <div class="heading6">
-              <h4><a>Benefits</a></h4>
+              <h4><a data-cms="surveys.engagement.benefitsTitle">Benefits</a></h4>
               <ul style="list-style: none;">
-                <li>
+                <li data-cms="surveys.engagement.benefitsItems.0">
                   Boost productivity with targeted engagement strategies.
                 </li>
-                <li>
+                <li data-cms="surveys.engagement.benefitsItems.1">
                   Strengthen alignment with organizational objectives.
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      
+
       </div>
     </div>
 
@@ -1136,11 +1138,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
     <div class="space30"></div>
     <div class="space30"></div>
-      <h3 class="text-anime-style-3" style="text-align: center;">Organizational Climate Survey </h3>
+      <h3 class="text-anime-style-3" style="text-align: center;" data-cms="surveys.climate.heading">Organizational Climate Survey </h3>
     <div class="space30"></div>
 
     <div class="row" style="justify-content: center;">
-    
+
       <div class="col-lg-6">
         <div class="" data-aos="fade-right" data-aos-duration="800">
           <div class="others-boxs">
@@ -1148,14 +1150,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="icon">
                 <img
                   style="height: 40px"
-                  src="https://cdn-icons-png.flaticon.com/512/8553/8553670.png"
+                  src="https://cdn-icons-png.flaticon.com/512/8553/8553670.png" data-cms-src="surveys.climate.objectiveIcon"
                   alt=""
                 />
               </div>
             </div>
             <div class="heading6">
-              <h4><a>Objective</a></h4>
-              <p>
+              <h4><a data-cms="surveys.climate.objectiveTitle">Objective</a></h4>
+              <p data-cms="surveys.climate.objectiveText">
                 Understand employee perceptions of the workplace
                 environment.
               </p>
@@ -1171,43 +1173,43 @@ document.getElementById("consultationForm").addEventListener("submit", function(
              <div class="icon">
                <img
                  style="height: 40px"
-                 src="https://cdn-icons-png.flaticon.com/512/8596/8596550.png"
+                 src="https://cdn-icons-png.flaticon.com/512/8596/8596550.png" data-cms-src="surveys.climate.benefitsIcon"
                  alt=""
                />
              </div>
            </div>
            <div class="heading6">
-             <h4><a>Benefits</a></h4>
+             <h4><a data-cms="surveys.climate.benefitsTitle">Benefits</a></h4>
              <div class="space10"></div>
              <ul style="list-style: none;">
-               <li>Enhance adaptability and inclusivity.</li>
-               <li>Align workplace culture with business goals.</li>
+               <li data-cms="surveys.climate.benefitsItems.0">Enhance adaptability and inclusivity.</li>
+               <li data-cms="surveys.climate.benefitsItems.1">Align workplace culture with business goals.</li>
              </ul>
            </div>
          </div>
        </div>
      </div>
       <div class="col-lg-6">
-      
+
         <div class="" data-aos="fade-right" data-aos-duration="1000">
           <div class="others-boxs">
             <div class="">
               <div class="icon">
                 <img
                   style="height: 40px"
-                  src="/assets/Simplification.svg"
+                  src="/assets/Simplification.svg" data-cms-src="surveys.climate.keyFeaturesIcon"
                   alt=""
                 />
               </div>
             </div>
             <div class="heading6">
-              <h4><a>Key Features                    </a></h4>
+              <h4><a data-cms="surveys.climate.keyFeaturesTitle">Key Features                    </a></h4>
               <ul style="list-style: none;">
-                <li>
+                <li data-cms="surveys.climate.keyFeaturesItems.0">
                   Evaluate leadership effectiveness, team dynamics, and
                   inclusivity.
                 </li>
-                <li>
+                <li data-cms="surveys.climate.keyFeaturesItems.1">
                   Provide a holistic view of the organization's cultural
                   health.
                 </li>
@@ -1216,39 +1218,39 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           </div>
         </div>
 
-     
+
 
       </div>
-     
-     
+
+
     </div>
 
 
     <div class="space30"></div>
     <div class="space30"></div>
-    <h3 class="text-anime-style-3" style="text-align: center;">
+    <h3 class="text-anime-style-3" style="text-align: center;" data-cms="surveys.experience.heading">
       Employee Experience Survey
     </h3>
     <div class="space30"></div>
     <div class="row" style="justify-content: center;">
-   
+
 
       <div class="col-lg-6">
         <div class="" data-aos="fade-right" data-aos-duration="800">
-      
+
           <div class="others-boxs">
             <div class="">
               <div class="icon">
                 <img
                   style="height: 40px"
-                  src="https://cdn-icons-png.flaticon.com/512/8553/8553670.png"
+                  src="https://cdn-icons-png.flaticon.com/512/8553/8553670.png" data-cms-src="surveys.experience.objectiveIcon"
                   alt=""
                 />
               </div>
             </div>
             <div class="heading6">
-              <h4><a>Objective</a></h4>
-              <p>
+              <h4><a data-cms="surveys.experience.objectiveTitle">Objective</a></h4>
+              <p data-cms="surveys.experience.objectiveText">
                 Capture employees' experiences throughout their lifecycle,
                 from onboarding to exit.
               </p>
@@ -1261,26 +1263,26 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
       </div>
       <div class="col-lg-6">
-      
+
         <div class="" data-aos="fade-right" data-aos-duration="1000">
           <div class="others-boxs">
             <div class="">
               <div class="icon">
                 <img
                   style="height: 40px"
-                  src="/assets/Simplification.svg"
+                  src="/assets/Simplification.svg" data-cms-src="surveys.experience.keyFeaturesIcon"
                   alt=""
                 />
               </div>
             </div>
             <div class="heading6">
-              <h4><a>Key Features</a></h4>
+              <h4><a data-cms="surveys.experience.keyFeaturesTitle">Key Features</a></h4>
               <ul style="list-style: none;">
-                <li>
+                <li data-cms="surveys.experience.keyFeaturesItems.0">
                   Collect feedback on touchpoints like onboarding,
                   training, and career progression.
                 </li>
-                <li>
+                <li data-cms="surveys.experience.keyFeaturesItems.1">
                   Analyze experiences impacting loyalty and advocacy.
                 </li>
               </ul>
@@ -1290,23 +1292,23 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
       </div>
       <div class="col-lg-6">
-  
+
         <div class="" data-aos="fade-right" data-aos-duration="1000">
           <div class="others-boxs">
             <div class="">
               <div class="icon">
                 <img
                   style="height: 40px"
-                  src="https://cdn-icons-png.flaticon.com/512/8596/8596550.png"
+                  src="https://cdn-icons-png.flaticon.com/512/8596/8596550.png" data-cms-src="surveys.experience.benefitsIcon"
                   alt=""
                 />
               </div>
             </div>
             <div class="heading6">
-              <h4><a>Benefits</a></h4>
+              <h4><a data-cms="surveys.experience.benefitsTitle">Benefits</a></h4>
               <ul style="list-style: none;">
-                <li>Boost employee advocacy and employer branding.</li>
-                <li>
+                <li data-cms="surveys.experience.benefitsItems.0">Boost employee advocacy and employer branding.</li>
+                <li data-cms="surveys.experience.benefitsItems.1">
                   Optimize processes for talent management and
                   development.
                 </li>
@@ -1330,8 +1332,8 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="row">
             <div class="col-lg-8 m-auto text-center">
               <div class="heading5">
-                <h2 class="text-anime-style-3">
-                  Benefits of Employee Engagement Services 
+                <h2 class="text-anime-style-3" data-cms="benefits2.heading">
+                  Benefits of Employee Engagement Services
                 </h2>
                 <div class="space16"></div>
               </div>
@@ -1348,19 +1350,19 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="benefits-box">
                 <div class="icon">
                   <img
-                    src="/assets/all-icons/results.png"  style="width: 40px;"
+                    src="/assets/all-icons/results.png" data-cms-src="benefits2.cards.0.icon"  style="width: 40px;"
                     alt=""
                   />
                 </div>
                 <div class="heading2">
-                  <h4><a href="">Enhanced Retention </a></h4>
+                  <h4><a href="" data-cms="benefits2.cards.0.title">Enhanced Retention </a></h4>
                   <div class="space16"></div>
                   <ul style="list-style: disc; color: white">
                     <li>
-                      <p>Reduce attrition by addressing employee concerns effectively. resource utilization to achieve more with less.
+                      <p data-cms="benefits2.cards.0.description">Reduce attrition by addressing employee concerns effectively. resource utilization to achieve more with less.
                       </p>
                     </li>
-                    
+
                   </ul>
                   <div class="space16"></div>
                 </div>
@@ -1375,20 +1377,20 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="benefits-box">
                 <div class="icon">
                   <img
-                    src="/assets/all-icons/improve.png"  style="width: 40px;"
+                    src="/assets/all-icons/improve.png" data-cms-src="benefits2.cards.1.icon"  style="width: 40px;"
                     alt=""
                   />
                 </div>
                 <div class="heading2">
-                  <h4><a href="">Increased Productivity </a></h4>
+                  <h4><a href="" data-cms="benefits2.cards.1.title">Increased Productivity </a></h4>
                   <div class="space16"></div>
                   <ul style="list-style: disc; color: white">
                     <li>
-                      <p>
+                      <p data-cms="benefits2.cards.1.description">
                         Foster a motivated workforce aligned with organizational goals.
                       </p>
                     </li>
-                   
+
                   </ul>
                   <div class="space16"></div>
                 </div>
@@ -1403,20 +1405,20 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="benefits-box">
                 <div class="icon">
                   <img
-                    src="/assets/all-icons/enhance.png"  style="width: 40px;"
+                    src="/assets/all-icons/enhance.png" data-cms-src="benefits2.cards.2.icon"  style="width: 40px;"
                     alt=""
                   />
                 </div>
                 <div class="heading2">
-                  <h4><a href="">Improved Workplace Culture </a></h4>
+                  <h4><a href="" data-cms="benefits2.cards.2.title">Improved Workplace Culture </a></h4>
                   <div class="space16"></div>
                   <ul style="list-style: disc; color: white">
                     <li>
-                      <p>
+                      <p data-cms="benefits2.cards.2.description">
                         Build a culture of trust, collaboration, and inclusivity.
                       </p>
                     </li>
-                  
+
                   </ul>
                   <div class="space16"></div>
                 </div>
@@ -1431,20 +1433,20 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="benefits-box">
                 <div class="icon">
                   <img
-                    src="/assets/all-icons/monitoring (1).png" style="width: 40px;"
+                    src="/assets/all-icons/monitoring (1).png" data-cms-src="benefits2.cards.3.icon" style="width: 40px;"
                     alt=""
                   />
                 </div>
                 <div class="heading2">
-                  <h4><a href=" ">Actionable Insights </a></h4>
+                  <h4><a href=" " data-cms="benefits2.cards.3.title">Actionable Insights </a></h4>
                   <div class="space16"></div>
                   <ul style="list-style: disc; color: white">
                     <li>
-                      <p>
+                      <p data-cms="benefits2.cards.3.description">
                         Drive meaningful changes with precise feedback and recommendations.
                       </p>
                     </li>
-                   
+
                   </ul>
                   <div class="space16"></div>
                 </div>
@@ -1456,9 +1458,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
       <div class="row">
         <div class="col-lg-6 m-auto text-center">
           <div class="heading6">
-            <h2 class="text-anime-style-3" style="text-align: center;">Success Stories</h2>
+            <h2 class="text-anime-style-3" style="text-align: center;" data-cms="successStories.heading">Success Stories</h2>
             <div class="space30"></div>
-            <h3 class="text-anime-style-3" style="text-align: center;">Employee Satisfaction Survey</h3>
+            <h3 class="text-anime-style-3" style="text-align: center;" data-cms="successStories.satisfaction.heading">Employee Satisfaction Survey</h3>
           </div>
         </div>
       </div>
@@ -1470,7 +1472,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
          
 
           <div class="row" style="justify-content: center;">
-         
+
             <div class="col-lg-6">
               <div class="" data-aos="fade-right" data-aos-duration="800">
                 <div class="others-boxs">
@@ -1478,14 +1480,14 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                     <div class="icon">
                       <img
                         style="height: 40px"
-                        src="https://cdn-icons-png.flaticon.com/512/10108/10108140.png"
+                        src="https://cdn-icons-png.flaticon.com/512/10108/10108140.png" data-cms-src="successStories.satisfaction.challengeIcon"
                         alt=""
                       />
                     </div>
                   </div>
                   <div class="heading6">
-                    <h4><a>Challenge</a></h4>
-                    <p>
+                    <h4><a data-cms="successStories.satisfaction.challengeTitle">Challenge</a></h4>
+                    <p data-cms="successStories.satisfaction.challengeText">
                       High attrition rates and low morale in a mid-sized
                       manufacturing firm.
                     </p>
@@ -1495,21 +1497,21 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
             </div>
             <div class="col-lg-6">
-            
+
               <div class="" data-aos="fade-right" data-aos-duration="1000">
                 <div class="others-boxs">
                   <div class="">
                     <div class="icon">
                       <img
                         style="height: 40px"
-                        src="https://cdn-icons-png.flaticon.com/512/8553/8553819.png"
+                        src="https://cdn-icons-png.flaticon.com/512/8553/8553819.png" data-cms-src="successStories.satisfaction.solutionIcon"
                         alt=""
                       />
                     </div>
                   </div>
                   <div class="heading6">
-                    <h4><a>Solution</a></h4>
-                    <p>
+                    <h4><a data-cms="successStories.satisfaction.solutionTitle">Solution</a></h4>
+                    <p data-cms="successStories.satisfaction.solutionText">
                       Conducted a satisfaction survey to gather feedback and
                       identify dissatisfaction drivers.
                     </p>
@@ -1518,23 +1520,23 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               </div>
 
             </div>
-          
+
             <div class="col-lg-6">
-          
+
               <div class="" data-aos="fade-right" data-aos-duration="1000">
                 <div class="others-boxs">
                   <div class="">
                     <div class="icon">
                       <img
                         style="height: 40px"
-                        src="https://cdn-icons-png.flaticon.com/512/11152/11152598.png"
+                        src="https://cdn-icons-png.flaticon.com/512/11152/11152598.png" data-cms-src="successStories.satisfaction.impactIcon"
                         alt=""
                       />
                     </div>
                   </div>
                   <div class="heading6">
-                    <h4><a>Impact</a></h4>
-                    <p>
+                    <h4><a data-cms="successStories.satisfaction.impactTitle">Impact</a></h4>
+                    <p data-cms="successStories.satisfaction.impactText">
                       Implemented targeted strategies, reducing attrition by 30%
                       within a year.
                     </p>
@@ -1543,34 +1545,34 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               </div>
 
             </div>
-          
+
           </div>
 
           <div class="space30"></div>
           <div class="space30"></div>
-          <h1 class="text-anime-style-3">
+          <h1 class="text-anime-style-3" data-cms="successStories.climate.heading">
             Organizational Climate Survey
           </h1>
           <div class="space30"></div>
           <div class="row" style="justify-content: center;">
-            
+
 
             <div class="col-lg-6">
               <div class="" data-aos="fade-right" data-aos-duration="800">
-              
+
                 <div class="others-boxs">
                   <div class="">
                     <div class="icon">
                       <img
                         style="height: 40px"
-                        src="https://cdn-icons-png.flaticon.com/512/10108/10108140.png"
+                        src="https://cdn-icons-png.flaticon.com/512/10108/10108140.png" data-cms-src="successStories.climate.challengeIcon"
                         alt=""
                       />
                     </div>
                   </div>
                   <div class="heading6">
-                    <h4><a>Challenge</a></h4>
-                    <p>
+                    <h4><a data-cms="successStories.climate.challengeTitle">Challenge</a></h4>
+                    <p data-cms="successStories.climate.challengeText">
                       A multinational corporation faced team silos and poor
                       collaboration.
                     </p>
@@ -1580,21 +1582,21 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
             </div>
             <div class="col-lg-6">
-          
+
               <div class="" data-aos="fade-right" data-aos-duration="1000">
                 <div class="others-boxs">
                   <div class="">
                     <div class="icon">
                       <img
                         style="height: 40px"
-                        src="https://cdn-icons-png.flaticon.com/512/8553/8553819.png"
+                        src="https://cdn-icons-png.flaticon.com/512/8553/8553819.png" data-cms-src="successStories.climate.solutionIcon"
                         alt=""
                       />
                     </div>
                   </div>
                   <div class="heading6">
-                    <h4><a>Solution</a></h4>
-                    <p>
+                    <h4><a data-cms="successStories.climate.solutionTitle">Solution</a></h4>
+                    <p data-cms="successStories.climate.solutionText">
                       Deployed a climate survey to gather feedback on workplace
                       dynamics.
                     </p>
@@ -1604,21 +1606,21 @@ document.getElementById("consultationForm").addEventListener("submit", function(
 
             </div>
             <div class="col-lg-6">
-          
+
               <div class="" data-aos="fade-right" data-aos-duration="1000">
                 <div class="others-boxs">
                   <div class="">
                     <div class="icon">
                       <img
                         style="height: 40px"
-                        src="https://cdn-icons-png.flaticon.com/512/11152/11152598.png"
+                        src="https://cdn-icons-png.flaticon.com/512/11152/11152598.png" data-cms-src="successStories.climate.impactIcon"
                         alt=""
                       />
                     </div>
                   </div>
                   <div class="heading6">
-                    <h4><a>Impact</a></h4>
-                    <p>
+                    <h4><a data-cms="successStories.climate.impactTitle">Impact</a></h4>
+                    <p data-cms="successStories.climate.impactText">
                       Developed cross-functional initiatives, improving
                       collaboration by 40%.
                     </p>
@@ -1641,21 +1643,21 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         <article>
           <div class="heading1">
             <div class="space30"></div>
-            <h2 style="text-align: center;">Ready to Elevate Your Employee Engagement?</h2>
-            <p style="text-align: center;">
+            <h2 style="text-align: center;" data-cms="cta.heading">Ready to Elevate Your Employee Engagement?</h2>
+            <p style="text-align: center;" data-cms="cta.paragraph">
               Contact us today to learn how our Employee Engagement Services can
               transform your workplace.
             </p>
 
             <div class="space16"></div>
             <div id="LearnMore-div" class="button" style="display: flex; justify-content: center;">
-            <a href="/contact.html"><button  type="submit" class="theme-btn1">
-                Contact Us Today
+            <a href="/contact.html" data-cms-href="cta.primaryBtnLink"><button  type="submit" class="theme-btn1">
+                <span data-cms="cta.primaryBtnText">Contact Us Today</span>
                 <span><i class="fa-solid fa-arrow-right"></i></span>
               </button></a>
 
-             <a href="/contact.html"> <button id="LearnMore" type="submit" class="theme-btn1">
-                Request a Free Demo
+             <a href="/contact.html" data-cms-href="cta.secondaryBtnLink"> <button id="LearnMore" type="submit" class="theme-btn1">
+                <span data-cms="cta.secondaryBtnText">Request a Free Demo</span>
                 <span><i class="fa-solid fa-arrow-right"></i></span>
               </button></a>
             </div>
@@ -1671,7 +1673,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               <div class="service-details-area">
                 <div class="">
                   <div class="heading1-w">
-                    <h2 style="text-align: center; color: black">FAQs</h2>
+                    <h2 style="text-align: center; color: black" data-cms="faq.heading">FAQs</h2>
                     <div class="space16"></div>
                   </div>
                 </div>
@@ -1690,6 +1692,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           data-bs-target="#flush-collapseOne"
                           aria-expanded="true"
                           aria-controls="flush-collapseOne"
+                          data-cms="faq.items.0.question"
                         >
                         1.	What is the purpose of employee engagement surveys?
                         </button>
@@ -1700,7 +1703,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body">
+                        <div class="accordion-body" data-cms="faq.items.0.answer">
                           Employee engagement surveys evaluate emotional and professional commitment, helping organizations identify engagement drivers and areas of improvement.
                         </div>
                       </div>
@@ -1716,6 +1719,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           data-bs-target="#flush-collapseTwo"
                           aria-expanded="false"
                           aria-controls="flush-collapseTwo"
+                          data-cms="faq.items.1.question"
                         >
                         2.	How can satisfaction surveys benefit my company?
                         </button>
@@ -1726,7 +1730,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body">
+                        <div class="accordion-body" data-cms="faq.items.1.answer">
                           Satisfaction surveys help identify dissatisfaction drivers, enabling targeted strategies to improve morale and retention.
                         </div>
                       </div>
@@ -1742,6 +1746,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           data-bs-target="#flush-collapseThree"
                           aria-expanded="false"
                           aria-controls="flush-collapseThree"
+                          data-cms="faq.items.2.question"
                         >
                         3.	What insights does an organizational climate survey provide?
                         </button>
@@ -1752,7 +1757,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         aria-labelledby="flush-headingThree"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body">
+                        <div class="accordion-body" data-cms="faq.items.2.answer">
                           This survey captures perceptions of leadership, inclusivity, and team dynamics, offering a holistic view of workplace culture.
                         </div>
                       </div>
@@ -1768,6 +1773,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           data-bs-target="#flush-collapseFour"
                           aria-expanded="false"
                           aria-controls="flush-collapseFour"
+                          data-cms="faq.items.3.question"
                         >
                         4.	How can an employee experience survey help my organization?
                         </button>
@@ -1778,7 +1784,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         aria-labelledby="flush-headingFour"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body">
+                        <div class="accordion-body" data-cms="faq.items.3.answer">
                           Experience surveys track touchpoints across the employee lifecycle, helping improve onboarding, development, and retention.
                         </div>
                       </div>
@@ -1794,6 +1800,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                           data-bs-target="#flush-collapseFive"
                           aria-expanded="false"
                           aria-controls="flush-collapseFive"
+                          data-cms="faq.items.4.question"
                         >
                         5.	Are these surveys customizable?
                         </button>
@@ -1804,7 +1811,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         aria-labelledby="flush-headingFive"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body">
+                        <div class="accordion-body" data-cms="faq.items.4.answer">
                           Yes, all surveys are tailored to fit your organization’s specific goals and requirements.
                         </div>
                       </div>
@@ -1825,36 +1832,36 @@ document.getElementById("consultationForm").addEventListener("submit", function(
           <div class="col-lg-4 col-md-6 col-12">
             <div class="single-footer-items footer-logo-area">
               <div class="footer-logo">
-                <a href="/"><img style="width: 150px" src="/assets/logo.png" alt="" /></a>
+                <a href="/"><img style="width: 150px" src="/assets/logo.png" data-cms-src="shared.footer.logoImage" alt="" /></a>
               </div>
               <div class="space20"></div>
               <div class="heading1-w">
-                <p>
+                <p data-cms="shared.footer.tagline">
                   Transforming Businesses, Empowering Teams, Driving Excellence.
                 </p>
               </div>
               <ul class="social-icon">
                 <li>
-                  <a href="https://www.linkedin.com/company/136419/"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://www.linkedin.com/company/136419/" data-cms-href="shared.social.linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/CEO_GROUPS"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="https://twitter.com/CEO_GROUPS" data-cms-href="shared.social.twitter"><i class="fa-brands fa-x-twitter"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA"><i
+                  <a href="https://www.youtube.com/channel/UC4nRMVsjaPXH3qt0HP22zEA" data-cms-href="shared.social.youtube"><i
                       class="fa-brands fa-youtube"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/ceo_hr_consultancy/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/ceo_hr_consultancy/" data-cms-href="shared.social.instagram"><i class="fa-brands fa-instagram"></i></a>
                 </li>
               </ul>
             </div>
           </div>
-  
+
           <div class="col-lg col-md-6 col-12">
             <div class="single-footer-items">
-              <h3>Quick Links</h3>
-  
+              <h3 data-cms="shared.footer.quickLinksTitle">Quick Links</h3>
+
               <ul class="menu-list">
                 <li><a href="/service.html">Service</a></li>
                 <li><a href="/hpt-resources.html">HPT Resources</a></li>
@@ -1864,11 +1871,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               </ul>
             </div>
           </div>
-  
+
           <div class="col-lg col-md-6 col-12">
             <div class="single-footer-items pl-5">
-              <h3>Explore</h3>
-  
+              <h3 data-cms="shared.footer.exploreTitle">Explore</h3>
+
               <ul class="menu-list">
                 <li><a href="/">Home </a></li>
                 <li><a href="/about.html">About Us</a></li>
@@ -1881,18 +1888,18 @@ document.getElementById("consultationForm").addEventListener("submit", function(
               </ul>
             </div>
           </div>
-  
+
           <div class="col-lg-3 col-md-6 col-12">
             <div class="single-footer-items">
-              <h3>Contact Us</h3>
-  
+              <h3 data-cms="shared.footer.contactTitle">Contact Us</h3>
+
               <div class="contact-box">
                 <div class="icon">
                   <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
                 </div>
                 <div class="pera">
                   <!-- <a href="tel:+91- 8939983080">+91- 8939983080</a> -->
-                  <a href="tel:+91 4449006000">+91 4449006000</a>
+                  <a href="tel:+91 4449006000" data-cms="shared.contact.phone1">+91 4449006000</a>
                 </div>
               </div>
               <div class="contact-box">
@@ -1900,42 +1907,42 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                   <img loading="lazy" src="/assets/img/icons/footer-icon1.png" alt="" />
                 </div>
                 <div class="pera">
-                  <a href="tel:+91- 8939983080">+91 8939983080</a>
+                  <a href="tel:+91- 8939983080" data-cms="shared.contact.phone2">+91 8939983080</a>
                   <!-- <a href="tel:+91 4449006000">+91 4449006000</a> -->
                 </div>
               </div>
-  
+
               <div class="contact-box">
                 <div class="icon">
                   <img loading="lazy" src="/assets/img/icons/footer-icon2.png" alt="" />
                 </div>
                 <div class="pera">
-                  <a href="mailto:info@ceohrconsultancy.com">info@ceohrconsultancy.com</a>
+                  <a href="mailto:info@ceohrconsultancy.com" data-cms="shared.contact.email">info@ceohrconsultancy.com</a>
                 </div>
               </div>
-  
+
               <div class="contact-box">
                 <div class="icon">
                   <img loading="lazy" src="/assets/img/icons/footer-icon3.png" alt="" />
                 </div>
                 <div class="pera">
-                  <a>9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
+                  <a data-cms="shared.contact.address">9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai,
                     Tamil Nadu, India – 600116</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-  
+
         <div class="space70"></div>
       </div>
-  
+
       <div class="copyright-area _relative">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-12">
               <div class="coppyright">
-                <p>© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
+                <p data-cms="shared.footer.copyright">© Copyright 2025 - CEO HR Consultancy. All Right Reserved</p>
               </div>
             </div>
           </div>
@@ -1998,7 +2005,11 @@ document.getElementById("consultationForm").addEventListener("submit", function(
         // alert("Network error: " + error.message);
       });
   });
-  
+
   </script>
+
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
 </body>
 </html>

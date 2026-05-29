@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+  <meta name="cms-page" content="service_high_performance_team" />
+    <title data-cms="meta.title">
       High-Performance Teams (HPT) | Self-Managed Teams (SMT) Solutions
     </title>
-    <meta
-      name="description"
+    <meta name="description"
       content="Transform your organization with High-Performance Teams (HPT) and Self-Managed Teams (SMT). Proven frameworks for accountability, efficiency, and measurable results."
-    />
-    <meta
-      name="keywords"
+    / data-cms-attr="meta.description|content">
+    <meta name="keywords"
       content="High-Performance Teams
      • Self-Managed Teams
      • Organizational transformation
      • HPT implementation process
      • Employee empowerment"
-    />
+    / data-cms-attr="meta.keywords|content">
 
     
 
@@ -582,7 +581,7 @@ document.getElementById("consultationForm").addEventListener("submit", function(
                         data-aos-duration="700"
                         >Service
                       </span>
-                           <h1> Empowering Organizations Through High-Performance Teams
+                           <h1 data-cms="hero.heading"> Empowering Organizations Through High-Performance Teams
                           </h1>
                            <div class="space16"></div>
                            <!-- <p>An advanced tool for auditing and improving employee relations across factories, ensuring compliance, safety, and employee well-being.</p> -->
@@ -1658,5 +1657,9 @@ document.getElementById("consultationForm").addEventListener("submit", function(
   });
   
   </script>
+  <!--===== CMS (Supabase-backed live editing) =======-->
+  <script src="/supabase-config.js"></script>
+  <script src="/cms-reader.js"></script>
+
 </body>
 </html>
