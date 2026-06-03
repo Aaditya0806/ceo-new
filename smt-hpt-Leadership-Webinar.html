@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMT / HPT Leadership Webinar — 16 June | CEO HR Consultancy</title>
+<meta name="description" content="Free leadership webinar: fix performance at the system level. 16 June, 4–5 PM IST. CEO HR Consultancy.">
+<link rel="shortcut icon" href="https://www.ceohrconsultancy.com/assets/favicon/favicon.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+<style>
+  :root{
+    --primary:#FF7A01;
+    --primary-hover:#FD965B;
+    --primary-light:#FFF2E6;
+    --heading:#081120;
+    --heading-alt:#19326A;
+    --text:#77787B;
+    --text-muted:#5A5F6A;
+    --input-bg:#E9E8E9;
+    --input-text:#60656E;
+    --bg-page:#F5F3F4;
+    --bg-white:#FFFFFF;
+    --border:#dfdcdc;
+    --footer-dark:#081120;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Figtree',sans-serif;color:var(--heading);background:var(--bg-page);-webkit-font-smoothing:antialiased;line-height:1.5;}
+  a{color:inherit;text-decoration:none;}
+  .container{max-width:1140px;margin:0 auto;padding:0 24px;}
+
+  /* site header — matches ceohrconsultancy.com */
+  .site-header{background:var(--bg-white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
+  .site-header .container{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:16px;}
+  .site-header .logo img{height:48px;width:auto;display:block;}
+  .site-header .nav-links{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+  .site-header .nav-links a{font-size:14px;font-weight:500;color:var(--heading-alt);transition:color .15s;}
+  .site-header .nav-links a:hover{color:var(--primary);}
+  .theme-btn1{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;border:none;border-radius:5px;padding:12px 22px;font-family:'Figtree',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:background .15s,transform .12s;}
+  .theme-btn1:hover{background:var(--primary-hover);transform:translateY(-1px);}
+  .theme-btn1 i{font-size:13px;}
+  .webinar-strip{background:var(--primary);color:#fff;text-align:center;padding:10px 24px;font-size:13px;font-weight:600;letter-spacing:.02em;}
+  .webinar-strip strong{font-weight:800;}
+
+  /* hero — content left, registration right */
+  .hero{background:var(--bg-page);position:relative;overflow:hidden;}
+  .hero .container{
+    position:relative;z-index:2;display:grid;
+    grid-template-columns:1.25fr .85fr;gap:48px;
+    padding:56px 24px 64px;align-items:center;
+  }
+  .hero-content{align-self:center;}
+  .span-tag{display:inline-block;font-size:14px;font-weight:600;color:var(--primary);background:var(--primary-light);padding:8px 14px;border-radius:4px;margin-bottom:16px;}
+  .hero h1{font-weight:800;font-size:44px;line-height:1.1;color:var(--heading);letter-spacing:-.02em;}
+  .hero h1 em{color:var(--primary);font-style:normal;}
+  .hero .lede{font-size:16px;color:var(--text);margin-top:20px;max-width:95%;line-height:1.65;}
+  .hero .meta{display:flex;gap:24px;margin-top:28px;flex-wrap:wrap;}
+  .hero .meta div{border-left:3px solid var(--primary);padding-left:14px;}
+  .hero .meta .l{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);font-weight:600;}
+  .hero .meta .v{font-size:15px;font-weight:700;color:var(--heading-alt);margin-top:4px;}
+
+  /* Registration panel — right column */
+  .teams-register{
+    background:var(--bg-white);
+    border-radius:10px;
+    border:1px solid var(--border);
+    box-shadow:2px 8px 32px rgba(8,17,32,.1);
+    display:flex;flex-direction:column;overflow:hidden;
+    position:relative;
+  }
+  .teams-register__ribbon{
+    position:absolute;top:14px;right:-36px;z-index:3;
+    background:var(--primary);color:#fff;font-size:11px;font-weight:800;
+    letter-spacing:.08em;text-transform:uppercase;padding:6px 40px;
+    transform:rotate(45deg);box-shadow:0 2px 8px rgba(0,0,0,.15);
+  }
+  .teams-register__head{
+    background:linear-gradient(135deg,var(--heading-alt),#254a9e);
+    color:#fff;padding:22px 22px 18px;flex-shrink:0;text-align:center;
+  }
+  .teams-register__head h3{font-size:20px;font-weight:900;margin:0;line-height:1.2;}
+  .teams-register__head p{font-size:14px;margin-top:8px;opacity:.9;}
+  .teams-register__body{
+    flex:1;padding:20px 22px 16px;
+    display:flex;flex-direction:column;gap:16px;
+    background:#fafbfc;
+  }
+  /* image-style registration visual (opens Teams on click) */
+  .reg-visual{
+    cursor:pointer;border-radius:10px;overflow:hidden;
+    border:2px solid var(--border);background:#fff;
+    transition:transform .15s,box-shadow .15s,border-color .15s;
+  }
+  .reg-visual:hover{
+    transform:translateY(-2px);border-color:var(--primary);
+    box-shadow:0 12px 28px rgba(255,122,1,.2);
+  }
+  .reg-visual:focus{outline:3px solid rgba(255,122,1,.45);outline-offset:2px;}
+  .reg-visual__poster{
+    position:relative;aspect-ratio:16/10;min-height:200px;
+    background:linear-gradient(145deg,var(--heading-alt) 0%,#2d5aa8 55%,var(--primary) 100%);
+    display:flex;align-items:center;justify-content:center;overflow:hidden;
+  }
+  /* Optional: add <img class="reg-visual__banner" src="your-webinar-poster.jpg" alt=""> inside .reg-visual__poster */
+  .reg-visual__banner{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;
+  }
+  .reg-visual__banner + .reg-visual__inner,
+  .reg-visual__banner ~ .reg-visual__overlay{z-index:1;}
+  .reg-visual__poster::before{
+    content:"";position:absolute;inset:0;
+    background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .reg-visual__inner{position:relative;z-index:1;text-align:center;padding:20px;color:#fff;width:100%;}
+  .reg-visual__logos{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:14px;}
+  .reg-visual__logos img{height:36px;width:auto;background:#fff;padding:6px 10px;border-radius:6px;object-fit:contain;}
+  .reg-visual__logos .teams-badge{
+    display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.95);
+    color:var(--heading-alt);font-size:12px;font-weight:800;padding:8px 14px;border-radius:6px;
+  }
+  .reg-visual__logos .teams-badge i{font-size:20px;color:#5059c9;}
+  .reg-visual__date{
+    display:inline-flex;align-items:center;gap:8px;margin-top:12px;
+    background:rgba(0,0,0,.25);padding:8px 16px;border-radius:50px;
+    font-size:13px;font-weight:700;
+  }
+  .reg-visual__chips{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12px;background:#fff;
+  }
+  .reg-visual__chip{
+    text-align:center;padding:10px 6px;border-radius:8px;background:var(--primary-light);
+  }
+  .reg-visual__chip i{display:block;font-size:20px;color:var(--primary);margin-bottom:6px;}
+  .reg-visual__chip strong{display:block;font-size:11px;font-weight:800;color:var(--heading);line-height:1.2;}
+  .reg-visual__chip span{font-size:10px;color:var(--text);margin-top:2px;display:block;}
+  .teams-register__steps{list-style:none;display:flex;flex-direction:column;gap:14px;}
+  .teams-register__steps li{
+    display:flex;align-items:flex-start;gap:12px;
+    font-size:14px;color:var(--text);line-height:1.45;
+  }
+  .teams-register__steps li span{
+    flex-shrink:0;width:28px;height:28px;border-radius:50%;
+    background:var(--primary);color:#fff;font-size:13px;font-weight:800;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .btn-teams-register{
+    width:100%;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+    background:linear-gradient(180deg,var(--primary) 0%,#e56d00 100%);
+    color:#fff;border:none;border-radius:8px;
+    padding:18px 20px;font-family:'Figtree',sans-serif;font-size:17px;font-weight:800;
+    cursor:pointer;transition:transform .12s,box-shadow .15s;text-align:center;
+    box-shadow:0 6px 20px rgba(255,122,1,.45);text-transform:uppercase;letter-spacing:.04em;
+  }
+  .btn-teams-register:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(255,122,1,.5);}
+  .btn-teams-register .btn-main{display:inline-flex;align-items:center;gap:10px;font-size:17px;}
+  .btn-teams-register i{font-size:20px;}
+  .btn-teams-register .sub{display:block;font-size:11px;font-weight:600;text-transform:none;letter-spacing:0;opacity:.9;}
+  .btn-teams-register.btn-row,
+  .final .btn-teams-register{
+    flex-direction:row;text-transform:none;letter-spacing:normal;
+  }
+  .teams-register__open-link{
+    display:block;text-align:center;font-size:13px;font-weight:600;color:var(--primary);
+  }
+  .teams-register__open-link:hover{text-decoration:underline;}
+  .teams-register__frame{display:none;}
+  .teams-register__foot{
+    padding:12px 16px;
+    background:var(--primary-light);
+    border-top:1px solid #ffd4a8;
+    font-size:12px;
+    color:var(--heading-alt);
+    line-height:1.45;
+    flex-shrink:0;
+  }
+  .teams-register__foot b{color:var(--primary);}
+  .teams-register__fallback{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    padding:28px 20px;
+    text-align:center;
+    min-height:280px;
+  }
+  .teams-register__fallback p{font-size:14px;color:var(--text);max-width:280px;}
+  .teams-register__fallback a.theme-btn1{font-size:14px;padding:14px 24px;}
+
+  /* sections */
+  section.block{padding:70px 0;}
+  section.block.alt{background:var(--bg-white);}
+  .eyebrow{font-size:14px;font-weight:700;color:var(--primary);text-align:center;text-transform:capitalize;}
+  .sec-title{font-weight:800;font-size:34px;line-height:1.15;text-align:center;color:var(--heading);margin-top:12px;max-width:760px;margin-left:auto;margin-right:auto;}
+
+  /* pain-point cards */
+  .familiar{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px;}
+  .fcard{background:var(--bg-white);border:1px solid var(--border);border-radius:10px;padding:24px 22px;box-shadow:2px 2px 10px rgba(0,0,0,.06);}
+  .fcard .ftag{font-size:12px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:.06em;}
+  .fcard h4{font-size:19px;font-weight:800;color:var(--heading-alt);margin-top:12px;line-height:1.2;}
+  .fcard ul{list-style:none;margin-top:14px;}
+  .fcard li{font-size:14px;color:var(--text);padding-left:26px;position:relative;margin-bottom:10px;line-height:1.5;}
+  .fcard li::before{content:"\f00c";font-family:"Font Awesome 6 Free";font-weight:900;position:absolute;left:0;top:2px;color:var(--primary);font-size:12px;}
+
+  /* proof — orange band like service4 on main site */
+  .proof{background:var(--primary);color:#fff;}
+  .proof .eyebrow{color:#fff;opacity:.95;}
+  .proof .sec-title{color:#fff;}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px;}
+  .stat{text-align:center;background:rgba(255,255,255,.12);border-radius:10px;padding:24px 16px;}
+  .stat .big{font-weight:900;font-size:48px;line-height:1;color:#fff;}
+  .stat .lbl{font-size:14px;font-weight:600;margin-top:10px;}
+  .stat .ctx{font-size:12px;opacity:.85;margin-top:8px;}
+  .quotes{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:48px;}
+  .quote{background:var(--bg-white);border-radius:10px;padding:24px 26px;color:var(--heading);box-shadow:2px 2px 12px rgba(0,0,0,.08);}
+  .quote p{font-size:16px;line-height:1.55;color:var(--heading-alt);font-style:italic;}
+  .quote .who{margin-top:16px;font-size:14px;font-weight:700;color:var(--primary);}
+  .quote .role{font-size:13px;color:var(--text);margin-top:4px;}
+  .clients{text-align:center;margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,.25);}
+  .clients .l{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.9;}
+  .clients .names{font-weight:700;font-size:17px;margin-top:14px;line-height:1.9;}
+  .clients .names span{margin:0 8px;opacity:.7;}
+
+  /* takeaways */
+  .takeaways{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px;margin-top:46px;max-width:900px;margin-left:auto;margin-right:auto;}
+  .tk{display:flex;gap:16px;align-items:flex-start;}
+  .tk .n{font-weight:900;font-size:28px;color:var(--primary);line-height:1;min-width:36px;}
+  .tk h5{font-size:16px;font-weight:700;color:var(--heading-alt);}
+  .tk p{font-size:14px;color:var(--text);margin-top:6px;}
+
+  /* final cta */
+  .final{background:var(--heading-alt);color:#fff;text-align:center;padding:72px 0;}
+  .final h2{font-weight:800;font-size:32px;line-height:1.15;max-width:700px;margin:0 auto;}
+  .final p{color:rgba(255,255,255,.85);margin-top:18px;font-size:16px;}
+  .final a.cta{display:inline-flex;align-items:center;gap:8px;margin-top:28px;background:var(--primary);color:#fff;font-weight:700;font-size:15px;padding:14px 32px;border-radius:5px;transition:background .15s,transform .12s;}
+  .final a.cta:hover{background:var(--primary-hover);transform:translateY(-1px);}
+
+  /* footer — aligned with main site */
+  .footer1{background:var(--footer-dark);color:rgba(255,255,255,.75);padding:48px 0 24px;font-size:14px;}
+  .footer1 .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;}
+  .footer1 h3{color:#fff;font-size:18px;font-weight:700;margin-bottom:16px;}
+  .footer1 .tagline{color:rgba(255,255,255,.8);line-height:1.6;max-width:280px;}
+  .footer1 .logo-foot img{width:140px;margin-bottom:16px;}
+  .footer1 ul{list-style:none;}
+  .footer1 ul li{margin-bottom:10px;}
+  .footer1 ul a{color:rgba(255,255,255,.75);transition:color .15s;}
+  .footer1 ul a:hover{color:var(--primary);}
+  .footer1 .contact-line{margin-bottom:12px;display:flex;gap:10px;align-items:flex-start;}
+  .footer1 .contact-line i{color:var(--primary);margin-top:3px;min-width:16px;}
+  .footer-copy{text-align:center;padding-top:28px;margin-top:32px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;}
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  @media(max-width:920px){
+    .hero .container{grid-template-columns:1fr;gap:32px;padding:40px 24px 48px;align-items:stretch;}
+    .teams-register{order:-1;}
+    .hero h1{font-size:30px;}
+    .hero .lede{max-width:100%;}
+    .teams-register__body{padding:18px 16px;}
+    .familiar,.stats,.quotes,.takeaways,.footer1 .grid{grid-template-columns:1fr;}
+    .sec-title{font-size:26px;}
+    .site-header .nav-links .hide-mobile{display:none;}
+    .site-header .nav-links .theme-btn1{padding:10px 16px;font-size:14px;}
+    .reg-visual__poster{min-height:180px;}
+  }
+  @media(max-width:480px){
+    .hero h1{font-size:26px;}
+    .teams-register__head h3{font-size:18px;}
+    .btn-teams-register{font-size:15px;padding:16px;}
+  }
+</style>
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="https://www.ceohrconsultancy.com/" title="CEO HR Consultancy">
+        <img src="https://www.ceohrconsultancy.com/assets/logo.png" alt="CEO HR Consultancy">
+      </a>
+      <div class="nav-links">
+        <a class="hide-mobile" href="https://www.ceohrconsultancy.com/">Home</a>
+        <a class="hide-mobile" href="https://www.ceohrconsultancy.com/service.html">Services</a>
+        <a class="hide-mobile" href="https://www.ceohrconsultancy.com/contact.html">Contact</a>
+        <a class="theme-btn1" href="#register">Register <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="webinar-strip">
+    <strong>Live Webinar</strong> · Tuesday, 16 June 2026 · 4:00–5:00 PM IST · Free registration
+  </div>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="span-tag reveal">A Leadership Webinar</span>
+        <h1 class="reveal">The performance you're missing isn't a people problem. <em>It's a systems problem.</em></h1>
+        <p class="lede reveal">Stalled growth despite rising headcount. Leaders trapped in firefighting. Good people walking out the door. These aren't separate problems — they share one root cause. In 60 minutes, see how 40+ organisations across India fixed it at the source.</p>
+        <div class="meta reveal">
+          <div><div class="l">Date</div><div class="v">Tue, 16 June 2026</div></div>
+          <div><div class="l">Time</div><div class="v">4:00–5:00 PM IST</div></div>
+          <div><div class="l">Format</div><div class="v">Live + Q&amp;A · Free</div></div>
+        </div>
+      </div>
+
+      <aside class="teams-register reveal" id="register">
+        <div class="teams-register__ribbon">Free</div>
+        <div class="teams-register__head">
+          <h3>SMT / HPT Leadership Webinar</h3>
+          <p>16 June 2026 · 4:00–5:00 PM IST · Microsoft Teams</p>
+        </div>
+        <div class="teams-register__body">
+          <div class="reg-visual" onclick="openTeamsRegistration()" role="button" tabindex="0" aria-label="Open webinar sign-up on Microsoft Teams">
+            <div class="reg-visual__poster">
+              <!-- Optional: <img class="reg-visual__banner" src="assets/webinar-poster.jpg" alt="SMT HPT Webinar"> -->
+              <div class="reg-visual__inner">
+                <div class="reg-visual__logos">
+                  <img src="https://www.ceohrconsultancy.com/assets/logo.png" alt="CEO HR Consultancy" width="120" height="36">
+                  <div class="teams-badge"><i class="fa-brands fa-microsoft"></i> Teams Live</div>
+                </div>
+                <div class="reg-visual__date">
+                  <i class="fa-regular fa-calendar"></i> 16 June · 4:00 PM IST
+                </div>
+              </div>
+            </div>
+            <div class="reg-visual__chips">
+              <div class="reg-visual__chip">
+                <i class="fa-solid fa-ticket"></i>
+                <strong>Free</strong>
+                <span>No fee</span>
+              </div>
+              <div class="reg-visual__chip">
+                <i class="fa-solid fa-video"></i>
+                <strong>Live</strong>
+                <span>+ Q&amp;A</span>
+              </div>
+              <div class="reg-visual__chip">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <strong>Confirm</strong>
+                <span>Via email</span>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn-teams-register btn-row" onclick="openTeamsRegistration();event.stopPropagation();">
+            <span class="btn-main"><i class="fa-brands fa-microsoft"></i> Register on Teams</span>
+          </button>
+          <a class="teams-register__open-link" href="https://events.teams.microsoft.com/event/f7df96b6-5b47-4c75-bd8c-634ff800300b@6de4e94a-70af-438a-ba49-a2502b6ce8e7" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+            Open in new tab <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+        <div class="teams-register__foot">
+          <b>Bonus for attendees:</b> a limited number of 1:1 strategy conversations will be opened on the day — first come, first served.
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <section class="block alt">
+    <div class="container">
+      <div class="eyebrow reveal">Does this sound familiar?</div>
+      <h2 class="sec-title reveal">Wherever you sit, the same gap is costing you</h2>
+      <div class="familiar">
+        <div class="fcard reveal">
+          <div class="ftag">If you run the business</div>
+          <h4>You're adding cost, not value</h4>
+          <ul>
+            <li>Headcount keeps rising — output per person doesn't follow.</li>
+            <li>Every decision routes back to you; momentum stalls in the layers.</li>
+            <li>You can't scale without buying more supervision.</li>
+          </ul>
+        </div>
+        <div class="fcard reveal">
+          <div class="ftag">If you run operations</div>
+          <h4>You came to build. You stayed to firefight</h4>
+          <ul>
+            <li>The day is reactive — chasing, following up, deciding for everyone.</li>
+            <li>Preventable defects and incidents keep recurring.</li>
+            <li>Your best supervisors are burning out, then leaving.</li>
+          </ul>
+        </div>
+        <div class="fcard reveal">
+          <div class="ftag">If you run people</div>
+          <h4>The bleed is faster than the fix</h4>
+          <ul>
+            <li>Talent leaves faster than you can replace it.</li>
+            <li>Culture programmes run; engagement scores don't move.</li>
+            <li>At the board, HR defends a budget — never presents a result.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block proof">
+    <div class="container">
+      <div class="eyebrow reveal">Documented outcomes — not projections</div>
+      <h2 class="sec-title reveal">When the system changes, the numbers change</h2>
+      <div class="stats">
+        <div class="stat reveal"><div class="big">107%</div><div class="lbl">Increase in output</div><div class="ctx">Pharma: 75M → 155M+ units/month</div></div>
+        <div class="stat reveal"><div class="big">73%</div><div class="lbl">Fewer people, same plant</div><div class="ctx">120 → 44, zero customer complaints</div></div>
+        <div class="stat reveal"><div class="big">Zero</div><div class="lbl">Man-hours lost to IR</div><div class="ctx">Across multiple clients, across decades</div></div>
+      </div>
+
+      <div class="quotes">
+        <div class="quote reveal">
+          <p>"HPT / Self-Managed Teams has been our game changer for the way we operate our shops. CEO has been a great partner in designing, training, and implementing the HPTs."</p>
+          <div class="who">Mr. K. Sitaram</div>
+          <div class="role">Director – HR, GE Supply Chain, South Asia</div>
+        </div>
+        <div class="quote reveal">
+          <p>"I am very enthused with the potential that the SMT Model delivers. I am delighted with your leadership to have delivered this outstanding result."</p>
+          <div class="who">Mr. Arun Kumar</div>
+          <div class="role">Founder &amp; Group CEO, Strides Emerging Markets</div>
+        </div>
+      </div>
+
+      <div class="clients reveal">
+        <div class="l">Trusted by leading organisations</div>
+        <div class="names">GE India<span>·</span>PepsiCo<span>·</span>Saint-Gobain<span>·</span>Mondelez<span>·</span>Dr. Reddy's<span>·</span>Strides Pharma<span>·</span>Visteon</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="container">
+      <div class="eyebrow reveal">What you'll walk away with</div>
+      <h2 class="sec-title reveal">An hour that changes how you see your own organisation</h2>
+      <div class="takeaways">
+        <div class="tk reveal"><div class="n">1</div><div><h5>The hidden cost you've normalised</h5><p>Why the gap between potential and performance persists — and what it's quietly costing you every quarter.</p></div></div>
+        <div class="tk reveal"><div class="n">2</div><div><h5>Proof it works in India</h5><p>Real outcomes from Indian manufacturing, pharma, and FMCG floors — not Western case studies.</p></div></div>
+        <div class="tk reveal"><div class="n">3</div><div><h5>What actually changes</h5><p>How frontline ownership reshapes productivity, quality, attrition, and the leader's own role.</p></div></div>
+        <div class="tk reveal"><div class="n">4</div><div><h5>Whether you're ready</h5><p>The honest preconditions for starting — and a clear sense of your own next step.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="container">
+      <h2>Your workforce is more capable than the systems built for them.</h2>
+      <p>Tuesday, 16 June · 4:00–5:00 PM IST · Free · Live Q&amp;A</p>
+      <a class="cta" href="#register">Register now <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <footer class="footer1">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <div class="logo-foot">
+            <a href="https://www.ceohrconsultancy.com/"><img src="https://www.ceohrconsultancy.com/assets/logo.png" alt="CEO HR Consultancy"></a>
+          </div>
+          <p class="tagline">Transforming Businesses, Empowering Teams, Driving Excellence.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="https://www.ceohrconsultancy.com/service.html">Services</a></li>
+            <li><a href="https://www.ceohrconsultancy.com/hpt-resources.html">HPT Resources</a></li>
+            <li><a href="https://www.ceohrconsultancy.com/testimonial.html">Testimonials</a></li>
+            <li><a href="https://www.ceohrconsultancy.com/FAQ.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <div class="contact-line"><i class="fa-solid fa-phone"></i><a href="tel:+914449006000">+91 4449006000</a></div>
+          <div class="contact-line"><i class="fa-solid fa-phone"></i><a href="tel:+918939983080">+91 8939983080</a></div>
+          <div class="contact-line"><i class="fa-solid fa-envelope"></i><a href="mailto:info@ceohrconsultancy.com">info@ceohrconsultancy.com</a></div>
+          <div class="contact-line"><i class="fa-solid fa-location-dot"></i><span>9, Pe Ve Plazza, 2nd Floor, Arcot Road, Porur, Chennai – 600116</span></div>
+        </div>
+      </div>
+      <div class="footer-copy">© Copyright 2025 - CEO HR Consultancy. All Rights Reserved</div>
+    </div>
+  </footer>
+
+<script>
+  var TEAMS_REGISTRATION_URL='https://events.teams.microsoft.com/event/f7df96b6-5b47-4c75-bd8c-634ff800300b@6de4e94a-70af-438a-ba49-a2502b6ce8e7';
+
+  document.querySelectorAll('.reg-visual').forEach(function(el){
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openTeamsRegistration();}});
+  });
+
+  function openTeamsRegistration(){
+    if(window.innerWidth>=768){
+      var w=Math.min(520,window.innerWidth-32);
+      var h=Math.min(780,window.innerHeight-32);
+      var left=Math.round((window.screen.width-w)/2);
+      var top=Math.round((window.screen.height-h)/2);
+      var win=window.open(
+        TEAMS_REGISTRATION_URL,
+        'teamsWebinarRegistration',
+        'width='+w+',height='+h+',left='+left+',top='+top+',scrollbars=yes,resizable=yes'
+      );
+      if(win){win.focus();return;}
+    }
+    window.open(TEAMS_REGISTRATION_URL,'_blank','noopener');
+  }
+
+  var els=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('in');},i*60);io.unobserve(e.target);}});
+  },{threshold:.12});
+  els.forEach(function(el){io.observe(el);});
+
+</script>
+</body>
+</html>
